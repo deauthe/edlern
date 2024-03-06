@@ -1,5 +1,6 @@
+"use client";
 import { useToast } from "@/components/ui/use-toast";
-import SignUpForm from "./signUpForm";
+import SignUpForm from "@/components/signup/signUpForm";
 import { SignUpFormFields } from "@/types/signUpTypes";
 import useMobileView from "@/hooks/useMobileView";
 
