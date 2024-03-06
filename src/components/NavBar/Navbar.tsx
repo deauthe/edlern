@@ -3,12 +3,16 @@ import NavMenu from "@/components/NavBar/NavMenu";
 import useMobileView from "@/hooks/useMobileView";
 import HamburgerMenu from "@/components/NavBar/HamburgerMenu";
 import { Button } from "../ui/button";
+import useNavBar from "@/hooks/useNavBar";
 const Navbar = () => {
+	const isNavbar = useNavBar();
 	const isMobileView = useMobileView();
 
 	return (
 		<div
-			className={`w-full grid grid-cols-12 justify-between gap-5 p-5 bg-opacity-65 bg-white  border-black border-b-1 rounded-b-lg h-16 shadow-md z-10 fixed "`}
+			className={`w-full grid grid-cols-12 justify-between gap-5 p-5 bg-opacity-65 bg-white  border-black border-b-1 rounded-b-lg h-16 shadow-md z-10 fixed ${
+				isNavbar ? "" : "hidden"
+			}`}
 		>
 			<div
 				className={`mb-auto h-fit  ${

@@ -15,7 +15,7 @@ const HeroBanner = () => {
 		<div className="m-auto relative mt-9 ">
 			<div className="h-[40px] w-full"></div>
 			<div className="flex justify-center mt-[70px] flex-col text-center gap-3 ">
-				{/* <p className="text-7xl font-bold" ref={element}>Design it, Wear it, Love it</p>
+				{/* <p className="text-7xl font-bold" ref={element}>Design it, Wear it, Love it</p>male
 				 */}
 				{/* <div className="text-7xl font-bold" id="good"></div> */}
 				<div className="text-4xl mt-6 font-bold text-[2em] text-textColor-100">
