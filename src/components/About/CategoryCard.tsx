@@ -8,26 +8,21 @@ import {
 	CardTitle,
 } from "@/components/ui/card";
 import { OfferingCardsStatic } from "./staticCategoryCards";
+import { InfiniteMovingCards } from "@/components/ui/infiniteMovingCards.tsx";
 
 const CategoryCard = () => {
 	return (
-		<div className="flex flex-row gap-5">
-			{OfferingCardsStatic.map((item, idx) => {
-				const Icon = item.icon;
-				return (
-					<div>
-						<Card className="w-fit">
-							<CardHeader>
-								<CardTitle className="flex flex-col text-center gap-5 uppercase text-lg">
-									<Icon className="mx-auto" />
-
-									{item.title}
-								</CardTitle>
-							</CardHeader>
-						</Card>
-					</div>
-				);
-			})}
+		<div className="flex flex-col gap-0">
+			<InfiniteMovingCards
+				items={OfferingCardsStatic}
+				direction="left"
+				speed="slow"
+			></InfiniteMovingCards>
+			<InfiniteMovingCards
+				items={OfferingCardsStatic}
+				speed="slow"
+				direction="right"
+			></InfiniteMovingCards>
 		</div>
 	);
 };

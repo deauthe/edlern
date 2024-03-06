@@ -1,8 +1,3 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import { TypeAnimation } from "react-type-animation";
 import RegisterForm from "@/components/RegistrationForm";
 
@@ -28,11 +23,11 @@ const HeroBanner = () => {
 							500,
 							"Your Knowledge", // initially rendered starting point
 							1000,
-							"Your Earnings",
+							"Your Knowledge,Your Earnings",
 						]}
 						speed={50}
 						style={{ fontSize: "2em" }}
-						repeat={3}
+						repeat={1}
 						cursor={false}
 					/>
 				</div>
@@ -43,53 +38,6 @@ const HeroBanner = () => {
 
 			<div className="flex justify-center mt-[3em]   ">
 				<RegisterForm onSubmit={RegisterUser} />
-			</div>
-
-			<div className="flex justify-center">
-				<div className="mt-[35px]  lg:w-[70%]  md:w-[80%] ">
-					<Swiper
-						effect={""}
-						grabCursor={true}
-						centeredSlides={true}
-						slidesPerView={"auto"}
-						coverflowEffect={{
-							rotate: 0,
-							stretch: 100,
-							depth: 100,
-							modifier: 1,
-							slideShadows: true,
-						}}
-						pagination={true}
-						modules={[EffectCoverflow, Pagination, Navigation]}
-						className="mySwiper "
-					>
-						<SwiperSlide className="">
-							<img
-								src="/bg-image-1.png"
-								alt="new"
-								width={700}
-								height={600}
-								className="mx-auto"
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<img
-								src="/bannerImage.webp"
-								alt="Banner Image"
-								width="full"
-								height="full"
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<img
-								src="/bannerImage.webp"
-								alt="Banner Image"
-								width="full"
-								height="full"
-							/>
-						</SwiperSlide>
-					</Swiper>
-				</div>
 			</div>
 		</div>
 	);

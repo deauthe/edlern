@@ -10,7 +10,7 @@ import About from "@/components/About/About";
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-between p-24 bg-gradient-to-l  from-blue-200 to-blue-300">
+		<main className="flex min-h-screen max-h-fit flex-col items-center justify-between px-24 bg-gradient-to-l  from-blue-200 to-blue-300">
 			<div className="h-screen">
 				<HeroBanner />
 				<About />
