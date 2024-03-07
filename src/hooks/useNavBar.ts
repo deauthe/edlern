@@ -3,15 +3,18 @@
 import { useEffect, useState } from "react";
 import useScroll from "./useScroll";
 
-const useNavBar = (): [boolean, boolean] => {
+const useNavBar = (
+	navBar: boolean,
+	transparent: boolean
+): [boolean, boolean] => {
 	const { direction, position } = useScroll();
-	const [showNavBar, setShowNavBar] = useState(true);
-	const [isTransparent, setTransparent] = useState(false);
+	const [showNavBar, setShowNavBar] = useState(navBar);
+	const [isTransparent, setTransparent] = useState(transparent);
 
 	useEffect(() => {
 		if (direction === "UP" || position === "TOP" || direction === "NONE") {
 			if (position === "TOP") {
-				setTransparent(false);
+				setTransparent(true);
 			}
 			setShowNavBar(true);
 		} else {
@@ -19,11 +22,13 @@ const useNavBar = (): [boolean, boolean] => {
 		}
 
 		return () => {
-			setTransparent(true);
+			setTransparent(false);
 			setShowNavBar(true);
 			console.log("unmounted");
 		};
 	}, [direction, position]);
+
+	useEffect(() => {}, [showNavBar]);
 
 	return [showNavBar, isTransparent];
 };

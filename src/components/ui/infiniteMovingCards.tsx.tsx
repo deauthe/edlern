@@ -75,14 +75,14 @@ export const InfiniteMovingCards = ({
 		<div
 			ref={containerRef}
 			className={cn(
-				"scroller relative z-20 w-fit overflow-hidden bg-black mx-auto",
+				"scroller relative z-20  w-screen overflow-hidden  mx-auto",
 				className
 			)}
 		>
 			<ul
 				ref={scrollerRef}
 				className={cn(
-					" flex w-full  gap-4 py-4 flex-nowrap ",
+					" flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
 					start && "animate-scroll ",
 					pauseOnHover && "hover:[animation-play-state:paused]"
 				)}
@@ -91,29 +91,25 @@ export const InfiniteMovingCards = ({
 					const Icon = item.icon;
 					return (
 						<li
-							className="w-fit  relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6  text-white "
+							className="w-fit flex relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6  text-white h-full "
 							style={{
 								background:
 									"linear-gradient(180deg, var(--zinc-800), var(--zinc-900) ",
 							}}
 							key={item.title}
 						>
-							<blockquote className=" w-fit">
-								<div
-									aria-hidden="true"
-									className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-								></div>
-								<span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
-									<Icon className="text-4xl mx-auto text-blue-200" />
-								</span>
-								<div className="relative z-20 mt-6 flex flex-row items-center">
-									<span className="flex flex-col gap-1">
-										<span className=" leading-[1.6] text-gray-400 font-normal text-lg text-center justify-end flex-col flex mx-auto ">
+							<div className=" w-fit my-auto flex h-full ">
+								<div className="relative z-20 flex flex-row items-center mb-auto justify-center ">
+									<span className="flex flex-row gap-5 my-auto">
+										<div className=" leading-[1.6] text-gray-400 font-bold text-lg text-center justify-end flex-col flex mx-auto ">
 											{item.title}
-										</span>
+										</div>
+										<div className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
+											<Icon className="text-4xl mx-auto text-blue-200" />
+										</div>
 									</span>
 								</div>
-							</blockquote>
+							</div>
 						</li>
 					);
 				})}

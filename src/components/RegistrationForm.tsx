@@ -33,7 +33,7 @@ const RegisterForm = ({ onSubmit }: FormProps) => {
 				className="space-y-8 text-white flex flex-row gap-5 "
 			>
 				<div>
-					<FormField
+					{/* <FormField
 						control={form.control}
 						name="email"
 						render={({ field }) => (
@@ -49,10 +49,13 @@ const RegisterForm = ({ onSubmit }: FormProps) => {
 								<FormMessage />
 							</FormItem>
 						)}
-					/>
+					/> */}
 				</div>
 				<div>
-					<Button type="submit" className="-translate-y-8 h-16 w-32">
+					<Button
+						type="submit"
+						className="-translate-y-8 h-fit w-52 py-2 text-2xl font-semibold text-white-200/[0.9] tracking-wider uppercase font-oswald bg-black/[0.8] shadow-md"
+					>
 						Register
 					</Button>
 				</div>

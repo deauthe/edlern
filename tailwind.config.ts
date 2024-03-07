@@ -24,6 +24,9 @@ const config = {
 		extend: {
 			fontFamily: {
 				sans: ["var(--font-sans)", ...fontFamily.sans],
+				serif: ["DmSerif", "sans-serif"],
+				DmSerif: ["DmSerif"],
+				oswald: "var(--font-oswald)",
 			},
 			colors: {
 				border: "hsl(var(--border))",
@@ -60,13 +63,19 @@ const config = {
 					foreground: "hsl(var(--card-foreground))",
 				},
 				blue: {
-					100: "rgb(92,225,230)",
-					200: "rgb(54,125,174)",
-					300: "rgb(3,70,110)",
+					100: "#26A4C6",
+					200: "#367DAE",
+					300: "#03466E",
+					400: "#",
 				},
-				textColor: {
+				green: {
+					100: "#C7E084",
+					200: "#88A201",
+				},
+				white: {
 					100: "white",
-					200: "black",
+					200: "#F1F5F4",
+					DEFAULT: "white",
 				},
 			},
 			borderRadius: {

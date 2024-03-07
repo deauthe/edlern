@@ -3,3 +3,9 @@ export type ScrollingImageCardTypes = {
 	Heading: string;
 	description: string;
 };
+
+export type FaqItemTypes = {
+	id: number;
+	heading: string;
+	description: string;
+};

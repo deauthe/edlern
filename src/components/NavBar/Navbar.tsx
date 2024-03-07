@@ -4,13 +4,25 @@ import useMobileView from "@/hooks/useMobileView";
 import HamburgerMenu from "@/components/NavBar/HamburgerMenu";
 import { Button } from "../ui/button";
 import useNavBar from "@/hooks/useNavBar";
+import { delay, motion } from "framer-motion";
 const Navbar = () => {
-	const isNavbar = useNavBar();
+	const [isNavbar, isTransparent] = useNavBar(true, true);
 	const isMobileView = useMobileView();
 
 	return (
-		<div
-			className={`w-full grid grid-cols-12 justify-between gap-5 p-5 bg-opacity-65 bg-white  border-black border-b-1 rounded-b-lg h-16 shadow-md z-10 fixed ${
+		<motion.div
+			initial={{
+				scale: 1,
+			}}
+			exit={{
+				scale: 0,
+			}}
+			transition={{
+				duration: 2,
+			}}
+			className={`w-full grid grid-cols-12 justify-between gap-5 p-5 ${
+				isTransparent ? "bg-opacity-0 shadow-none" : "bg-opacity-100 shadow-md "
+			} bg-white  border-black border-b-1 rounded-b-lg h-16 shadow-md z-10 fixed ${
 				isNavbar ? "" : "hidden"
 			}`}
 		>
@@ -46,7 +58,7 @@ const Navbar = () => {
 					</div>
 				</>
 			)}
-		</div>
+		</motion.div>
 	);
 };
 
