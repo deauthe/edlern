@@ -3,26 +3,74 @@ import { useToast } from "@/components/ui/use-toast";
 import SignUpForm from "@/components/signup/signUpForm";
 import { SignUpFormFields } from "@/types/signUpTypes";
 import useMobileView from "@/hooks/useMobileView";
+import { FcGraduationCap } from "react-icons/fc";
+import { createUser } from "@/apiCalls/UserApi";
+import { date } from "zod";
+import { MdOutlineError } from "react-icons/md";
+import Router from "next/router";
+import { Toaster } from "@/components/ui/toaster";
 
 const SignUp = () => {
 	const { toast } = useToast();
 	const isMobileView = useMobileView();
+	const router = Router;
 
 	const onSubmit = async (data: SignUpFormFields) => {
-		toast({
-			title: "congratulations, you are registered!!",
-			description: (
-				<div className="w-full  justify-center items-center text-2xl uppercase">
-					{data.name}
-				</div>
-			),
-		});
-		console.log("registered values are:", data);
+		const {
+			email,
+			phone,
+			dob,
+			interestField,
+			name,
+			phonePrefix,
+			fieldExplanation,
+		} = data;
+		try {
+			console.log("registered values are:", data);
+
+			const user = await createUser({
+				dob,
+				phone,
+				email,
+				name,
+				fieldExplanation,
+				phonePrefix,
+				interestField,
+			});
+			console.error(user);
+			toast({
+				title: "congratulations, you are registered!!",
+				description: (
+					<div className="w-full  justify-center items-center text-2xl uppercase font-oswald font-semibold">
+						{user!.data.name!}
+					</div>
+				),
+			});
+			router.replace("/");
+		} catch (error: any) {
+			console.log("useFul error", error);
+			let errorTitle;
+			if (error.statusCode === 11000) {
+				errorTitle = "user already registered OR Internal Server Error";
+			} else {
+				errorTitle = "user with this info exists or internal server error";
+			}
+			toast({
+				title: "congratulations, you are registered!!",
+				description: (
+					<div className="w-full tracking-tighter justify-center items-center text-xl uppercase font-oswald font-semibold">
+						{data.name!}
+					</div>
+				),
+			});
+		}
 	};
 	return (
-		<div className={`flex flex-row z-10 ${isMobileView ? "mt-10" : ""}`}>
+		<div
+			className={`flex flex-row z-10 font-oswald text-black bg-gradient-to-l from-blue-300 to-blue-200 to-black`}
+		>
 			<div
-				className={` p-5 ${
+				className={` m-5 rounded-lg bg-white ${
 					isMobileView ? "mx-auto w-4/5" : "mr-auto w-3/5"
 				} shadow-lg`}
 			>
@@ -32,7 +80,11 @@ const SignUp = () => {
 				<></>
 			) : (
 				<>
-					<div className="h-screen w-full bg-gradient-to-l from-blue-300 to-blue-200 to-black"></div>
+					<div className="h-screen w-full  text-9xl flex ">
+						<div className="h-fit w-fit shadow-lg p-10 mx-auto my-auto rounded-lg ">
+							<FcGraduationCap className="" />
+						</div>
+					</div>
 				</>
 			)}
 		</div>

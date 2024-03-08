@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
+import { AnimatePresence, motion } from "framer-motion";
 import {
 	Form,
 	FormControl,
@@ -31,8 +32,6 @@ import {
 import { Calendar } from "@/components/ui/calendar";
 import { Checkbox } from "@/components/ui/checkbox";
 import { SignUpFormFields, signUpFormSchema } from "@/types/signUpTypes";
-import { Toaster } from "@/components/ui/toaster";
-import { RadioGroupItem, RadioGroup } from "@/components/ui/radio-group";
 
 type FormProps = {
 	onSubmit: SubmitHandler<SignUpFormFields>;
@@ -47,7 +46,7 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 		<Form {...form}>
 			<form
 				onSubmit={form.handleSubmit(onSubmit)}
-				className="space-y-8 text-white "
+				className="space-y-8 text-black m-10 bg-white/[0.9] "
 			>
 				<FormField
 					control={form.control}
@@ -69,7 +68,7 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 					name="email"
 					render={({ field }) => (
 						<FormItem>
-							<FormLabel>email</FormLabel>
+							<FormLabel className="font-oswald">email</FormLabel>
 							<FormControl>
 								<Input placeholder="eg: ...@gmail.com" {...field} />
 							</FormControl>
@@ -81,30 +80,14 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 
 				<FormField
 					control={form.control}
-					name="gender"
+					name="phone"
 					render={({ field }) => (
-						<FormItem className="space-y-3">
-							<FormLabel>gender</FormLabel>
+						<FormItem>
+							<FormLabel>mobile number</FormLabel>
 							<FormControl>
-								<RadioGroup
-									onValueChange={field.onChange}
-									defaultValue={field.value}
-									className="flex flex-col space-y-1"
-								>
-									<FormItem className="flex items-center space-x-3 space-y-0">
-										<FormControl>
-											<RadioGroupItem value="male" />
-										</FormControl>
-										<FormLabel className="font-normal">male</FormLabel>
-									</FormItem>
-									<FormItem className="flex items-center space-x-3 space-y-0">
-										<FormControl>
-											<RadioGroupItem value="female" />
-										</FormControl>
-										<FormLabel className="font-normal">female</FormLabel>
-									</FormItem>
-								</RadioGroup>
+								<Input placeholder="Please do not add prefix" {...field} />
 							</FormControl>
+
 							<FormMessage />
 						</FormItem>
 					)}
@@ -115,7 +98,7 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 					name="dob"
 					render={({ field }) => (
 						<FormItem className="flex flex-col text-black">
-							<FormLabel className="text-white">Date of birth</FormLabel>
+							<FormLabel className="text-black">Date of birth</FormLabel>
 							<Popover>
 								<PopoverTrigger asChild>
 									<FormControl>
@@ -138,6 +121,9 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 								<PopoverContent className="w-auto p-0" align="start">
 									<Calendar
 										mode="single"
+										captionLayout="dropdown-buttons"
+										fromYear={1980}
+										toYear={2020}
 										selected={field.value}
 										onSelect={field.onChange}
 										disabled={(date: Date) =>
@@ -174,7 +160,7 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 				/>
 				<FormField
 					control={form.control}
-					name="name"
+					name="interestField"
 					render={({ field }) => (
 						<FormItem className="text-black">
 							<Select onValueChange={field.onChange} defaultValue={field.value}>
@@ -185,9 +171,9 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 										<SelectValue placeholder="select an interest field" />
 									</SelectTrigger>
 								</FormControl>
-								<SelectContent>
+								<SelectContent className="w-2/4">
 									<SelectItem value="Academics">Academics</SelectItem>
-									<SelectItem value="others">others</SelectItem>
+									<SelectItem value="Other">Other</SelectItem>
 									<SelectItem value="Finance">Finance</SelectItem>
 									<SelectItem value="Sports and Recreation">
 										Sports and Recreation{" "}
@@ -217,23 +203,35 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 						</FormItem>
 					)}
 				/>
-				<FormField
-					control={form.control}
-					name="email"
-					render={({ field }) => (
-						<FormItem>
-							<FormLabel>more about your field</FormLabel>
-							<FormControl>
-								<Input placeholder="explain..." {...field} />
-							</FormControl>
+				{form.watch("interestField") === "Other" && (
+					<motion.div animate={{ scale: 1 }} initial={{ scale: 0 }}>
+						<FormField
+							control={form.control}
+							name="fieldExplanation"
+							render={({ field }) => (
+								<FormItem>
+									<FormLabel>more about your field</FormLabel>
+									<FormControl>
+										<Input placeholder="explain..." {...field} />
+									</FormControl>
 
-							<FormMessage />
-						</FormItem>
-					)}
-				/>
+									<FormMessage />
+								</FormItem>
+							)}
+						/>
+					</motion.div>
+				)}
+				{/* <Toaster /> */}
 
-				<Toaster />
-				<Button type="submit">Submit</Button>
+				<Button
+					type="submit"
+					disabled={form.formState.isSubmitting}
+					className={`bg-gradient-to-l from-blue-200 to-blue-300 shadow-sm shadow-black text-lg font-bold tracking-tight ml-auto ${
+						form.formState.isSubmitting ? "text-transparent" : ""
+					}`}
+				>
+					Submit
+				</Button>
 			</form>
 		</Form>
 	);

@@ -11,6 +11,7 @@ import FaqSection from "@/components/Faq/FaqSection";
 import Community from "@/components/Community/Community";
 import localfont from "next/font/local";
 import CategoryStrip from "@/components/CategoryStrip/CategoryStrip";
+import { Footer } from "react-day-picker";
 const Oswald = localfont({
 	src: [
 		{
@@ -44,20 +45,25 @@ const Oswald = localfont({
 
 export default function Home() {
 	return (
-		<main
-			className={`flex h-full flex-col items-center justify-between px-24 bg-gradient-to-l from-blue-200 to-blue-300 ${Oswald.variable}`}
-		>
-			<div className="h-full">
-				<div className="h-screen flex">
-					<HeroBanner />
-				</div>
-				<About />
-				<FaqSection />
-				<CategoryStrip />
+		<>
+			<Navbar />
 
-				<Community />
-			</div>
-			<hr className="bg-black" />
-		</main>
+			<main
+				className={`flex h-full flex-col items-center justify-between px-24 bg-gradient-to-l from-blue-200 to-blue-300 ${Oswald.variable}`}
+			>
+				<div className="h-full">
+					<div className="h-screen flex">
+						<HeroBanner />
+					</div>
+					<About />
+					<FaqSection />
+					<CategoryStrip />
+
+					<Community />
+				</div>
+				<hr className="bg-black" />
+			</main>
+			<Footer />
+		</>
 	);
 }

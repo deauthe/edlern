@@ -19,24 +19,29 @@ const NavMenu = () => {
 					<NavigationMenuTrigger className="bg-transparent">
 						Getting started
 					</NavigationMenuTrigger>
-					<NavigationMenuContent>
-						<ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+					<NavigationMenuContent className="shadow-lg shadow-black">
+						<ul className="grid gap-1 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
 							<li className="row-span-3">
 								<NavigationMenuLink asChild>
 									<a
-										className="flex bg-red-300 h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+										className="flex bg-blue-300 h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/100 to-muted/50 p-6 no-underline outline-none focus:shadow-md"
 										href="/"
 									></a>
 								</NavigationMenuLink>
 							</li>
-							<ListItem href="/docs" title="Introduction">
-								Re-usable components built using Radix UI and Tailwind CSS.
+
+							<ListItem href="/docs" title="Launch" className="">
+								the countdown begins
 							</ListItem>
-							<ListItem href="/docs/installation" title="Installation">
-								How to install dependencies and structure your app.
+							<ListItem href="/docs/installation" title="About" className="">
+								what is edlern?
 							</ListItem>
-							<ListItem href="/docs/primitives/typography" title="Typography">
-								Styles for headings, paragraphs, lists...etc
+							<ListItem
+								href="/docs/primitives/typography"
+								title="Why Us?"
+								className=""
+							>
+								see what we do
 							</ListItem>
 						</ul>
 					</NavigationMenuContent>

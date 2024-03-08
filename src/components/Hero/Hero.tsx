@@ -1,5 +1,7 @@
 import { TypeAnimation } from "react-type-animation";
 import RegisterForm from "@/components/RegistrationForm";
+import FloatingCard from "../floatingCards/FloatingCard";
+import { OfferingCardsStatic } from "../About/staticCategoryStripItems";
 
 const HeroBanner = () => {
 	const RegisterUser = () => {
@@ -35,7 +37,21 @@ const HeroBanner = () => {
 			</div>
 
 			<div className="flex justify-center mt-[3em]   ">
-				<RegisterForm onSubmit={RegisterUser} />
+				<RegisterForm />
+			</div>
+			<div className="mx-auto w-11/12 items-center justify-center flex flex-row gap-10 h-96 ">
+				{OfferingCardsStatic.map((item, idx) => {
+					return (
+						<>
+							<FloatingCard
+								title={item.title}
+								icon={item.icon}
+								key={idx}
+								delay={idx * 0.2}
+							/>
+						</>
+					);
+				})}
 			</div>
 		</div>
 	);
