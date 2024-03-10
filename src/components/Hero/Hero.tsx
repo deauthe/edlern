@@ -1,7 +1,10 @@
 import { TypeAnimation } from "react-type-animation";
 import RegisterForm from "@/components/RegistrationForm";
-import FloatingCard from "../floatingCards/FloatingCard";
+import FloatingCard from "../Offerings/FloatingCard";
 import { OfferingCardsStatic } from "../About/staticCategoryStripItems";
+import SignUpForm from "../signup/signUpForm";
+import Offerings from "../Offerings/Offerings";
+import SignUp from "@/components/signup/SignUp";
 
 const HeroBanner = () => {
 	const RegisterUser = () => {
@@ -9,49 +12,50 @@ const HeroBanner = () => {
 	};
 
 	return (
-		<div className="mx-auto  relative my-auto font-oswald font-extrabold">
-			<div className="h-[40px] w-full"></div>
-			<div className="flex justify-center mt-[70px] flex-col text-center gap-3 ">
-				{/* <p className="text-7xl font-bold" ref={element}>Design it, Wear it, Love it</p>male
-				 */}
-				{/* <div className="text-7xl font-bold" id="good"></div> */}
+		<div className="mx-auto relative font-oswald font-extrabold h-fit mt-10">
+			<div className="sm:flex sm:flex-col lg:grid lg:grid-cols-2 lg:gap-32 mx-10">
+				<div className="flex justify-center mt-[70px] flex-col text-center  col-span-1 gap-3 my-auto">
+					<div className="lg:text-5xl text-3xl px-10 mt-6 font-semibold tracking-tighter uppercase text-muted/90 ">
+						<TypeAnimation
+							preRenderFirstString={true}
+							sequence={[
+								500,
+								"Your Knowledge", // initially rendered starting point
+								1000,
+								"Your Earnings",
+								1500,
+								"Your Knowledge, Your Earnings",
+							]}
+							speed={50}
+							style={{ fontSize: "2em" }}
+							repeat={3}
+							cursor={false}
+						/>
+					</div>
 
-				<div className="text-5xl mt-6 font-semibold tracking-tighter uppercase text-white-200">
-					<TypeAnimation
-						preRenderFirstString={true}
-						sequence={[
-							500,
-							"Your Knowledge", // initially rendered starting point
-							1000,
-							"Your Knowledge  Your Earnings",
-						]}
-						speed={50}
-						style={{ fontSize: "2em" }}
-						repeat={3}
-						cursor={false}
-					/>
+					<div className="mt-10 ">
+						<h1 className="lg:text-6xl text-4xl md:text-5xl tracking-tighter box-content font-oswald font-semibold text-center mx-auto lg:px-20 px-3 text-muted/60">
+							Share your
+							<span className="bg-gradient-to-t text-transparent from-blue-300 to-black bg-clip-text ">
+								{` ideas, `}
+							</span>
+							host,{" "}
+							<span className="bg-gradient-to-t text-transparent from-blue-300 to-black  bg-clip-text ">
+								{` discussions,`}
+							</span>
+							<span className="bg-gradient-to-t text-transparent from-blue-300 to-black bg-clip-text ">
+								{` events, courses `}
+							</span>
+							and engage in
+							<span className="bg-gradient-to-t text-transparent from-blue-300 to-black bg-clip-text ">
+								{` coaching and consultations. `}
+							</span>
+						</h1>
+					</div>
 				</div>
-				<div className="text-8xl mt-6 font-bold tracking-tighter  text-textColor-100 uppercase text-white-200/[0.8]">
-					Welcome to Creator Hub!
+				<div className=" w-full">
+					<SignUp />
 				</div>
-			</div>
-
-			<div className="flex justify-center mt-[3em]   ">
-				<RegisterForm />
-			</div>
-			<div className="mx-auto w-11/12 items-center justify-center flex flex-row gap-10 h-96 ">
-				{OfferingCardsStatic.map((item, idx) => {
-					return (
-						<>
-							<FloatingCard
-								title={item.title}
-								icon={item.icon}
-								key={idx}
-								delay={idx * 0.2}
-							/>
-						</>
-					);
-				})}
 			</div>
 		</div>
 	);

@@ -41,3 +41,18 @@ export const createUser = async (user: CreateUsertypes) => {
 		console.error("error creating user", e);
 	}
 };
+
+export const getUserByEmail = async ({
+	email,
+	phone,
+}: {
+	email: string;
+	phone: string;
+}) => {
+	const getConfig: AxiosRequestConfig = {
+		method: "Get",
+		url: Server_url + "/email/" + email,
+	};
+
+	const user = await axios(getConfig);
+};

@@ -12,7 +12,7 @@ import { InfiniteMovingCards } from "@/components/ui/infiniteMovingCards.tsx";
 
 const CategoryStrip = () => {
 	return (
-		<div className="flex flex-col gap-0">
+		<div className="flex flex-col gap-0 ">
 			<InfiniteMovingCards
 				items={OfferingCardsStatic}
 				direction="left"

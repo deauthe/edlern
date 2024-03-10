@@ -13,7 +13,7 @@ interface ScrollInfo {
 const useScroll = (): ScrollInfo => {
 	const [scrollInfo, setScrollInfo] = useState<ScrollInfo>({
 		direction: "NONE",
-		position: "NONE",
+		position: "TOP",
 	});
 
 	useEffect(() => {

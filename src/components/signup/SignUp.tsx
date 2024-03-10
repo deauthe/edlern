@@ -66,27 +66,14 @@ const SignUp = () => {
 		}
 	};
 	return (
-		<div
-			className={`flex flex-row z-10 font-oswald text-black bg-gradient-to-l from-blue-300 to-blue-200 to-black`}
-		>
+		<div className={` z-10 font-oswald text-black py-5 `}>
 			<div
-				className={` m-5 rounded-lg bg-white ${
-					isMobileView ? "mx-auto w-4/5" : "mr-auto w-3/5"
+				className={`h-fit m-5 rounded-lg bg-white bg-dot-blue-300/[0.4] hover:bg-dot-black/[0.4] ${
+					isMobileView ? "mx-auto w-4/5" : "w-11/12"
 				} shadow-lg`}
 			>
 				<SignUpForm onSubmit={onSubmit} />
 			</div>
-			{isMobileView ? (
-				<></>
-			) : (
-				<>
-					<div className="h-screen w-full  text-9xl flex ">
-						<div className="h-fit w-fit shadow-lg p-10 mx-auto my-auto rounded-lg ">
-							<FcGraduationCap className="" />
-						</div>
-					</div>
-				</>
-			)}
 		</div>
 	);
 };

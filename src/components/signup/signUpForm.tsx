@@ -29,9 +29,10 @@ import {
 	SelectValue,
 } from "@/components/ui/select";
 
-import { Calendar } from "@/components/ui/calendar";
+// import { Calendar } from "@/components/ui/calendar";
 import { Checkbox } from "@/components/ui/checkbox";
 import { SignUpFormFields, signUpFormSchema } from "@/types/signUpTypes";
+import { Calendar } from "../ui/calendar";
 
 type FormProps = {
 	onSubmit: SubmitHandler<SignUpFormFields>;
@@ -46,16 +47,20 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 		<Form {...form}>
 			<form
 				onSubmit={form.handleSubmit(onSubmit)}
-				className="space-y-8 text-black m-10 bg-white/[0.9] "
+				className="space-y-8 text-black m-10  py-5 font-oswald "
 			>
 				<FormField
 					control={form.control}
 					name="name"
 					render={({ field }) => (
 						<FormItem>
-							<FormLabel>full name</FormLabel>
+							<FormLabel className="text-lg text-semibold">full name</FormLabel>
 							<FormControl>
-								<Input placeholder="eg: edlernUser" {...field} />
+								<Input
+									className="bg-white/[0.5]"
+									placeholder="eg: edlernUser"
+									{...field}
+								/>
 							</FormControl>
 
 							<FormMessage />
@@ -68,9 +73,13 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 					name="email"
 					render={({ field }) => (
 						<FormItem>
-							<FormLabel className="font-oswald">email</FormLabel>
+							<FormLabel className="text-lg text-semibold">email</FormLabel>
 							<FormControl>
-								<Input placeholder="eg: ...@gmail.com" {...field} />
+								<Input
+									className="bg-white/[0.5]"
+									placeholder="eg: ...@gmail.com"
+									{...field}
+								/>
 							</FormControl>
 
 							<FormMessage />
@@ -83,9 +92,15 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 					name="phone"
 					render={({ field }) => (
 						<FormItem>
-							<FormLabel>mobile number</FormLabel>
+							<FormLabel className="text-lg text-semibold">
+								mobile number
+							</FormLabel>
 							<FormControl>
-								<Input placeholder="Please do not add prefix" {...field} />
+								<Input
+									className="bg-white/[0.5]"
+									placeholder="Please do not add prefix"
+									{...field}
+								/>
 							</FormControl>
 
 							<FormMessage />
@@ -98,7 +113,9 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 					name="dob"
 					render={({ field }) => (
 						<FormItem className="flex flex-col text-black">
-							<FormLabel className="text-black">Date of birth</FormLabel>
+							<FormLabel className="text-lg text-semibold">
+								Date of birth
+							</FormLabel>
 							<Popover>
 								<PopoverTrigger asChild>
 									<FormControl>
@@ -118,7 +135,10 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 										</Button>
 									</FormControl>
 								</PopoverTrigger>
-								<PopoverContent className="w-auto p-0" align="start">
+								<PopoverContent
+									className="w-auto p-0 bg-white/[0.5]"
+									align="start"
+								>
 									<Calendar
 										mode="single"
 										captionLayout="dropdown-buttons"
@@ -145,7 +165,7 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 					control={form.control}
 					name="termsCheckBox"
 					render={({ field }) => (
-						<FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4 shadow">
+						<FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4 shadow bg-white/[0.5]">
 							<FormControl>
 								<Checkbox
 									checked={field.value}
@@ -164,7 +184,9 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 					render={({ field }) => (
 						<FormItem className="text-black">
 							<Select onValueChange={field.onChange} defaultValue={field.value}>
-								<FormLabel className="text-text">Interest Field</FormLabel>
+								<FormLabel className="text-lg text-semibold">
+									Interest Field
+								</FormLabel>
 
 								<FormControl>
 									<SelectTrigger>
@@ -210,9 +232,15 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 							name="fieldExplanation"
 							render={({ field }) => (
 								<FormItem>
-									<FormLabel>more about your field</FormLabel>
+									<FormLabel className="text-lg text-semibold">
+										more about your field
+									</FormLabel>
 									<FormControl>
-										<Input placeholder="explain..." {...field} />
+										<Input
+											className="bg-white/[0.5]"
+											placeholder="explain..."
+											{...field}
+										/>
 									</FormControl>
 
 									<FormMessage />

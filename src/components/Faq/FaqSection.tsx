@@ -9,7 +9,7 @@ import { FaqItems } from "./FaqStaticItems";
 
 const FaqSection = () => {
 	return (
-		<div className="h-fit bg-white rounded-lg w-full flex flex-col py-20 shadow-lg">
+		<div className="h-fit bg-white rounded-lg w-full flex flex-col py-20 shadow-lg bg-dot-blue-100/[0.8]">
 			<div className="mx-auto mb-10 ">
 				<h1 className="text-9xl tracking-tighter bg-gradient-to-l from-blue-200 to-blue-300 text-transparent box-content font-oswald font-bold mx-auto bg-clip-text  ">
 					FAQ
@@ -26,11 +26,11 @@ const FaqSection = () => {
 						ipsum aspernatur modi quis ad repellat.
 					</div>
 				</div>
-				<div className="col-span-2 px-5 ">
+				<div className="col-span-2 px-5 bg-white py-10 rounded-lg shadow-lg border-black/[0.1] border-2">
 					<Accordion type="single" collapsible>
-						{FaqItems.map((item) => {
+						{FaqItems.map((item, index) => {
 							return (
-								<AccordionItem value={`${item.id}`!}>
+								<AccordionItem value={`${item.id}`!} key={index}>
 									<AccordionTrigger className="text-2xl text-black/[0.8] italic font-semibold">
 										{item.heading}
 									</AccordionTrigger>

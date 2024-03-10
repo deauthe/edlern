@@ -29,7 +29,7 @@ const useNavBar = (
 	}, [direction, position]);
 
 	useEffect(() => {}, [showNavBar]);
-
+	console.log("transparent?", isTransparent, position);
 	return [showNavBar, isTransparent];
 };
 

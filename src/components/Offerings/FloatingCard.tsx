@@ -18,11 +18,6 @@ const FloatingCard = (item: FloatingCardType) => {
 	const cardVariants: Variants = {
 		hover: {
 			scale: 1.1,
-			boxShadow: "2px 3px 8px rgb(0,0,0)",
-			transition: {
-				duration: 0.5,
-				type: "inertia",
-			},
 		},
 		initial: {
 			scale: 1,
@@ -37,7 +32,7 @@ const FloatingCard = (item: FloatingCardType) => {
 				duration: 0.7,
 				repeat: Infinity,
 				type: "intertia",
-				repeatType: "mirror",
+				repeatType: "reverse",
 				delay: item.delay,
 			},
 		},
@@ -46,17 +41,15 @@ const FloatingCard = (item: FloatingCardType) => {
 	return (
 		<AnimatePresence>
 			<motion.div
-				className=" rounded-md h-44 w-44  "
+				className=" rounded-full lg:h-44 h-32 lg:w-44 w-32 bg-white hover:cursor-pointer hover:shadow-lg bg-gradient-to-b from-white-200 to-slate-300 "
 				variants={cardVariants}
 				whileHover={"hover"}
-				initial="initial"
-				animate="animate"
 			>
-				<div className=" bg-white w-full h-full rounded-md flex flex-col bg-gradient-to-t from-blue-300/[0.8]  to-white ">
+				<div className="  w-full h-full rounded-full flex flex-col ">
 					<div className="mx-auto w-fit h-fit my-auto ">
-						<h1 className="text-2xl text-center tracking-tighter bg-gradient-to-l from-blue-200 to-blue-300 text-transparent box-content font-oswald font-bold mx-auto bg-clip-text flex flex-col gap-2 px-2">
+						<h1 className="lg:text-2xl text-lg text-center tracking-tighter bg-gradient-to-l from-blue-200 to-blue-300 text-transparent box-content font-oswald font-bold mx-auto bg-clip-text flex flex-col gap-2 px-2">
 							{item.title}
-							<Icon className="text-6xl  text-blue-300 mx-auto" />
+							<Icon className="lg:text-6xl text-3xl  text-blue-300 mx-auto" />
 						</h1>
 					</div>
 				</div>

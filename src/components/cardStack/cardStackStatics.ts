@@ -1,5 +1,3 @@
-import { faker } from "@faker-js/faker";
-
 type Card = {
 	id: number;
 	name: string;
@@ -9,7 +7,8 @@ type Card = {
 
 export const cardStackCards: Card[] = Array.from({ length: 4 }, (_, index) => ({
 	id: index + 1,
-	name: faker.person.fullName(),
-	designation: faker.person.jobTitle(),
-	content: faker.lorem.paragraph(),
+	name: "person:" + index,
+	designation: "job:" + index,
+	content:
+		";akshd;iwhdaoshj;wj d;alsknd ;alwkdn;alskn c;lwndlaksndlk wndlajsd lkaj laosjd;awjd;asjd a;osd;a as;dka asd ;laskdkwdnmfnkjfbhabdha ahjsd",
 }));
