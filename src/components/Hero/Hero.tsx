@@ -12,10 +12,10 @@ const HeroBanner = () => {
 	};
 
 	return (
-		<div className="mx-auto relative font-oswald font-extrabold h-fit mt-10">
-			<div className="sm:flex sm:flex-col lg:grid lg:grid-cols-2 lg:gap-32 mx-10">
+		<div className="mx-auto relative font-oswald font-extrabold h-fit ">
+			<div className="sm:flex sm:flex-col lg:grid lg:grid-cols-2 lg:gap-32 ">
 				<div className="flex justify-center mt-[70px] flex-col text-center  col-span-1 gap-3 my-auto">
-					<div className="lg:text-5xl text-3xl px-10 mt-6 font-semibold tracking-tighter uppercase text-muted/90 ">
+					<div className="lg:text-5xl text-2xl lg:px-10  mt-6 font-semibold tracking-tighter text-muted/90 h-24 lg:h-44">
 						<TypeAnimation
 							preRenderFirstString={true}
 							sequence={[
@@ -53,7 +53,7 @@ const HeroBanner = () => {
 						</h1>
 					</div>
 				</div>
-				<div className=" w-full">
+				<div className="w-full ">
 					<SignUp />
 				</div>
 			</div>

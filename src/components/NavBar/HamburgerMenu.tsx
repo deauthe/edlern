@@ -26,7 +26,7 @@ const HamburgerMenu = () => {
 						</NavigationMenuTrigger>
 						<NavigationMenuContent>
 							<NavigationMenuLink className="">
-								<ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-red-200 ">
+								<ul className="grid w-[200px] gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[400px] ">
 									{staticComponents.map((component) => (
 										<ListItem
 											key={component.title}

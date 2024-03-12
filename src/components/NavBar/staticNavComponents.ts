@@ -17,7 +17,7 @@ export const staticComponents: NavComponentsType[] = [
 	},
 	{
 		title: "Who are we ?",
-		href: "#details",
+		href: "#whyUs",
 		description:
 			"For sighted users to preview content available behind a link.",
 	},
@@ -28,14 +28,14 @@ export const staticComponents: NavComponentsType[] = [
 			"Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
 	},
 	{
-		title: "Frequently Asked Questions",
-		href: "#faq",
-		description: "Visually or semantically separates content.",
-	},
-	{
 		title: "Legal",
 		href: "#footer",
 		description:
 			"A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+	},
+	{
+		title: "Frequently Asked Questions",
+		href: "#faq",
+		description: "Visually or semantically separates content.",
 	},
 ];

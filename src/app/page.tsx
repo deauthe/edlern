@@ -4,9 +4,7 @@ import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/NavBar/Navbar";
 import Hero from "@/components/Hero/Hero";
-import About from "@/components/About/About";
 import FaqSection from "@/components/Faq/FaqSection";
-import Community from "@/components/features/FeaturesHome";
 import localfont from "next/font/local";
 import CategoryStrip from "@/components/CategoryStrip/CategoryStrip";
 import Footer from "@/components/Footer/Footer";
@@ -21,27 +19,27 @@ const Oswald = localfont({
 	src: [
 		{
 			path: "../../public/fonts/Oswald/Oswald-ExtraLight.ttf",
-			weight: "400",
+			weight: "300",
 			style: "normal",
 		},
 		{
 			path: "../../public/fonts/Oswald/Oswald-Light.ttf",
-			weight: "500",
+			weight: "400",
 			style: "normal",
 		},
 		{
 			path: "../../public/fonts/Oswald/Oswald-Medium.ttf",
-			weight: "600",
+			weight: "500",
 			style: "normal",
 		},
 		{
 			path: "../../public/fonts/Oswald/Oswald-SemiBold.ttf",
-			weight: "700",
+			weight: "600",
 			style: "normal",
 		},
 		{
 			path: "../../public/fonts/Oswald/Oswald-Bold.ttf",
-			weight: "800",
+			weight: "700",
 			style: "normal",
 		},
 	],
@@ -51,23 +49,23 @@ const Oswald = localfont({
 export default function Home() {
 	return (
 		<>
-			<Navbar />
-
 			<main
-				className={`flex h-full  flex-col items-center justify-between px-24 bg-gradient-to-b from-blue-300 to-white ${Oswald.variable} `}
+				className={`flex h-full w-screen flex-col items-center justify-between  bg-gradient-to-b from-blue-300 to-white ${Oswald.variable} `}
 			>
-				<div className="h-full scroll-smooth">
+				<Navbar />
+
+				<div className="h-full w-full ">
 					<div
 						id="home"
 						className="lg:h-screen h-fit w-full dark:bg-black bg-transparent  dark:bg-grid-white/[0.2] bg-dot-blue-100/[0.6] relative flex items-center justify-center"
 					>
 						<Hero />
 					</div>
-					{/* <About /> */}
+
 					<Offerings />
 					<div
 						id="whyUs"
-						className="grid grid-cols-2 px-44 bg-white bg-dot-zinc-500/[0.9] "
+						className="lg:grid lg:grid-cols-2 lg:px-44 bg-white bg-dot-zinc-500/[0.9] flex flex-col  w-full"
 					>
 						<Vision />
 						<WhyUs />
@@ -77,7 +75,7 @@ export default function Home() {
 					</div>
 					<CategoryStrip />
 					<div id="features">
-						<Community />
+						<FeaturesHome />
 						<FeaturesStrip />
 					</div>
 					<div id="faq">

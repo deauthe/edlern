@@ -4,17 +4,17 @@ import React from "react";
 
 const FeaturesHome = () => {
 	return (
-		<div className={cn("h-fit  bg-white-200/[0.9] ")}>
-			<div className="bg-grid-blue-300/[0.1] py-20 w-full h-fit flex-col flex gap-10">
+		<div className={cn("h-fit bg-white-200/[0.9] ")}>
+			<div className="bg-grid-blue-300/[0.1] lg:py-20 py-5 w-full h-fit flex-col flex lg:gap-10 gap-10">
 				{/* heading  */}
-				<div className="mx-auto mb-10 ">
-					<h1 className="text-9xl tracking-tight bg-gradient-to-l from-blue-200 to-blue-300 text-transparent box-content font-oswald font-bold mx-auto bg-clip-text  ">
+				<div className="mx-auto lg:mb-10 ">
+					<h1 className="lg:text-9xl text-6xl tracking-tight bg-gradient-to-l from-blue-200 to-blue-300 text-transparent box-content font-oswald font-bold mx-auto bg-clip-text  ">
 						What We Provide
 					</h1>
 				</div>
 
 				{/* contet part  */}
-				<div className="flex flex-col gap-10 h-full">
+				<div className="lg:flex flex-col gap-10 h-full hidden lg:visible">
 					<div id="createCommunity">
 						<CreateCommunity />
 					</div>
@@ -79,7 +79,7 @@ const CreateCommunity = () => {
 
 const Calender = () => {
 	return (
-		<div className=" w-9/12 h- mx-auto rounded-md grid grid-cols-2 gap-10 px-5 mt-20">
+		<div className=" w-9/12 h- mx-auto rounded-md grid grid-cols-2 gap-10 px-5 lg:mt-20 mt-5">
 			<div className="my-auto mx-auto flex flex-col gap-10  ">
 				<h1 className="text-7xl text-black font-oswald tracking-tight font-semibold italic text-right">
 					Calendar

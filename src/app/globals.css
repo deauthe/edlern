@@ -88,3 +88,7 @@
 	font-weight: 400;
 	src: local(""), url("/fonts/DMSerifDisplay-Regular.ttf") format("ttf");
 }
+
+html {
+	box-sizing: border-box;
+}

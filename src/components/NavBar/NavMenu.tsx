@@ -20,15 +20,14 @@ const NavMenu = () => {
 						Fast Travel
 					</NavigationMenuTrigger>
 					<NavigationMenuContent>
-						<ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] hover:bg-dot-black/[0.9]">
+						<ul className="grid w-[200px] gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[400px] font-oswald font-bold">
 							{staticComponents.map((component) => (
 								<ListItem
+									className="flex flex-row gap-3"
 									key={component.title}
 									title={component.title}
 									href={component.href}
-								>
-									{component.description}
-								</ListItem>
+								></ListItem>
 							))}
 						</ul>
 					</NavigationMenuContent>
@@ -48,12 +47,12 @@ const ListItem = React.forwardRef<
 				<a
 					ref={ref}
 					className={cn(
-						"block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+						" block font-bold select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
 						className
 					)}
 					{...props}
 				>
-					<div className="text-sm font-medium leading-none">{title}</div>
+					<div className="text-md font-medium leading-none">{title}</div>
 					<p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
 						{children}
 					</p>

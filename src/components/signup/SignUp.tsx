@@ -68,8 +68,8 @@ const SignUp = () => {
 	return (
 		<div className={` z-10 font-oswald text-black py-5 `}>
 			<div
-				className={`h-fit m-5 rounded-lg bg-white bg-dot-blue-300/[0.4] hover:bg-dot-black/[0.4] ${
-					isMobileView ? "mx-auto w-4/5" : "w-11/12"
+				className={`h-fit m-5 rounded-lg bg-white bg-dot-blue-300/[0.1] hover:bg-dot-black/[0.4] ${
+					isMobileView ? "mx-auto w-fit" : "w-11/12"
 				} shadow-lg`}
 			>
 				<SignUpForm onSubmit={onSubmit} />
