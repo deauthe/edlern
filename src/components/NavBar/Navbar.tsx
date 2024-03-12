@@ -29,6 +29,11 @@ const Navbar = () => {
 							: "bg-opacity-100 shadow-md "
 					}bg-white h-16 shadow-md z-10 fixed top-0 left-0`}
 				>
+					<div
+						className={`mr-0 w-fit col-span-9 h-fit my-auto text-${textColour} lg:hidden`}
+					>
+						<HamburgerMenu />
+					</div>
 					<div className={` col-span-3 `}>
 						<Image
 							src="/logo.png"
@@ -37,12 +42,6 @@ const Navbar = () => {
 							height={500}
 							className="w-32 rounded-lg"
 						/>
-					</div>
-
-					<div
-						className={`mr-0 w-fit col-span-9 h-fit my-auto text-${textColour} lg:hidden`}
-					>
-						<HamburgerMenu />
 					</div>
 
 					<>

@@ -15,7 +15,7 @@ import { cn } from "@/lib/utils";
 const HamburgerMenu = () => {
 	return (
 		<div>
-			<NavigationMenu>
+			<NavigationMenu orientation="vertical">
 				<NavigationMenuList>
 					<NavigationMenuItem>
 						<NavigationMenuTrigger className="bg-transparent border-l-1 border-black shadow-sm">
@@ -25,7 +25,7 @@ const HamburgerMenu = () => {
 							{/* icon  */}
 						</NavigationMenuTrigger>
 						<NavigationMenuContent>
-							<NavigationMenuLink className="">
+							<NavigationMenuLink className="translate-x-32">
 								<ul className="grid w-[200px] gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[400px] ">
 									{staticComponents.map((component) => (
 										<ListItem
