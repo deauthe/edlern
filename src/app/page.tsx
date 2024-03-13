@@ -54,10 +54,10 @@ export default function Home() {
 			>
 				<Navbar />
 
-				<div className="h-full w-full ">
+				<div className="h-full w-full lg:py-5 py-8 ">
 					<div
 						id="home"
-						className="lg:h-screen h-fit w-full dark:bg-black bg-transparent  dark:bg-grid-white/[0.2] bg-dot-blue-100/[0.6] relative flex items-center justify-center"
+						className="lg:h-screen h-fit w-full  bg-transparent  bg-dot-blue-100/[0.6] relative flex items-center justify-center"
 					>
 						<Hero />
 					</div>
@@ -81,14 +81,15 @@ export default function Home() {
 					<div id="faq">
 						<FaqSection />
 					</div>
+					<hr className="bg-black" />
+
+					<div id="footer">
+						<Footer />
+					</div>
 
 					<Toaster />
 				</div>
-				<hr className="bg-black" />
 			</main>
-			<div id="footer">
-				<Footer />
-			</div>
 		</>
 	);
 }

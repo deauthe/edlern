@@ -47,14 +47,14 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 		<Form {...form}>
 			<form
 				onSubmit={form.handleSubmit(onSubmit)}
-				className="space-y-8 text-black m-10  py-5 font-oswald "
+				className="space-y-8 m-10  py-5 font-oswald "
 			>
 				<FormField
 					control={form.control}
 					name="name"
 					render={({ field }) => (
 						<FormItem>
-							<FormLabel className="text-lg text-semibold">full name</FormLabel>
+							<FormLabel className="text-lg text-semibold">Full Name</FormLabel>
 							<FormControl>
 								<Input
 									className="bg-white/[0.5]"
@@ -73,7 +73,7 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 					name="email"
 					render={({ field }) => (
 						<FormItem>
-							<FormLabel className="text-lg text-semibold">email</FormLabel>
+							<FormLabel className="text-lg text-semibold">Email</FormLabel>
 							<FormControl>
 								<Input
 									className="bg-white/[0.5]"
@@ -93,7 +93,7 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 					render={({ field }) => (
 						<FormItem>
 							<FormLabel className="text-lg text-semibold">
-								mobile number
+								Mobile Number
 							</FormLabel>
 							<FormControl>
 								<Input
@@ -114,7 +114,7 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 					render={({ field }) => (
 						<FormItem className="flex flex-col text-black">
 							<FormLabel className="text-lg text-semibold">
-								Date of birth
+								Date Of Birth
 							</FormLabel>
 							<Popover>
 								<PopoverTrigger asChild>
@@ -150,28 +150,8 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 									/>
 								</PopoverContent>
 							</Popover>
-							<FormDescription>
-								Your date of birth is used to calculate your age.
-							</FormDescription>
-							<FormMessage />
-						</FormItem>
-					)}
-				/>
 
-				<FormField
-					control={form.control}
-					name="termsCheckBox"
-					render={({ field }) => (
-						<FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4 shadow bg-white/[0.5]">
-							<FormControl>
-								<Checkbox
-									checked={field.value}
-									onCheckedChange={field.onChange}
-								/>
-							</FormControl>
-							<div className="space-y-1 leading-none">
-								<FormLabel>accept terms and conditions</FormLabel>
-							</div>
+							<FormMessage />
 						</FormItem>
 					)}
 				/>
@@ -179,14 +159,14 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 					control={form.control}
 					name="interestField"
 					render={({ field }) => (
-						<FormItem className="text-black">
+						<FormItem className="">
 							<Select onValueChange={field.onChange}>
 								<FormLabel className="text-lg text-semibold">
 									Interest Field
 								</FormLabel>
 
 								<FormControl>
-									<SelectTrigger>
+									<SelectTrigger className="text-zinc-500 font-medium">
 										<SelectValue placeholder="select an interest field" />
 									</SelectTrigger>
 								</FormControl>
@@ -246,6 +226,24 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 						/>
 					</motion.div>
 				)}
+
+				<FormField
+					control={form.control}
+					name="termsCheckBox"
+					render={({ field }) => (
+						<FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4 shadow bg-white/[0.5]">
+							<FormControl>
+								<Checkbox
+									checked={field.value}
+									onCheckedChange={field.onChange}
+								/>
+							</FormControl>
+							<div className="space-y-1 leading-none">
+								<FormLabel>I accept terms and conditions</FormLabel>
+							</div>
+						</FormItem>
+					)}
+				/>
 
 				<Button
 					type="submit"

@@ -14,7 +14,7 @@ export const staticComponents: NavComponentsType[] = [
 		href: "#home",
 	},
 	{
-		title: "Who are we ?",
+		title: "About",
 		href: "#whyUs",
 	},
 	{
@@ -26,7 +26,7 @@ export const staticComponents: NavComponentsType[] = [
 		href: "#footer",
 	},
 	{
-		title: "Frequently Asked Questions",
+		title: "Faq",
 		href: "#faq",
 	},
 ];

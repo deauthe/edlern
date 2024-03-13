@@ -7,8 +7,8 @@ const FeaturesHome = () => {
 		<div className={cn("h-fit bg-white-200/[0.9] ")}>
 			<div className="bg-grid-blue-300/[0.1] lg:py-20 py-5 w-full h-fit flex-col flex lg:gap-10 gap-10">
 				{/* heading  */}
-				<div className="mx-auto lg:mb-10 ">
-					<h1 className="lg:text-9xl text-6xl tracking-tight bg-gradient-to-l from-blue-200 to-blue-300 text-transparent box-content font-oswald font-bold mx-auto bg-clip-text  ">
+				<div className="mx-auto lg:mb-10 w-fit ">
+					<h1 className="lg:text-9xl md:text-7xl text-5xl tracking-tight bg-gradient-to-r from-blue-300 to-black text-transparent box-content font-oswald font-bold mx-auto bg-clip-text">
 						What We Provide
 					</h1>
 				</div>
@@ -26,9 +26,6 @@ const FeaturesHome = () => {
 					</div>
 					<div id="gamification">
 						<Gamification />
-					</div>
-					<div id="calendar">
-						<Calender />
 					</div>
 				</div>
 			</div>

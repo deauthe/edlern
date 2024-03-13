@@ -12,48 +12,31 @@ const HeroBanner = () => {
 	};
 
 	return (
-		<div className="mx-auto relative font-oswald font-extrabold h-fit ">
-			<div className="sm:flex sm:flex-col lg:grid lg:grid-cols-2 lg:gap-32 ">
-				<div className="flex justify-center mt-[70px] flex-col text-center  col-span-1 gap-3 my-auto">
-					<div className="lg:text-5xl text-2xl lg:px-10  mt-6 font-semibold tracking-tighter text-muted/90 h-24 lg:h-44">
-						<TypeAnimation
-							preRenderFirstString={true}
-							sequence={[
-								500,
-								"Your Knowledge", // initially rendered starting point
-								1000,
-								"Your Earnings",
-								1500,
-								"Your Knowledge, Your Earnings",
-							]}
-							speed={50}
-							style={{ fontSize: "2em" }}
-							repeat={3}
-							cursor={false}
-						/>
+		<div className="mx-auto relative font-oswald font-extrabold h-fit mt-[70px] ">
+			<div className="sm:flex sm:flex-col lg:grid lg:grid-cols-2 lg:gap-16 ">
+				<div className="flex justify-center  flex-col text-center  col-span-1 gap-3 my-auto ">
+					<div className="lg:text-7xl md:text-4xl text-4xl lg:px-10 md:px-5 mt-6 font-semibold tracking-tighter text-muted/80 h-fit w-11/12   mx-auto ">
+						Your New Home For Learning And Community Engagement!
 					</div>
 
-					<div className="mt-10 ">
-						<h1 className="lg:text-6xl text-4xl md:text-5xl tracking-tighter box-content font-oswald font-semibold text-center mx-auto lg:px-20 px-3 text-muted/60">
-							Share your
-							<span className="bg-gradient-to-t text-transparent from-blue-300 to-black bg-clip-text ">
-								{` ideas, `}
+					<div className="lg:mt-10 md:mt-5 mt-2 mx-auto lg:px-3 md:px-1 w-11/12">
+						<h1 className="lg:text-6xl text-4xl md:text-3xl tracking-tighter font-oswald font-semibold text-center mx-auto lg:px-20  text-muted/60">
+							<span className="bg-gradient-to-b text-transparent from-blue-300 to-black bg-clip-text ">
+								{`Share your  `}
 							</span>
-							host,{" "}
-							<span className="bg-gradient-to-t text-transparent from-blue-300 to-black  bg-clip-text ">
-								{` discussions,`}
+							ideas,{" "}
+							<span className="bg-gradient-to-b text-transparent from-blue-300 to-black  bg-clip-text ">
+								{`host, `}
 							</span>
-							<span className="bg-gradient-to-t text-transparent from-blue-300 to-black bg-clip-text ">
-								{` events, courses `}
+							discussions
+							<span className="bg-gradient-to-b text-transparent from-blue-300 to-black bg-clip-text ">
+								{` and engage in `}
 							</span>
-							and engage in
-							<span className="bg-gradient-to-t text-transparent from-blue-300 to-black bg-clip-text ">
-								{` coaching and consultations. `}
-							</span>
+							events, courses, coaching and consultations.
 						</h1>
 					</div>
 				</div>
-				<div className="w-full ">
+				<div className="w-full flex flex-col h-fit mx-auto my-auto">
 					<SignUp />
 				</div>
 			</div>

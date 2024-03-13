@@ -17,10 +17,7 @@ export const OfferingCardsStatic: OfferingCardType[] = [
 		title: "Discussions",
 		icon: RiDiscussFill,
 	},
-	{
-		title: "Integrations",
-		icon: GiFamilyTree,
-	},
+
 	{
 		title: "Events",
 		icon: MdEmojiEvents,

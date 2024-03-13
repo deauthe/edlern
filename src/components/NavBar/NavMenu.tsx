@@ -14,27 +14,18 @@ import { cn } from "@/lib/utils";
 
 const NavMenu = () => {
 	return (
-		<NavigationMenu className=" mx-auto">
-			<NavigationMenuList className="flex flex-row justify-between ">
-				<NavigationMenuItem>
-					<NavigationMenuTrigger className="bg-transparent">
-						<HamburgerMenuIcon />
-					</NavigationMenuTrigger>
-					<NavigationMenuContent>
-						<ul className="grid w-[200px] gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[400px] font-oswald font-bold">
-							{staticComponents.map((component) => (
-								<ListItem
-									className="flex flex-row gap-3"
-									key={component.title}
-									title={component.title}
-									href={component.href}
-								></ListItem>
-							))}
-						</ul>
-					</NavigationMenuContent>
-				</NavigationMenuItem>
-			</NavigationMenuList>
-		</NavigationMenu>
+		<div className="mx-auto w-[200px] md:w-[500px] ">
+			<ul className="flex flex-row font-oswald mx-auto w-fit gap-10">
+				{staticComponents.map((component) => (
+					<ListItem
+						className=""
+						key={component.title}
+						title={component.title}
+						href={component.href}
+					></ListItem>
+				))}
+			</ul>
+		</div>
 	);
 };
 
@@ -44,21 +35,9 @@ const ListItem = React.forwardRef<
 >(({ className, title, children, ...props }, ref) => {
 	return (
 		<li>
-			<NavigationMenuLink asChild>
-				<a
-					ref={ref}
-					className={cn(
-						" block font-bold select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-						className
-					)}
-					{...props}
-				>
-					<div className="text-md font-medium leading-none">{title}</div>
-					<p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-						{children}
-					</p>
-				</a>
-			</NavigationMenuLink>
+			<a ref={ref} className={cn("", className)} {...props}>
+				<div className="text-md font-normal mx-auto">{title}</div>
+			</a>
 		</li>
 	);
 });

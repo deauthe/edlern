@@ -26,9 +26,4 @@ knowledge and talents and monetize their content`,
 		description: `Encourage engagement using incentive points and leadership board.`,
 		link: "#gamification",
 	},
-	{
-		title: "Calender",
-		description: `Never miss the latest update from your favourite creator, just mark it on your calendar.`,
-		link: "#calendar",
-	},
 ];
