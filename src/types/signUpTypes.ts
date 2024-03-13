@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 export const signUpFormSchema = z.object({
-	termsCheckBox: z.boolean().default(false),
+	termsCheckBox: z.boolean(),
 	name: z.string(),
 	dob: z.date({
 		required_error: "date of birth is required",

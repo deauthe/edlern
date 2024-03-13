@@ -180,7 +180,7 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 					name="interestField"
 					render={({ field }) => (
 						<FormItem className="text-black">
-							<Select onValueChange={field.onChange} defaultValue={field.value}>
+							<Select onValueChange={field.onChange}>
 								<FormLabel className="text-lg text-semibold">
 									Interest Field
 								</FormLabel>
@@ -190,7 +190,7 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 										<SelectValue placeholder="select an interest field" />
 									</SelectTrigger>
 								</FormControl>
-								<SelectContent className="w-2/4">
+								<SelectContent className="lg:w-2/4 w-5/6">
 									<SelectItem value="Academics">Academics</SelectItem>
 									<SelectItem value="Other">Other</SelectItem>
 									<SelectItem value="Finance">Finance</SelectItem>
@@ -246,7 +246,6 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 						/>
 					</motion.div>
 				)}
-				{/* <Toaster /> */}
 
 				<Button
 					type="submit"
