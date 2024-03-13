@@ -135,10 +135,7 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 										</Button>
 									</FormControl>
 								</PopoverTrigger>
-								<PopoverContent
-									className="w-auto p-0 bg-white/[0.5]"
-									align="start"
-								>
+								<PopoverContent className="w-auto p-0 bg-white" align="start">
 									<Calendar
 										mode="single"
 										captionLayout="dropdown-buttons"

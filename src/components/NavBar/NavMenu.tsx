@@ -7,6 +7,7 @@ import {
 	NavigationMenuList,
 	NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { staticComponents } from "./staticNavComponents";
 
 import { cn } from "@/lib/utils";
@@ -17,7 +18,7 @@ const NavMenu = () => {
 			<NavigationMenuList className="flex flex-row justify-between ">
 				<NavigationMenuItem>
 					<NavigationMenuTrigger className="bg-transparent">
-						Fast Travel
+						<HamburgerMenuIcon />
 					</NavigationMenuTrigger>
 					<NavigationMenuContent>
 						<ul className="grid w-[200px] gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[400px] font-oswald font-bold">

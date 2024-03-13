@@ -2,10 +2,10 @@ import { CreateUsertypes } from "@/types/signUpTypes";
 import axios, { AxiosRequestConfig } from "axios";
 import { error } from "console";
 
-const Server_url = "http://localhost:8080/api/v1/user";
+const Server_url = process.env.NEXT_PUBLIC_SERVER_URL;
 
 export const createUser = async (user: CreateUsertypes) => {
-	const suffix = "/signup";
+	const suffix = "/user/signup";
 	const url = Server_url + suffix;
 	let {
 		name,

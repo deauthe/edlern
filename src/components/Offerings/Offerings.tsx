@@ -8,14 +8,12 @@ const Offerings = () => {
 			<div className="grid lg:grid-cols-7 md:grid-cols-5 grid-cols-2 gap-10  w-fit  mx-auto mt-auto">
 				{OfferingCardsStatic.map((item, idx) => {
 					return (
-						<>
-							<FloatingCard
-								title={item.title}
-								icon={item.icon}
-								key={idx}
-								delay={idx * 0.2}
-							/>
-						</>
+						<FloatingCard
+							title={item.title}
+							icon={item.icon}
+							key={idx}
+							delay={idx * 0.2}
+						/>
 					);
 				})}
 			</div>

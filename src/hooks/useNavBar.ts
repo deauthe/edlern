@@ -24,12 +24,10 @@ const useNavBar = (
 		return () => {
 			setTransparent(false);
 			setShowNavBar(true);
-			console.log("unmounted");
 		};
 	}, [direction, position]);
 
 	useEffect(() => {}, [showNavBar]);
-	console.log("isNavBar?", showNavBar, position);
 	return [showNavBar, isTransparent];
 };
 
