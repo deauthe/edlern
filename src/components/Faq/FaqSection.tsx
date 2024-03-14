@@ -26,10 +26,12 @@ const FaqSection = () => {
 						{FaqItems.map((item, index) => {
 							return (
 								<AccordionItem value={`${item.id}`!} key={index}>
-									<AccordionTrigger className="text-2xl text-black/[0.8] italic font-semibold">
+									<AccordionTrigger className="text-2xl text-black/[0.8] italic font-semibold hover:no-underline">
 										{item.heading}
 									</AccordionTrigger>
-									<AccordionContent>{item.description}</AccordionContent>
+									<AccordionContent className="text-xl">
+										{item.description}
+									</AccordionContent>
 								</AccordionItem>
 							);
 						})}

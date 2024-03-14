@@ -10,6 +10,7 @@ import { FcAbout } from "react-icons/fc";
 import { FaSheetPlastic } from "react-icons/fa6";
 import { BsNewspaper } from "react-icons/bs";
 import { BsFileEarmarkSpreadsheet } from "react-icons/bs";
+import { CiLinkedin } from "react-icons/ci";
 
 const Footer = () => {
 	return (
@@ -86,8 +87,8 @@ const Footer = () => {
 								href="#features"
 								className="hover:text-black hover:scale-105 flex flex-row gap-2"
 							>
-								Twitter
-								<FiTwitter className="my-auto" />
+								Linkedin
+								<CiLinkedin className="my-auto text-2xl" />
 							</a>
 						</div>
 					</div>
@@ -98,21 +99,14 @@ const Footer = () => {
 
 						<div className="flex flex-col text-lg text-black/80 font-medium transition-all italic duration-300">
 							<a
-								href="#home"
+								href="/disclaimer.docx"
 								className="hover:text-black hover:scale-105 flex flex-row gap-2"
 							>
 								Disclaimer
 								<FaSheetPlastic className="my-auto" />
 							</a>
 							<a
-								href="#features"
-								className="hover:text-black hover:scale-105 flex flex-row gap-2"
-							>
-								terms
-								<BsFileEarmarkSpreadsheet className="my-auto" />
-							</a>
-							<a
-								href="#features"
+								href="/policy.docx"
 								className="hover:text-black hover:scale-105 flex flex-row gap-2 text-ellipsis"
 							>
 								Privacy Policy

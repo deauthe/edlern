@@ -40,7 +40,7 @@ const ListItem = React.forwardRef<
 				className={cn("hover:scale-125 hover:text-blue-300", className)}
 				{...props}
 			>
-				<div className="text-md font-normal mx-auto">{title}</div>
+				<div className="text-md font-medium mx-auto">{title}</div>
 			</a>
 		</li>
 	);

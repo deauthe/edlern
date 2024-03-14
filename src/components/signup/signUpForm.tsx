@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { AnimatePresence, motion } from "framer-motion";
 import {
 	Form,
@@ -49,6 +50,10 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 				onSubmit={form.handleSubmit(onSubmit)}
 				className="space-y-8 m-10  py-5 font-oswald "
 			>
+				<FormLabel className="text-lg font-semibold uppercase">
+					Sign Up Now!
+				</FormLabel>
+
 				<FormField
 					control={form.control}
 					name="name"
@@ -93,7 +98,7 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 					render={({ field }) => (
 						<FormItem>
 							<FormLabel className="text-lg text-semibold">
-								Mobile Number
+								Contact Number
 							</FormLabel>
 							<FormControl>
 								<Input
@@ -114,7 +119,7 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 					render={({ field }) => (
 						<FormItem className="flex flex-col text-black">
 							<FormLabel className="text-lg text-semibold">
-								Date Of Birth
+								Date of Birth
 							</FormLabel>
 							<Popover>
 								<PopoverTrigger asChild>
@@ -167,7 +172,7 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 
 								<FormControl>
 									<SelectTrigger className="text-zinc-500 font-medium">
-										<SelectValue placeholder="select an interest field" />
+										<SelectValue placeholder="Select an interest field" />
 									</SelectTrigger>
 								</FormControl>
 								<SelectContent className="lg:w-2/4 w-5/6">
@@ -239,7 +244,12 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 								/>
 							</FormControl>
 							<div className="space-y-1 leading-none">
-								<FormLabel>I accept terms and conditions</FormLabel>
+								<FormLabel className="flex flex-row gap-2 ">
+									I accept terms and conditions
+									<a href="/terms.docx">
+										<FaExternalLinkAlt />
+									</a>
+								</FormLabel>
 							</div>
 						</FormItem>
 					)}

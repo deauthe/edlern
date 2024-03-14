@@ -8,7 +8,7 @@ const FeaturesHome = () => {
 			<div className="bg-grid-blue-300/[0.1] lg:py-20 py-5 w-full h-fit flex-col flex lg:gap-10 gap-10">
 				{/* heading  */}
 				<div className="mx-auto lg:mb-10 w-fit ">
-					<h1 className="uppercase lg:text-9xl md:text-7xl text-5xl tracking-tight bg-gradient-to-r from-blue-300 to-black text-transparent box-content font-oswald font-bold mx-auto bg-clip-text">
+					<h1 className="uppercase lg:text-7xl md:text-6xl text-5xl tracking-tight bg-gradient-to-r from-blue-300 to-black text-transparent box-content font-oswald font-bold mx-auto bg-clip-text">
 						What We Provide
 					</h1>
 				</div>

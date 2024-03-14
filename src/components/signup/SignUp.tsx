@@ -69,9 +69,6 @@ const SignUp = () => {
 		<div
 			className={` z-10 font-oswald text-black h-fit flex flex-col md:gap-3 gap-1 py-2  w-full mx-auto mt-8 md:mt-4 lg:mt-0 p-4`}
 		>
-			<div className="font-oswald lg:text-3xl md:text-2xl text-xl text-muted/50 my-auto mx-auto">
-				SIGN UP
-			</div>
 			<div
 				className={`h-fit md:mx-5  rounded-lg bg-white bg-dot-blue-300/[0.1] hover:bg-dot-black/[0.4] shadow-lg`}
 			>

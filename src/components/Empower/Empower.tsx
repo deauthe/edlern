@@ -12,7 +12,7 @@ const Empower = () => {
 				</h1>
 			</div>
 
-			<div className="flex flex-col md:grid md:grid-cols-3 lg:gap-16 md:10 gap-5 lg:py-14 md:py-10 py-6 rounded-lg lg:bg-white-200/[0.7] lg:shadow-lg w-fit mx-auto lg:px-16 lg:mt-16 md:mt-10 mt-8">
+			<div className="flex flex-col md:grid md:grid-cols-3 lg:gap-16 md:10 gap-5 lg:py-14 md:py-10 py-6 rounded-lg w-fit mx-auto lg:px-16 lg:mt-16 md:mt-10 mt-8">
 				{sections.map((item, index) => {
 					return (
 						<Section
@@ -42,10 +42,10 @@ const Section = (data: SectionParams) => {
 			<div className="mx-auto lg:text-9xl md:text-8xl text-7xl">
 				{data.icon}
 			</div>
-			<div className="lg:text-5xl md:text-4xl text-3xl font-semibold">
+			<div className="lg:text-5xl md:text-4xl text-3xl font-semibold ">
 				{data.heading}
 			</div>
-			<ul className="list-disc text-left mx-auto w-fit lg:text-3xl md:text-2xl font-normal list-outside">
+			<ul className="list-disc text-left mx-auto w-fit lg:text-3xl md:text-2xl font-normal list-inside">
 				{data.keypoints.map((keyPoint, index) => {
 					return <li key={index}>{keyPoint}</li>;
 				})}

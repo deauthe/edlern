@@ -7,6 +7,7 @@ import useNavBar from "@/hooks/useNavBar";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaInstagram } from "react-icons/fa6";
 import { FiTwitter } from "react-icons/fi";
+import { CiLinkedin } from "react-icons/ci";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -49,7 +50,7 @@ const Navbar = () => {
 						<div className={`col-span-6 text-${textColour} hidden lg:block`}>
 							<NavMenu />
 						</div>
-						<div className="col-span-3 lg:flex flex-row justify-end gap-2 hidden lg:block ">
+						<div className="col-span-3 lg:flex flex-row justify-end gap-2 hidden ">
 							<div className=" my-auto">
 								<a
 									href="instagram.com"
@@ -62,10 +63,10 @@ const Navbar = () => {
 							<div className=" my-auto">
 								<a
 									href="instagram.com"
-									className={` bg-transparent text-md font-serif font-bold hover:bg-transparent hover:font-extrabold transition-all duration-100 hover:translate-x-px ease-linear text-${textColour} flex flex-row gap-1 items-center`}
+									className={` text-md font-serif font-bold hover:bg-transparent hover:font-extrabold transition-all duration-100 hover:translate-x-px ease-linear flex flex-row gap-1 items-center`}
 								>
-									Twitter
-									<FiTwitter />
+									Linkedin
+									<CiLinkedin />
 								</a>
 							</div>
 						</div>
