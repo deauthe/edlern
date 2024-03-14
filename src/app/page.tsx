@@ -67,7 +67,7 @@ export default function Home() {
 					<Offerings />
 					<div
 						id="whyUs"
-						className="md:grid md:grid-cols-2 md:px-12 lg:px-44 bg-white bg-dot-zinc-500/[0.5] flex flex-col px-5 w-full py-10"
+						className="md:grid md:grid-cols-2 md:px-12 lg:px-44 bg-white bg-dot-zinc-500/[0.5] flex flex-col md:gap-0 gap-10 px-5 w-full py-10"
 					>
 						<Vision />
 						<WhyUs />
