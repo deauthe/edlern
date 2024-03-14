@@ -23,14 +23,14 @@ const Navbar = () => {
 		<>
 			{isNavbar && (
 				<div
-					className={`w-[100vw] box-border flex flex-row lg:grid lg:grid-cols-12  justify-between gap-5 p-5 bg-opacity-0 lg:px-32 md:px-16 px-3 z-50 ${
+					className={`w-[100vw] box-border flex flex-row lg:grid lg:grid-cols-12  justify-between gap-5 p-5 bg-opacity-0 lg:px-14 md:px-16 px-3 z-50 ${
 						isTransparent
 							? "bg-opacity-100 shadow-none "
 							: "bg-opacity-100 shadow-md "
 					}bg-white h-16 shadow-md z-10 fixed top-0 left-0`}
 				>
 					<div
-						className={`mr-0 w-fit col-span-9 h-fit my-auto text-${textColour} md:hidden`}
+						className={`mr-0 w-fit col-span-9 h-fit my-auto text-${textColour} lg:hidden`}
 					>
 						<HamburgerMenu />
 					</div>
@@ -46,7 +46,7 @@ const Navbar = () => {
 
 					<>
 						{" "}
-						<div className={`col-span-6 text-${textColour} hidden md:block`}>
+						<div className={`col-span-6 text-${textColour} hidden lg:block`}>
 							<NavMenu />
 						</div>
 						<div className="col-span-3 lg:flex flex-row justify-end gap-2 hidden lg:block ">

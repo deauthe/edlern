@@ -47,7 +47,7 @@ const FloatingCard = (item: FloatingCardType) => {
 			>
 				<div className="  w-full h-full rounded-full flex flex-col ">
 					<div className="mx-auto w-fit h-fit my-auto ">
-						<h1 className="lg:text-2xl text-lg text-center tracking-tighter bg-gradient-to-l from-blue-200 to-blue-300 text-transparent box-content font-oswald font-bold mx-auto bg-clip-text flex flex-col gap-2 px-2">
+						<h1 className="lg:text-xl md:text-lg text-lg text-center tracking-tighter bg-gradient-to-l from-blue-200 to-blue-300 text-transparent box-content font-oswald font-bold mx-auto bg-clip-text flex flex-col gap-2 px-2">
 							{item.title}
 							<Icon className="lg:text-6xl text-3xl  text-blue-300 mx-auto" />
 						</h1>

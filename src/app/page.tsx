@@ -58,7 +58,7 @@ export default function Home() {
 				<div className="h-full w-full lg:py-5 py-8 ">
 					<div
 						id="home"
-						className="lg:h-screen h-fit w-full  bg-transparent  bg-dot-blue-100/[0.6] relative flex items-center justify-center bg-red-500"
+						className="lg:h-fit h-fit w-full  bg-transparent  bg-dot-blue-100/[0.6] relative flex items-center justify-center bg-red-500"
 					>
 						{/* TODO:md response */}
 						<Hero />
@@ -67,7 +67,7 @@ export default function Home() {
 					<Offerings />
 					<div
 						id="whyUs"
-						className="md:grid md:grid-cols-2 md:px-12 lg:px-44 bg-white bg-dot-zinc-500/[0.5] flex flex-col md:gap-0 gap-10 px-5 w-full py-10"
+						className="md:grid md:grid-cols-2 md:px-8 lg:px-12 bg-white bg-dot-zinc-500/[0.5] flex flex-col md:gap-0 gap-10 px-5 w-full py-10"
 					>
 						<Vision />
 						<WhyUs />
