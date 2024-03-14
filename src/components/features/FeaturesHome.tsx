@@ -8,7 +8,7 @@ const FeaturesHome = () => {
 			<div className="bg-grid-blue-300/[0.1] lg:py-20 py-5 w-full h-fit flex-col flex lg:gap-10 gap-10">
 				{/* heading  */}
 				<div className="mx-auto lg:mb-10 w-fit ">
-					<h1 className="lg:text-9xl md:text-7xl text-5xl tracking-tight bg-gradient-to-r from-blue-300 to-black text-transparent box-content font-oswald font-bold mx-auto bg-clip-text">
+					<h1 className="uppercase lg:text-9xl md:text-7xl text-5xl tracking-tight bg-gradient-to-r from-blue-300 to-black text-transparent box-content font-oswald font-bold mx-auto bg-clip-text">
 						What We Provide
 					</h1>
 				</div>
@@ -41,7 +41,7 @@ const DiscoverCommunity = () => {
 				</video>
 			</div>
 			<div className="my-auto mx-auto flex flex-col gap-10  ">
-				<h1 className="text-7xl text-black font-oswald tracking-tight font-semibold text-right italic">
+				<h1 className="text-7xl text-black font-oswald tracking-tight font-semibold text-right ">
 					Discover Communities
 				</h1>
 				<p className="text-3xl text-black/[0.7] font-oswald tracking-wider font-medium w-3/4 text-right ml-auto ">
@@ -57,7 +57,7 @@ const CreateCommunity = () => {
 	return (
 		<div className=" w-9/12 h- mx-auto rounded-md grid grid-cols-2 gap-10 px-5 pt-10">
 			<div className="my-auto mx-auto flex flex-col gap-10  ">
-				<h1 className="text-7xl text-black font-oswald tracking-tight font-semibold italic">
+				<h1 className="text-7xl text-black font-oswald tracking-tight font-semibold ">
 					Create Communities
 				</h1>
 				<p className="text-3xl text-black/[0.7] font-oswald tracking-wider font-medium w-3/4">
@@ -78,7 +78,7 @@ const Calender = () => {
 	return (
 		<div className=" w-9/12 h- mx-auto rounded-md grid grid-cols-2 gap-10 px-5 lg:mt-20 mt-5">
 			<div className="my-auto mx-auto flex flex-col gap-10  ">
-				<h1 className="text-7xl text-black font-oswald tracking-tight font-semibold italic text-right">
+				<h1 className="text-7xl text-black font-oswald tracking-tight font-semibold  text-right">
 					Calendar
 				</h1>
 				<p className="text-3xl text-black/[0.7] font-oswald tracking-wider font-medium w-3/4 text-right ml-auto">
@@ -103,7 +103,7 @@ const StudyRoom = () => {
 	return (
 		<div className=" w-9/12 h- mx-auto rounded-md grid grid-cols-2 gap-10 px-5">
 			<div className="my-auto mx-auto flex flex-col gap-10  ">
-				<h1 className="text-7xl text-black font-oswald tracking-tight font-semibold italic">
+				<h1 className="text-7xl text-black font-oswald tracking-tight font-semibold ">
 					Study Room
 				</h1>
 				<p className="text-3xl text-black/[0.7] font-oswald tracking-wider font-medium w-3/4">
@@ -129,7 +129,7 @@ const Gamification = () => {
 				</video>
 			</div>
 			<div className="my-auto mx-auto flex flex-col gap-10  ">
-				<h1 className="text-7xl text-black font-oswald tracking-tight font-semibold text-right italic">
+				<h1 className="text-7xl text-black font-oswald tracking-tight font-semibold text-right ">
 					Gamification
 				</h1>
 				<p className="text-3xl text-black/[0.7] font-oswald tracking-wider font-medium w-3/4 text-right ml-auto ">

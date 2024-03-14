@@ -7,6 +7,9 @@ import { MdOutlineFeaturedVideo } from "react-icons/md";
 import { PiSealQuestionBold } from "react-icons/pi";
 import { MdRoundaboutLeft } from "react-icons/md";
 import { FcAbout } from "react-icons/fc";
+import { FaSheetPlastic } from "react-icons/fa6";
+import { BsNewspaper } from "react-icons/bs";
+import { BsFileEarmarkSpreadsheet } from "react-icons/bs";
 
 const Footer = () => {
 	return (
@@ -93,12 +96,27 @@ const Footer = () => {
 							LEGAL
 						</h2>
 
-						<div className="flex flex-col text-black/80 transition-all duration-300">
-							<a href="" className="hover:text-black hover:scale-105 ">
-								Terms
+						<div className="flex flex-col text-lg text-black/80 font-medium transition-all italic duration-300">
+							<a
+								href="#home"
+								className="hover:text-black hover:scale-105 flex flex-row gap-2"
+							>
+								Disclaimer
+								<FaSheetPlastic className="my-auto" />
 							</a>
-							<a href="" className="hover:text-black hover:scale-105 ">
-								finance
+							<a
+								href="#features"
+								className="hover:text-black hover:scale-105 flex flex-row gap-2"
+							>
+								terms
+								<BsFileEarmarkSpreadsheet className="my-auto" />
+							</a>
+							<a
+								href="#features"
+								className="hover:text-black hover:scale-105 flex flex-row gap-2 text-ellipsis"
+							>
+								Privacy Policy
+								<BsNewspaper className="my-auto" />
 							</a>
 						</div>
 					</div>

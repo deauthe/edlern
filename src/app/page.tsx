@@ -15,6 +15,7 @@ import Offerings from "@/components/Offerings/Offerings";
 import Vision from "@/components/Vision/Vision";
 import WhyUs from "@/components/WhyUs/WhyUs";
 import Launch from "@/components/Launch/Launch";
+import Empower from "@/components/Empower/Empower";
 const Oswald = localfont({
 	src: [
 		{
@@ -57,21 +58,26 @@ export default function Home() {
 				<div className="h-full w-full lg:py-5 py-8 ">
 					<div
 						id="home"
-						className="lg:h-screen h-fit w-full  bg-transparent  bg-dot-blue-100/[0.6] relative flex items-center justify-center"
+						className="lg:h-screen h-fit w-full  bg-transparent  bg-dot-blue-100/[0.6] relative flex items-center justify-center bg-red-500"
 					>
+						{/* TODO:md response */}
 						<Hero />
 					</div>
 
 					<Offerings />
 					<div
 						id="whyUs"
-						className="lg:grid lg:grid-cols-2 lg:px-44 bg-white bg-dot-zinc-500/[0.9] flex flex-col  w-full"
+						className="lg:grid lg:grid-cols-2 lg:px-44 bg-white bg-dot-zinc-500/[0.9] flex flex-col px-5 w-full"
 					>
 						<Vision />
 						<WhyUs />
 					</div>
+
 					<div id="launch" className="pb-10 bg-white bg-dot-zinc-500/[0.9]">
 						<Launch />
+					</div>
+					<div>
+						<Empower />
 					</div>
 					<CategoryStrip />
 					<div id="features">
