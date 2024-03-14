@@ -5,14 +5,14 @@ import { IoBriefcaseOutline } from "react-icons/io5";
 
 const Empower = () => {
 	return (
-		<div className=" lg:py-16 md:py-8 py-5 text-center flex flex-col h-fit bg-white-200/[0.9] bg-dot-black/[0.2] ">
+		<div className=" lg:py-12 md:py-8 py-5 text-center flex flex-col h-fit  ">
 			<div className="mx-auto mb-3 w-screen">
 				<h1 className="lg:text-8xl md:text-7xl text-5xl uppercase tracking-tighter bg-gradient-to-b from-black to-blue-300 text-transparent box-content font-oswald font-bold mx-auto bg-clip-text  ">
 					At Edlern We Empower
 				</h1>
 			</div>
 
-			<div className="flex flex-col md:grid md:grid-cols-3 lg:gap-16 md:10 gap-5 lg:py-14 md:py-10 py-6 rounded-lg bg-white-200/[0.7] lg:shadow-lg w-fit mx-auto lg:px-16 lg:mt-16 md:mt-10 mt-8">
+			<div className="flex flex-col md:grid md:grid-cols-3 lg:gap-16 md:10 gap-5 lg:py-14 md:py-10 py-6 rounded-lg lg:bg-white-200/[0.7] lg:shadow-lg w-fit mx-auto lg:px-16 lg:mt-16 md:mt-10 mt-8">
 				{sections.map((item, index) => {
 					return (
 						<Section

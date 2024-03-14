@@ -67,18 +67,18 @@ export default function Home() {
 					<Offerings />
 					<div
 						id="whyUs"
-						className="lg:grid lg:grid-cols-2 lg:px-44 bg-white bg-dot-zinc-500/[0.9] flex flex-col px-5 w-full"
+						className="md:grid md:grid-cols-2 md:px-12 lg:px-44 bg-white bg-dot-zinc-500/[0.5] flex flex-col px-5 w-full py-10"
 					>
 						<Vision />
 						<WhyUs />
 					</div>
-
-					<div id="launch" className="pb-10 bg-white bg-dot-zinc-500/[0.9]">
+					<div id="launch" className="pb-10 bg-white bg-dot-zinc-500/[0.5]">
 						<Launch />
 					</div>
-					<div>
+					<div className="bg-white bg-grid-zinc-500/[0.2]">
 						<Empower />
 					</div>
+
 					<CategoryStrip />
 					<div id="features">
 						<FeaturesHome />
