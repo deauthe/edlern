@@ -4,7 +4,7 @@ import FloatingCard from "./FloatingCard";
 
 const Offerings = () => {
 	return (
-		<div className=" w-screen flex flex-col lg:pt-10 mx-auto h-fit pb-10 bg-dot-blue-100/[0.8]">
+		<div className=" w-full flex flex-col lg:pt-10 pt-5 mx-auto h-fit pb-10 bg-dot-blue-100/[0.8]">
 			<div className="grid md:grid-cols-6 grid-cols-2 gap-10 w-fit mx-auto mt-auto lg:px-0 px-3">
 				{OfferingCardsStatic.map((item, idx) => {
 					return (

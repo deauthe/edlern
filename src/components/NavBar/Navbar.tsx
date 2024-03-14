@@ -23,7 +23,7 @@ const Navbar = () => {
 		<>
 			{isNavbar && (
 				<div
-					className={`w-[100vw] box-border flex flex-row lg:grid lg:grid-cols-12  justify-between gap-5 p-5 bg-opacity-0 lg:px-14 md:px-16 px-3 z-50 ${
+					className={`w-full box-border flex flex-row lg:grid lg:grid-cols-12  justify-between gap-5 p-5 bg-opacity-0 lg:px-14 md:px-16 px-3 z-50 ${
 						isTransparent
 							? "bg-opacity-100 shadow-none "
 							: "bg-opacity-100 shadow-md "
@@ -40,7 +40,7 @@ const Navbar = () => {
 							alt=""
 							width={500}
 							height={500}
-							className="w-32 rounded-lg"
+							className="w-32 h-auto rounded-lg"
 						/>
 					</div>
 

@@ -53,18 +53,18 @@ export default function Home() {
 			<main
 				className={`flex h-full w-screen flex-col items-center justify-between  bg-gradient-to-b from-blue-300 to-white ${Oswald.variable} `}
 			>
-				<Navbar />
-
 				<div className="h-full w-full lg:py-5 py-8 ">
+					<Navbar />
 					<div
 						id="home"
-						className="lg:h-fit h-fit w-full  bg-transparent  bg-dot-blue-100/[0.6] relative flex items-center justify-center bg-red-500"
+						className="lg:h-fit h-fit w-full  bg-transparent  bg-dot-blue-100/[0.6] relative flex items-center justify-center "
 					>
 						{/* TODO:md response */}
 						<Hero />
 					</div>
-
-					<Offerings />
+					<div className="w-full">
+						<Offerings />
+					</div>
 					<div
 						id="whyUs"
 						className="md:grid md:grid-cols-2 md:px-8 lg:px-12 bg-white bg-dot-zinc-500/[0.5] flex flex-col md:gap-0 gap-10 px-5 w-full py-10"
