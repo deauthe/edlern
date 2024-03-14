@@ -13,12 +13,7 @@ import Image from "next/image";
 const Navbar = () => {
 	const [isNavbar, isTransparent] = useNavBar(true, true);
 	const isMobileView = useMobileView();
-	let textColour;
-	if (isTransparent) {
-		textColour = "black";
-	} else {
-		textColour = "black";
-	}
+	let textColour = "black";
 
 	return (
 		<>
@@ -51,6 +46,9 @@ const Navbar = () => {
 							<NavMenu />
 						</div>
 						<div className="col-span-3 lg:flex flex-row justify-end gap-2 hidden ">
+							<div className=" my-auto mr-3 text-black/[0.6] text-nowrap">
+								connect with us on
+							</div>
 							<div className=" my-auto">
 								<a
 									href="instagram.com"

@@ -14,28 +14,28 @@ export type OfferingCardType = {
 
 export const OfferingCardsStatic: OfferingCardType[] = [
 	{
-		title: "Discussions",
-		icon: RiDiscussFill,
-	},
-
-	{
-		title: "Events",
-		icon: MdEmojiEvents,
-	},
-	{
-		title: "Direct Engagement with Eductor",
-		icon: GiTalk,
-	},
-	{
-		title: "Coaching and Consulting",
-		icon: FaChalkboardTeacher,
+		title: "Online Community",
+		icon: TbBuildingCommunity,
 	},
 	{
 		title: "Educational Courses",
 		icon: SiSemanticscholar,
 	},
 	{
-		title: "Online Community",
-		icon: TbBuildingCommunity,
+		title: "Coaching and Consulting",
+		icon: FaChalkboardTeacher,
+	},
+	{
+		title: "Events",
+		icon: MdEmojiEvents,
+	},
+	{
+		title: "Discussions",
+		icon: RiDiscussFill,
+	},
+
+	{
+		title: "Direct Engagement with Eductor",
+		icon: GiTalk,
 	},
 ];

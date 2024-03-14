@@ -45,7 +45,7 @@ const Section = (data: SectionParams) => {
 			<div className="lg:text-5xl md:text-4xl text-3xl font-semibold ">
 				{data.heading}
 			</div>
-			<ul className="list-disc text-left mx-auto w-fit lg:text-3xl md:text-2xl font-normal list-inside">
+			<ul className="list-disc text-left mx-auto w-fit lg:text-2xl md:text-2xl font-normal list-outside ">
 				{data.keypoints.map((keyPoint, index) => {
 					return <li key={index}>{keyPoint}</li>;
 				})}
