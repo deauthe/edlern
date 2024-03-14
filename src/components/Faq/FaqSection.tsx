@@ -16,8 +16,8 @@ const FaqSection = () => {
 				</h1>
 			</div>
 			<div className="  lg:grid lg:grid-cols-4 gap-5 mb-10 lg:px-20 lg:pt-10 rounded-lg lg:mt-10 mt-3 lg:mx-20 mx-5 lg:py-20 justify-center items-center font-DmSerif ">
-				<div className="col-span-2 mb-5 lg:mb-0 bg-red-700">
-					<h1 className="lg:text-7xl md:text-6xl text-5xl tracking-tight font-bold uppercase font-oswald mx-auto bg-red-300">
+				<div className="col-span-2 mb-5 lg:mb-0 ">
+					<h1 className="lg:text-7xl md:text-6xl text-5xl tracking-tight font-bold uppercase font-oswald mx-auto ">
 						Got a question?
 					</h1>
 				</div>
