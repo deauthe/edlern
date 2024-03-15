@@ -54,8 +54,7 @@ const Navbar = () => {
 									href="instagram.com"
 									className={` bg-gradient-to-r from-pink-600 to-yellow-400 text-transparent bg-clip-text text-md font-serif font-bold hover:bg-transparent hover:font-extrabold transition-all duration-100 hover:translate-x-px ease-linear flex flex-row gap-1 items-center`}
 								>
-									Instragram
-									<FaInstagram className="text-black" />
+									<FaInstagram className="text-black text-xl" />
 								</a>
 							</div>
 							<div className=" my-auto">
@@ -63,8 +62,7 @@ const Navbar = () => {
 									href="instagram.com"
 									className={` text-md font-serif font-bold hover:bg-transparent hover:font-extrabold transition-all duration-100 hover:translate-x-px ease-linear flex flex-row gap-1 items-center`}
 								>
-									Linkedin
-									<CiLinkedin />
+									<CiLinkedin className="text-black text-xl" />
 								</a>
 							</div>
 						</div>
