@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { FaInstagram } from "react-icons/fa";
+import { FaExternalLinkAlt, FaInstagram } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 import { FaHome } from "react-icons/fa";
 import { MdOutlineFeaturedVideo } from "react-icons/md";
@@ -24,12 +24,12 @@ const Footer = () => {
 						height={200}
 						className="rounded-full ml-auto"
 					/>
-					<div className="w-[200px] text-center ml-auto flex flex-col hidden lg:visible">
-						<div className="font-oswald text-xl text-black/60 font-normal text-wrap">
-							motto1
-						</div>
-						<div className="font-oswald text-xl text-black/60 font-normal text-wrap">
-							motto 2
+					<div className="w-[200px] text-center ml-auto  flex-col flex ">
+						<div className="font-oswald text-lg  text-black/60 font-medium text-wrap flex flex-row gap-2 my-auto hover:scale-105 transition-all duration-75">
+							<a href="mailto:support@edlern.com">
+								For any queries, contact us on support@edlern.com
+								<FaExternalLinkAlt className="my-auto mx-auto " />
+							</a>
 						</div>
 					</div>
 				</div>
