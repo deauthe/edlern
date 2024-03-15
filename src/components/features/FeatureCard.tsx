@@ -9,7 +9,7 @@ export const HoverEffect = ({
 }: {
 	items: {
 		title: string;
-		description: string;
+		description: React.ReactNode;
 		link: string;
 	}[];
 	className?: string;
@@ -49,11 +49,13 @@ export const HoverEffect = ({
 							/>
 						)}
 					</AnimatePresence>
-					<Card>
-						<CardTitle className="text-xl md:text-3xl lg:text-5xl bg-gradient-to-tl from-blue-100 to-white text-transparent bg-clip-text">
+					<Card className="">
+						<CardTitle className="text-xl md:text-3xl lg:text-5xl bg-gradient-to-tl from-blue-100 to-white text-transparent bg-clip-text mx-auto ">
 							{item.title}
 						</CardTitle>
-						<CardDescription>{item.description}</CardDescription>
+						<CardDescription className="text-md h-fit w-full leading-6">
+							{item.description}
+						</CardDescription>
 					</Card>
 				</Link>
 			))}

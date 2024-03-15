@@ -41,13 +41,15 @@ const DiscoverCommunity = () => {
 				</video>
 			</div>
 			<div className="my-auto mx-auto flex flex-col gap-10  ">
-				<h1 className="text-7xl text-black font-oswald tracking-tight font-semibold text-right ">
+				<h1 className="text-7xl text-black font-oswald tracking-tight font-semibold text-left  ">
 					Discover Communities
 				</h1>
-				<p className="text-3xl text-black/[0.7] font-oswald tracking-wider font-medium w-3/4 text-right ml-auto ">
-					Learners have the opportunity to explore various communities to access
-					high-quality educational content and actively engage in learning.
-				</p>
+				<ul className="text-3xl text-black/[0.7] font-oswald tracking-wider font-normal w-5/6 text-left mx-auto list-disc ">
+					<li>Access high-quality content</li>
+					<li>Explore communities</li>
+					<li>Actively engage in learning</li>
+					<li>One-o-One Connect with Educator</li>
+				</ul>
 			</div>
 		</div>
 	);
@@ -55,15 +57,17 @@ const DiscoverCommunity = () => {
 
 const CreateCommunity = () => {
 	return (
-		<div className=" w-9/12 h- mx-auto rounded-md grid grid-cols-2 gap-10 px-5 pt-10">
-			<div className="my-auto mx-auto flex flex-col gap-10  ">
+		<div className=" w-9/12 h- mx-auto rounded-md grid grid-cols-2 gap-10 px-5 pt-10 ">
+			<div className="my-auto mx-auto flex flex-col gap-10   w-full">
 				<h1 className="text-7xl text-black font-oswald tracking-tight font-semibold ">
 					Create Communities
 				</h1>
-				<p className="text-3xl text-black/[0.7] font-oswald tracking-wider font-medium w-3/4">
-					Creators can effortlessly create community where they can exhibit
-					their knowledge &amp; talents and monetize their content
-				</p>
+				<ul className="text-3xl text-black/[0.7] font-oswald tracking-wider font-normal w-5/6 text-left mx-auto list-disc ">
+					<li>Create courses</li>
+					<li>Share expertise</li>
+					<li>Enable monetization</li>
+					<li>Connect with community</li>
+				</ul>
 			</div>
 			<div className="my-auto">
 				<video autoPlay loop muted className="w-[34em] rounded-full ml-auto">
@@ -74,43 +78,21 @@ const CreateCommunity = () => {
 	);
 };
 
-const Calender = () => {
-	return (
-		<div className=" w-9/12 h- mx-auto rounded-md grid grid-cols-2 gap-10 px-5 lg:mt-20 mt-5">
-			<div className="my-auto mx-auto flex flex-col gap-10  ">
-				<h1 className="text-7xl text-black font-oswald tracking-tight font-semibold  text-right">
-					Calendar
-				</h1>
-				<p className="text-3xl text-black/[0.7] font-oswald tracking-wider font-medium w-3/4 text-right ml-auto">
-					Never miss the latest update from your favourite creator, just mark it
-					on your calendar.
-				</p>
-			</div>
-			<div className="my-auto">
-				<video
-					autoPlay
-					loop
-					muted
-					className="w-[15em] rounded-full lg:mr-auto lg:ml-16"
-				>
-					<source src="/Calendar.mp4" />
-				</video>
-			</div>
-		</div>
-	);
-};
 const StudyRoom = () => {
 	return (
 		<div className=" w-9/12 h- mx-auto rounded-md grid grid-cols-2 gap-10 px-5">
-			<div className="my-auto mx-auto flex flex-col gap-10  ">
-				<h1 className="text-7xl text-black font-oswald tracking-tight font-semibold ">
+			<div className="my-auto mx-auto flex flex-col gap-10   w-full">
+				<h1 className="text-7xl text-black font-oswald tracking-tight font-semibold w-full text-left ">
 					Study Room
 				</h1>
-				<p className="text-3xl text-black/[0.7] font-oswald tracking-wider font-medium w-3/4">
-					The built-in study room feature serves as a platform where you can
-					create and add new courses, sharing them exclusively with your
-					community members.
-				</p>
+				<ul className="text-3xl text-black/[0.7] font-oswald tracking-wider font-normal text-left w-5/6 mx-auto list-disc ">
+					<li>Create, add courses</li>
+					<li>Share Resources</li>
+					<li>Exclusive sharing</li>
+					<li>Host Events</li>
+					<li>Live Streams</li>
+					<li>Set Calendar invite</li>
+				</ul>
 			</div>
 			<div className="my-auto">
 				<video autoPlay loop muted className="w-[34em] rounded-full ml-auto">
@@ -129,12 +111,14 @@ const Gamification = () => {
 				</video>
 			</div>
 			<div className="my-auto mx-auto flex flex-col gap-10  ">
-				<h1 className="text-7xl text-black font-oswald tracking-tight font-semibold text-right ">
+				<h1 className="text-7xl text-black font-oswald tracking-tight font-semibold w-full text-left ">
 					Gamification
 				</h1>
-				<p className="text-3xl text-black/[0.7] font-oswald tracking-wider font-medium w-3/4 text-right ml-auto ">
-					Encourage engagement using incentive points and leadership board
-				</p>
+				<ul className="text-3xl text-black/[0.7] font-oswald tracking-wider font-normal text-left w-5/6 mx-auto list-disc flex flex-col gap-2">
+					<li className="leading-7">Levelling system: Advance ranks</li>
+					<li className="leading-7">Progress tracking: Visual milestones</li>
+					<li>Badges for achievements</li>
+				</ul>
 			</div>
 		</div>
 	);
