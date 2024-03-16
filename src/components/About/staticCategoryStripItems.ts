@@ -26,7 +26,7 @@ export const OfferingCardsStatic: OfferingCardType[] = [
 		icon: FaChalkboardTeacher,
 	},
 	{
-		title: "Events",
+		title: "Host Events",
 		icon: MdEmojiEvents,
 	},
 	{
@@ -34,7 +34,7 @@ export const OfferingCardsStatic: OfferingCardType[] = [
 		icon: GiTalk,
 	},
 	{
-		title: "Discussions",
+		title: "Discussion Forums",
 		icon: RiDiscussFill,
 	},
 ];
