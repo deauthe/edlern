@@ -24,11 +24,10 @@ const HeroBanner = () => {
 							<span className="bg-gradient-to-b text-transparent from-blue-300 to-black bg-clip-text ">
 								{`Share your  `}
 							</span>
-							ideas,{" "}
+							ideas, host discussions
 							<span className="bg-gradient-to-b text-transparent from-blue-300 to-black  bg-clip-text ">
-								{`host, `}
+								{` `}
 							</span>
-							discussions
 							<span className="bg-gradient-to-b text-transparent from-blue-300 to-black bg-clip-text ">
 								{` and engage in `}
 							</span>
