@@ -5,7 +5,7 @@ export const FaqItems: FaqItemTypes[] = [
 		id: 1,
 		heading: "Is making the community free on edLern?",
 		description:
-			"Yes, creating community, creating and uploading courses is free on edLern as of now.",
+			" It can be either way, as it ultimately depends on the creator's preference whether they want their community to be free or premium.",
 	},
 	{
 		id: 4,
