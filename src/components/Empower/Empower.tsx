@@ -57,7 +57,7 @@ const Section = (data: SectionParams) => {
 const sections: SectionParams[] = [
 	{
 		icon: <PiStudentDuotone />,
-		heading: "Students to",
+		heading: "Learners to",
 		keypoints: [
 			"Find inspiration",
 			"Acquire fresh skills.",
