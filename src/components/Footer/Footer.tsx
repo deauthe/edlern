@@ -15,8 +15,8 @@ import { CiLinkedin } from "react-icons/ci";
 const Footer = () => {
 	return (
 		<div className="h-fit w-full bg-gradient-to-t border-t-2 border-black from-blue-300 to-white text-black/[0.9]">
-			<div className="lg:grid lg:grid-cols-5 lg:mx-0 mx-auto gap-10 bg-dot-white-200/[0.2] px-1 h-full flex flex-col ">
-				<div className="rounded-md lg:my-auto my-3 lg:col-span-2 lg:mx-0 flex flex-col gap-5 mx-auto ">
+			<div className="md:grid md:grid-cols-5 md:mx-0 mx-auto gap-10 bg-dot-white-200/[0.2] px-1  flex flex-col ">
+				<div className="rounded-md md:my-auto my-3 md:col-span-2 lg:mx-0 flex flex-col gap-5 mx-auto ">
 					<Image
 						alt="edlern"
 						src="/logo.png"
@@ -33,12 +33,12 @@ const Footer = () => {
 						</div>
 					</div>
 				</div>
-				<div className=" rounded-md col-span-3 lg:mt-5  font-oswald grid-cols-2 grid lg:grid-cols-3 lg:py-10 lg:gap-20 gap-10  w-3/4 lg:ml-20 mx-auto  ">
+				<div className=" rounded-md col-span-3 md:mt-5  font-oswald grid-cols-2 grid md:grid-cols-3 lg:py-10 lg:gap-20 gap-10  w-3/4 lg:ml-20 mx-auto  ">
 					<div className="flex flex-col gap-3  col-span-1 mx-auto w-full">
 						<h2 className="text-xl md:font-bold font-semibold tracking-tight uppercase text-black/80">
 							WEBSITE
 						</h2>
-						<div className="flex flex-col text-lg md:font-medium sm:font-normal text-black/80  transition-all duration-300">
+						<div className="flex flex-col text-lg  sm:font-normal text-black/80  transition-all duration-300">
 							<a
 								href="#home"
 								className="hover:text-black hover:scale-105 flex flex-row gap-2 "
@@ -75,7 +75,7 @@ const Footer = () => {
 							Socials
 						</h2>
 
-						<div className="flex flex-col text-lg md:font-medium font-normal text-black/80  transition-all duration-300">
+						<div className="flex flex-col text-lg md:font-normal font-normal text-black/80  transition-all duration-300">
 							<a
 								href="#home"
 								className="hover:text-black hover:scale-105 flex flex-row gap-2"
@@ -97,7 +97,7 @@ const Footer = () => {
 							LEGAL
 						</h2>
 
-						<div className="flex flex-col text-lg text-black/80 font-normal md:font-medium transition-all  duration-300">
+						<div className="flex flex-col text-lg text-black/80 font-normal  transition-all  duration-300">
 							<a
 								href="/disclaimer.docx"
 								className="hover:text-black hover:scale-105 flex flex-row gap-2"

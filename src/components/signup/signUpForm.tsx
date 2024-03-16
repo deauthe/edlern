@@ -48,7 +48,7 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 		<Form {...form}>
 			<form
 				onSubmit={form.handleSubmit(onSubmit)}
-				className="space-y-8 m-10  py-5 font-oswald "
+				className="space-y-3 lg:m-10 md:m-8 m-4  lg:py-5 md:py-3 py-1 font-oswald "
 			>
 				<FormLabel className="text-lg font-semibold ">
 					To Create Community - Sign Up Now!
