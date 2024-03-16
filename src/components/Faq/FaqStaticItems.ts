@@ -11,7 +11,7 @@ export const FaqItems: FaqItemTypes[] = [
 		id: 4,
 		heading: "Is joining the community free on edLern?",
 		description:
-			"It depends upon the community creator. Is it;s free, you can join it for free &amp; for the  premium you have to pay the monthly subscription.",
+			"It depends upon the community creator. Is its free, you can join it for free and for the  premium you have to pay the monthly subscription.",
 	},
 	{
 		id: 2,
