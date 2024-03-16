@@ -87,7 +87,7 @@ const Footer = () => {
 								href="#features"
 								className="hover:text-black hover:scale-105 flex flex-row gap-2"
 							>
-								Linkedin
+								LinkedIn
 								<CiLinkedin className="my-auto text-2xl" />
 							</a>
 						</div>

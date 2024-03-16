@@ -8,7 +8,7 @@ const Empower = () => {
 		<div className=" lg:py-12 md:py-8 py-5 text-center flex flex-col h-fit  ">
 			<div className="mx-auto mb-3 w-screen">
 				<h1 className="lg:text-7xl md:text-6xl text-4xl  tracking-tighter bg-gradient-to-b from-black to-blue-300 text-transparent box-content font-oswald font-bold mx-auto bg-clip-text  ">
-					At EdLern We Empower
+					At edLern We Empower
 				</h1>
 			</div>
 
@@ -59,27 +59,27 @@ const sections: SectionParams[] = [
 		icon: <PiStudentDuotone />,
 		heading: "Students to",
 		keypoints: [
-			"find inspiration",
-			"acquire fresh skills.",
-			"uncover new insights.",
+			"Find inspiration",
+			"Acquire fresh skills.",
+			"Uncover new insights.",
 		],
 	},
 	{
 		icon: <FaChalkboardTeacher />,
 		heading: "Educators to",
 		keypoints: [
-			"share their expertise.",
-			"generate income",
-			"contribute to the community.",
+			"Share their expertise.",
+			"Generate income",
+			"Contribute to the community.",
 		],
 	},
 	{
 		icon: <IoBriefcaseOutline />,
 		heading: "Employees to",
 		keypoints: [
-			"nurture curiosity.",
-			"effect meaningful change.",
-			"lead a fulfilling life.",
+			"Nurture curiosity.",
+			"Effect meaningful change.",
+			"Lead a fulfilling life.",
 		],
 	},
 ];
