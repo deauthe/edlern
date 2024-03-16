@@ -8,6 +8,12 @@ export const FaqItems: FaqItemTypes[] = [
 			"Yes, creating community, creating &amp; uploading courses is free on edLern as of now.",
 	},
 	{
+		id: 4,
+		heading: "Is joining the community free on edLern?",
+		description:
+			"It depends upon the community creator. Is it;s free, you can join it for free &amp; for the  premium you have to pay the monthly subscription.",
+	},
+	{
 		id: 2,
 		heading: "How can I earn money on edLern?",
 		description:
@@ -18,11 +24,5 @@ export const FaqItems: FaqItemTypes[] = [
 		heading: "When the edLern is fully launching?",
 		description:
 			"We will be launching soon. Please sign up and stay updated with recent news and launch date.",
-	},
-	{
-		id: 4,
-		heading: "Is joining the community free on edLern?",
-		description:
-			"It depends upon the community creator. Is it;s free, you can join it for free &amp; for the  premium you have to pay the monthly subscription.",
 	},
 ];

@@ -18,7 +18,7 @@ const About = () => {
 				</p>
 			</div>
 			<div className="grid lg:grid-cols-2 justify between mx-auto px-40 mt-10 gap-10 grid-cols-1  ">
-				<h1 className="lg:text-6xl text-4xl md:text-5xl tracking-tighter box-content font-oswald font-semibold md:text-left mx-auto lg:px-20 px-3 text-black">
+				<h1 className="lg:text-4xl text-xl md:text-3xl tracking-tighter box-content font-oswald font-semibold md:text-left mx-auto lg:px-20 px-3 text-black">
 					Share your
 					<span className="bg-gradient-to-l text-transparent from-blue-200 to-blue-300  bg-clip-text ">
 						{` ideas,`}

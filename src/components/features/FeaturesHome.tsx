@@ -86,12 +86,10 @@ const StudyRoom = () => {
 					Study Room
 				</h1>
 				<ul className="text-3xl text-black/[0.7] font-oswald tracking-wider font-normal text-left w-5/6 mx-auto list-disc ">
-					<li>Create, add courses</li>
+					<li>Create and add courses</li>
 					<li>Share Resources</li>
-					<li>Exclusive sharing</li>
-					<li>Host Events</li>
-					<li>Live Streams</li>
-					<li>Set Calendar invite</li>
+					<li>Host Live Events</li>
+					<li>Set Calendar Invite</li>
 				</ul>
 			</div>
 			<div className="my-auto">

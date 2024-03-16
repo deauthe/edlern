@@ -20,7 +20,7 @@ const HeroBanner = () => {
 					</div>
 
 					<div className="lg:mt-10 md:mt-5 mt-2 mx-auto lg:px-3 md:px-1 w-11/12">
-						<h1 className="lg:text-6xl text-4xl md:text-3xl tracking-tighter font-oswald font-semibold text-center mx-auto lg:px-20  text-muted/60">
+						<h1 className="lg:text-5xl text-2xl md:text-3xl tracking-tighter font-oswald font-semibold text-center mx-auto lg:px-20 md:px-10 px-3  text-muted/60">
 							<span className="bg-gradient-to-b text-transparent from-blue-300 to-black bg-clip-text ">
 								{`Share your  `}
 							</span>

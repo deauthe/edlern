@@ -14,9 +14,9 @@ import { CiLinkedin } from "react-icons/ci";
 
 const Footer = () => {
 	return (
-		<div className="h-fit w-screen bg-gradient-to-r from-blue-100 to-blue-300  text-black/[0.9]">
+		<div className="h-fit w-full bg-gradient-to-t border-t-2 border-black from-blue-300 to-white text-black/[0.9]">
 			<div className="lg:grid lg:grid-cols-5 lg:mx-0 mx-auto gap-10 bg-dot-white-200/[0.2] px-1 h-full flex flex-col ">
-				<div className="rounded-md lg:my-10 my-3 lg:col-span-2 lg:mx-0 flex-col gap-5 mx-auto ">
+				<div className="rounded-md lg:my-auto my-3 lg:col-span-2 lg:mx-0 flex flex-col gap-5 mx-auto ">
 					<Image
 						alt="edlern"
 						src="/logo.png"
@@ -24,21 +24,21 @@ const Footer = () => {
 						height={200}
 						className="rounded-full ml-auto"
 					/>
-					<div className="w-[200px] text-center ml-auto  flex-col flex ">
-						<div className="font-oswald text-lg  text-black/60 font-medium text-wrap flex flex-row gap-2 my-auto hover:scale-105 transition-all duration-75">
+					<div className="w-[200px] text-center ml-auto  flex-col flex  ">
+						<div className="font-oswald md:text-lg text-md  text-black/80 font-normal text-wrap flex flex-row gap-2 my-auto hover:scale-105 transition-all duration-75">
 							<a href="mailto:support@edlern.com">
 								For any queries, contact us on support@edlern.com
-								<FaExternalLinkAlt className="my-auto mx-auto " />
+								<FaExternalLinkAlt className="my-auto mx-auto text-black/50" />
 							</a>
 						</div>
 					</div>
 				</div>
 				<div className=" rounded-md col-span-3 lg:mt-5  font-oswald grid-cols-2 grid lg:grid-cols-3 lg:py-10 lg:gap-20 gap-10  w-3/4 lg:ml-20 mx-auto  ">
 					<div className="flex flex-col gap-3  col-span-1 mx-auto w-full">
-						<h2 className="text-xl font-bold tracking-tight uppercase text-black/80">
+						<h2 className="text-xl md:font-bold font-semibold tracking-tight uppercase text-black/80">
 							WEBSITE
 						</h2>
-						<div className="flex flex-col text-lg font-medium text-black/80 italic transition-all duration-300">
+						<div className="flex flex-col text-lg md:font-medium sm:font-normal text-black/80  transition-all duration-300">
 							<a
 								href="#home"
 								className="hover:text-black hover:scale-105 flex flex-row gap-2 "
@@ -71,11 +71,11 @@ const Footer = () => {
 					</div>
 
 					<div className="flex flex-col gap-3 cols-span-1 mx-auto w-full ">
-						<h2 className="text-xl font-bold tracking-tight uppercase text-black/80">
+						<h2 className="text-xl md:font-bold font-semibold tracking-tight  uppercase text-black/80">
 							Socials
 						</h2>
 
-						<div className="flex flex-col text-lg font-medium text-black/80 italic transition-all duration-300">
+						<div className="flex flex-col text-lg md:font-medium font-normal text-black/80  transition-all duration-300">
 							<a
 								href="#home"
 								className="hover:text-black hover:scale-105 flex flex-row gap-2"
@@ -93,11 +93,11 @@ const Footer = () => {
 						</div>
 					</div>
 					<div className="flex flex-col gap-3 cols-span-1 mx-auto w-full">
-						<h2 className="text-xl font-semibold tracking-tight uppercase  text-black/80">
+						<h2 className="text-xl md:font-bold font-semibold tracking-tight uppercase  text-black/80">
 							LEGAL
 						</h2>
 
-						<div className="flex flex-col text-lg text-black/80 font-medium transition-all italic duration-300">
+						<div className="flex flex-col text-lg text-black/80 font-normal md:font-medium transition-all  duration-300">
 							<a
 								href="/disclaimer.docx"
 								className="hover:text-black hover:scale-105 flex flex-row gap-2"

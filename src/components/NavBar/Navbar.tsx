@@ -9,6 +9,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { FiTwitter } from "react-icons/fi";
 import { CiLinkedin } from "react-icons/ci";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
 	const [isNavbar, isTransparent] = useNavBar(true, true);
@@ -50,20 +51,20 @@ const Navbar = () => {
 								connect with us on
 							</div>
 							<div className=" my-auto">
-								<a
-									href="instagram.com"
+								<Link
+									href="https://instagram.com"
 									className={` bg-gradient-to-r from-pink-600 to-yellow-400 text-transparent bg-clip-text text-md font-serif font-bold hover:bg-transparent hover:font-extrabold transition-all duration-100 hover:translate-x-px ease-linear flex flex-row gap-1 items-center`}
 								>
 									<FaInstagram className="text-black text-xl" />
-								</a>
+								</Link>
 							</div>
 							<div className=" my-auto">
-								<a
-									href="instagram.com"
+								<Link
+									href="https://linkedin.com"
 									className={` text-md font-serif font-bold hover:bg-transparent hover:font-extrabold transition-all duration-100 hover:translate-x-px ease-linear flex flex-row gap-1 items-center`}
 								>
 									<CiLinkedin className="text-black text-xl" />
-								</a>
+								</Link>
 							</div>
 						</div>
 					</>

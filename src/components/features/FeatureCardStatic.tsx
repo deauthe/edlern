@@ -31,11 +31,9 @@ export const FeatureCardContent: {
 		title: "Study Rooms",
 		description: (
 			<ul className=" font-oswald tracking-wider font-normal text-left w-5/6 mx-auto list-disc ">
-				<li>Create, add courses</li>
+				<li>Create and add courses</li>
 				<li>Share Resources</li>
-				<li>Exclusive sharing</li>
-				<li>Host Events</li>
-				<li>Live Streams</li>
+				<li>Host Live Events</li>
 				<li>Set Calendar invite</li>
 			</ul>
 		),

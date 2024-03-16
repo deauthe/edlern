@@ -7,12 +7,12 @@ const Empower = () => {
 	return (
 		<div className=" lg:py-12 md:py-8 py-5 text-center flex flex-col h-fit  ">
 			<div className="mx-auto mb-3 w-screen">
-				<h1 className="lg:text-8xl md:text-7xl text-5xl uppercase tracking-tighter bg-gradient-to-b from-black to-blue-300 text-transparent box-content font-oswald font-bold mx-auto bg-clip-text  ">
-					At Edlern We Empower
+				<h1 className="lg:text-7xl md:text-6xl text-4xl  tracking-tighter bg-gradient-to-b from-black to-blue-300 text-transparent box-content font-oswald font-bold mx-auto bg-clip-text  ">
+					At EdLern We Empower
 				</h1>
 			</div>
 
-			<div className="flex flex-col md:grid md:grid-cols-3 lg:gap-16 md:10 gap-5 lg:py-14 md:py-10 py-6 rounded-lg w-fit mx-auto lg:px-16 lg:mt-16 md:mt-10 mt-8">
+			<div className="flex flex-col md:grid md:grid-cols-3 lg:gap-44 md:10  gap-5 lg:py-14 md:py-10 py-6 rounded-lg w-fit mx-auto lg:px-16 lg:mt-16 md:mt-10 mt-8">
 				{sections.map((item, index) => {
 					return (
 						<Section
@@ -42,10 +42,10 @@ const Section = (data: SectionParams) => {
 			<div className="mx-auto lg:text-9xl md:text-8xl text-7xl">
 				{data.icon}
 			</div>
-			<div className="lg:text-5xl md:text-4xl text-3xl font-semibold ">
+			<div className="lg:text-5xl md:text-5xl text-4xl font-semibold ">
 				{data.heading}
 			</div>
-			<ul className="list-disc text-left mx-auto w-fit lg:text-2xl md:text-2xl font-normal list-outside ">
+			<ul className="list-disc text-left mx-auto md:w-fit w-[180px]  lg:text-2xl md:text-2xl text-lg font-normal list-outside  ">
 				{data.keypoints.map((keyPoint, index) => {
 					return <li key={index}>{keyPoint}</li>;
 				})}

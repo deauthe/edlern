@@ -53,7 +53,7 @@ export default function Home() {
 			<main
 				className={`flex h-full w-screen flex-col items-center justify-between  bg-gradient-to-b from-blue-300 to-white ${Oswald.variable} `}
 			>
-				<div className="h-full w-full lg:py-5 py-8 ">
+				<div className="h-full w-full  ">
 					<Navbar />
 					<div
 						id="home"

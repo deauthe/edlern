@@ -50,10 +50,10 @@ export const HoverEffect = ({
 						)}
 					</AnimatePresence>
 					<Card className="">
-						<CardTitle className="text-xl md:text-3xl lg:text-5xl bg-gradient-to-tl from-blue-100 to-white text-transparent bg-clip-text mx-auto ">
+						<CardTitle className="text-xl md:text-3xl lg:text-5xl bg-gradient-to-l from-blue-200 to-white text-transparent bg-clip-text mx-auto ">
 							{item.title}
 						</CardTitle>
-						<CardDescription className="text-md h-fit w-full leading-6">
+						<CardDescription className="text-md h-fit w-full leading-6 text-white/90">
 							{item.description}
 						</CardDescription>
 					</Card>
@@ -73,7 +73,7 @@ export const Card = ({
 	return (
 		<div
 			className={cn(
-				"rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+				"rounded-2xl h-full w-full p-4 overflow-hidden bg-gradient-to-l from-blue-300 to-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
 				className
 			)}
 		>

@@ -50,8 +50,8 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 				onSubmit={form.handleSubmit(onSubmit)}
 				className="space-y-8 m-10  py-5 font-oswald "
 			>
-				<FormLabel className="text-lg font-semibold uppercase">
-					Sign Up Now!
+				<FormLabel className="text-lg font-semibold ">
+					To Create Community - Sign Up Now!
 				</FormLabel>
 
 				<FormField
