@@ -215,7 +215,7 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 							render={({ field }) => (
 								<FormItem>
 									<FormLabel className="text-lg text-semibold">
-										more about your field
+										More about your field
 									</FormLabel>
 									<FormControl>
 										<Input
