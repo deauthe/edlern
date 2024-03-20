@@ -15,8 +15,8 @@ import { CiLinkedin } from "react-icons/ci";
 const Footer = () => {
 	return (
 		<div className="h-fit w-full bg-gradient-to-t border-t-2 border-black from-blue-300 to-white text-black/[0.9]">
-			<div className="md:grid md:grid-cols-5 md:mx-0 mx-auto gap-10 bg-dot-white-200/[0.2] px-1  flex flex-col ">
-				<div className="rounded-md md:my-auto my-3 md:col-span-1 lg:mx-0 flex flex-col gap-5 mx-auto justify-center">
+			<div className="md:grid md:grid-cols-5 md:mx-0 mx-auto md:gap-10 gap-10 bg-dot-white-200/[0.2] px-1  flex flex-col ">
+				<div className="rounded-md md:my-auto mt-3 md:col-span-1 lg:mx-0 flex flex-col gap-5 mx-auto justify-center">
 					<Image
 						alt="edlern"
 						src="/logo.png"
@@ -31,7 +31,7 @@ const Footer = () => {
 						</div>
 					</div>
 				</div>
-				<div className="rounded-md md:my-auto my-3 md:col-span-1 lg:mx-0 flex flex-col gap-5 mx-auto ">
+				<div className="rounded-md md:my-auto md:col-span-1 lg:mx-0 flex flex-col gap-5 mx-auto ">
 					<div className="w-[200px] text-center mx-auto  flex-col flex  ">
 						<div className="font-oswald md:text-md text-sm  text-black/80 font-normal text-wrap flex flex-row gap-2 my-auto hover:scale-105 transition-all duration-75">
 							<a href="mailto:support@edlern.com">
