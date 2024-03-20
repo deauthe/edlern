@@ -11,7 +11,7 @@ const FaqSection = () => {
 	return (
 		<div className="h-fit bg-blue-200/15 rounded-lg w-full flex flex-col lg:py-20 py-5 shadow-lg bg-dot-blue-100/[0.8]">
 			<div className="mx-auto lg:mb-10 mb-2">
-				<h1 className="lg:text-9xl md:text-7xl text-4xl tracking-tighter bg-gradient-to-l from-blue-300 to-black text-transparent box-content font-oswald font-bold mx-auto bg-clip-text  ">
+				<h1 className="lg:text-9xl md:text-7xl text-4xl tracking-tighter bg-gradient-to-l from-blue-300 to-black text-transparent box-content font-oswald font-bold mx-auto bg-clip-text  lg:px-2">
 					FAQs
 				</h1>
 			</div>
