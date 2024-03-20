@@ -1,4 +1,7 @@
 "use client";
+import { instagram } from "react-icons-kit/fa/instagram";
+import { linkedinSquare } from "react-icons-kit/fa/linkedinSquare";
+import { Icon } from "react-icons-kit";
 import NavMenu from "@/components/NavBar/NavMenu";
 import useMobileView from "@/hooks/useMobileView";
 import HamburgerMenu from "@/components/NavBar/HamburgerMenu";
@@ -10,6 +13,9 @@ import { FiTwitter } from "react-icons/fi";
 import { CiLinkedin } from "react-icons/ci";
 import Image from "next/image";
 import Link from "next/link";
+
+export const IconInstagram = () => <Icon icon={instagram} size={26} />;
+export const IconLinkedIn = () => <Icon icon={linkedinSquare} size={26} />;
 
 const Navbar = () => {
 	const [isNavbar, isTransparent] = useNavBar(true, true);
@@ -48,22 +54,22 @@ const Navbar = () => {
 						</div>
 						<div className="col-span-3 lg:flex flex-row justify-end gap-2 hidden ">
 							<div className=" my-auto mr-3 text-black/[0.6] text-nowrap">
-								connect with us on
+								Let's connect
 							</div>
 							<div className=" my-auto">
 								<Link
 									href="https://instagram.com"
-									className={` bg-gradient-to-r from-pink-600 to-yellow-400 text-transparent bg-clip-text text-md font-serif font-bold hover:bg-transparent hover:font-extrabold transition-all duration-100 hover:translate-x-px ease-linear flex flex-row gap-1 items-center`}
+									className={` text-pink-500 text-md font-serif font-bold hover:bg-transparent hover:font-extrabold transition-all duration-100 hover:translate-x-px ease-linear flex flex-row gap-1 items-center`}
 								>
-									<FaInstagram className="text-black text-xl" />
+									<IconInstagram />
 								</Link>
 							</div>
 							<div className=" my-auto">
 								<Link
 									href="https://linkedin.com"
-									className={` text-md font-serif font-bold hover:bg-transparent hover:font-extrabold transition-all duration-100 hover:translate-x-px ease-linear flex flex-row gap-1 items-center`}
+									className={`text-blue-300 text-md font-serif font-bold hover:bg-transparent hover:font-extrabold transition-all duration-100 hover:translate-x-px ease-linear flex flex-row gap-1 items-center`}
 								>
-									<CiLinkedin className="text-black text-xl" />
+									<IconLinkedIn />
 								</Link>
 							</div>
 						</div>

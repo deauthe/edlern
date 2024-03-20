@@ -3,13 +3,13 @@ import { FaqItemTypes } from "@/types/componentPropTypes";
 export const FaqItems: FaqItemTypes[] = [
 	{
 		id: 1,
-		heading: "Is making the community free on edLern?",
+		heading: "Is making community free on edLern?",
 		description:
 			" It can be either way, as it ultimately depends on the creator's preference whether they want their community to be free or premium.",
 	},
 	{
 		id: 4,
-		heading: "Is joining the community free on edLern?",
+		heading: "Is joining community free on edLern?",
 		description:
 			"It depends upon the community creator. If its free, you can join it for free and for the  premium you have to pay the monthly subscription.",
 	},

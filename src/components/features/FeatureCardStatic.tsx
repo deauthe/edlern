@@ -43,8 +43,8 @@ export const FeatureCardContent: {
 		title: "Gamification",
 		description: (
 			<ul className=" font-oswald tracking-wider font-normal text-left w-5/6 mx-auto list-disc flex flex-col gap-2">
-				<li>Levelling system: Advance ranks</li>
-				<li>Progress tracking: Visual milestones</li>
+				<li>Levelling system</li>
+				<li>Progress tracking</li>
 				<li>Badges for achievements</li>
 			</ul>
 		),

@@ -16,16 +16,24 @@ const Footer = () => {
 	return (
 		<div className="h-fit w-full bg-gradient-to-t border-t-2 border-black from-blue-300 to-white text-black/[0.9]">
 			<div className="md:grid md:grid-cols-5 md:mx-0 mx-auto gap-10 bg-dot-white-200/[0.2] px-1  flex flex-col ">
-				<div className="rounded-md md:my-auto my-3 md:col-span-2 lg:mx-0 flex flex-col gap-5 mx-auto ">
+				<div className="rounded-md md:my-auto my-3 md:col-span-1 lg:mx-0 flex flex-col gap-5 mx-auto justify-center">
 					<Image
 						alt="edlern"
 						src="/logo.png"
 						width={200}
 						height={200}
-						className="rounded-full ml-auto"
+						className="rounded-full  mx-auto"
 					/>
-					<div className="w-[200px] text-center ml-auto  flex-col flex  ">
-						<div className="font-oswald md:text-lg text-md  text-black/80 font-normal text-wrap flex flex-row gap-2 my-auto hover:scale-105 transition-all duration-75">
+					<div className="w-[200px] text-center mx-auto  flex-col flex  ">
+						<div className="font-oswald md:text-md text-md  text-black/80 font-normal text-wrap flex flex-row gap-2 my-auto hover:scale-105 transition-all duration-75 lg:w-full w-5/6 mx-auto">
+							edLern is an online, centralized place for growing the educational
+							community
+						</div>
+					</div>
+				</div>
+				<div className="rounded-md md:my-auto my-3 md:col-span-1 lg:mx-0 flex flex-col gap-5 mx-auto ">
+					<div className="w-[200px] text-center mx-auto  flex-col flex  ">
+						<div className="font-oswald md:text-md text-sm  text-black/80 font-normal text-wrap flex flex-row gap-2 my-auto hover:scale-105 transition-all duration-75">
 							<a href="mailto:support@edlern.com">
 								For any queries, contact us on support@edlern.com
 								<FaExternalLinkAlt className="my-auto mx-auto text-black/50" />

@@ -31,7 +31,7 @@ const HeroBanner = () => {
 							<span className="bg-gradient-to-b text-transparent from-blue-300 to-black bg-clip-text ">
 								{` and engage in `}
 							</span>
-							events, courses, coaching and consultations.
+							events, courses, coaching and consultations
 						</h1>
 					</div>
 				</div>

@@ -11,7 +11,9 @@ const Launch = () => {
 					<div className="my-auto mx-auto flex flex-col gap-10  ">
 						<h1 className="uppercase lg:text-7xl text-2xl md:text-4xl mx-auto lg:mx-0 bg-gradient-to-b from-blue-200 to-blue-300 text-transparent bg-clip-text  py-3  font-oswald  tracking-tight font-semibold text-center flex flex-col lg:gap-5 gap-0">
 							<div>Launching Soon </div>
-							<div>The Countdown Begins.. </div>
+							<div className="lg:text-5xl md:text-3xl text-xl mx-auto normal-case">
+								The Countdown Begins..{" "}
+							</div>
 						</h1>
 					</div>
 				</div>

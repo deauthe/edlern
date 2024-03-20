@@ -22,11 +22,7 @@ export const staticComponents: NavComponentsType[] = [
 		href: "#features",
 	},
 	{
-		title: "Legal",
-		href: "#footer",
-	},
-	{
-		title: "Faq",
+		title: "FAQs",
 		href: "#faq",
 	},
 ];

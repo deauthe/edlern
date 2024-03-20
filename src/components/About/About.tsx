@@ -32,7 +32,7 @@ const About = () => {
 					</span>
 					and engage in
 					<span className="bg-gradient-to-l text-transparent from-blue-200 to-blue-300  bg-clip-text ">
-						{` coaching and consultations. `}
+						{` coaching and consultations `}
 					</span>
 				</h1>
 			</div>

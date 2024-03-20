@@ -113,9 +113,9 @@ const Gamification = () => {
 					Gamification
 				</h1>
 				<ul className="text-3xl text-black/[0.7] font-oswald tracking-wider font-normal text-left w-5/6 mx-auto list-disc flex flex-col gap-2">
-					<li className="leading-7">Levelling system: Advance ranks</li>
-					<li className="leading-7">Progress tracking: Visual milestones</li>
-					<li>Badges for achievements</li>
+					<li className="">Levelling system</li>
+					<li className="">Progress tracking</li>
+					<li className="text-nowrap">Badges for achievements</li>
 				</ul>
 			</div>
 		</div>
