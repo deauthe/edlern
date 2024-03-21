@@ -37,7 +37,7 @@ const DiscoverCommunity = () => {
 		<div className=" w-9/12 h-full mx-auto rounded-md grid grid-cols-2 gap-10 px-5 pt-10">
 			<div className="my-auto">
 				<video autoPlay loop muted className="w-[34em]  rounded-full mr-auto">
-					<source src="/CreateCommunity.mp4" />
+					<source src="/discoverCommunity.mp4" />
 				</video>
 			</div>
 			<div className="my-auto mx-auto flex flex-col gap-10  ">
@@ -71,7 +71,7 @@ const CreateCommunity = () => {
 			</div>
 			<div className="my-auto">
 				<video autoPlay loop muted className="w-[34em] rounded-full ml-auto">
-					<source src="/DiscoverCommunity.mp4" />
+					<source src="/creativeCommunity.mp4" />
 				</video>
 			</div>
 		</div>
@@ -94,7 +94,7 @@ const StudyRoom = () => {
 			</div>
 			<div className="my-auto">
 				<video autoPlay loop muted className="w-[34em] rounded-full ml-auto">
-					<source src="/DiscoverCommunity.mp4" />
+					<source src="/calendar.mp4" />
 				</video>
 			</div>
 		</div>
@@ -105,7 +105,7 @@ const Gamification = () => {
 		<div className=" w-9/12 h-full mx-auto rounded-md grid grid-cols-2 gap-10 px-5">
 			<div className="my-auto">
 				<video autoPlay loop muted className="w-[34em]   rounded-full mr-auto">
-					<source src="/CreateCommunity.mp4" />
+					<source src="/AnimatedLeaderboardSystem.mp4" />
 				</video>
 			</div>
 			<div className="my-auto mx-auto flex flex-col gap-10  ">
