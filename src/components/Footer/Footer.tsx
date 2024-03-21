@@ -11,6 +11,7 @@ import { FaSheetPlastic } from "react-icons/fa6";
 import { BsNewspaper } from "react-icons/bs";
 import { BsFileEarmarkSpreadsheet } from "react-icons/bs";
 import { CiLinkedin } from "react-icons/ci";
+import Link from "next/link";
 
 const Footer = () => {
 	return (
@@ -34,10 +35,10 @@ const Footer = () => {
 				<div className="rounded-md md:my-auto md:col-span-1 lg:mx-0 flex flex-col gap-5 mx-auto ">
 					<div className="w-[200px] text-center mx-auto  flex-col flex  ">
 						<div className="font-oswald md:text-md text-sm  text-black/80 font-normal text-wrap flex flex-row gap-2 my-auto hover:scale-105 transition-all duration-75">
-							<a href="mailto:support@edlern.com">
+							<Link href="mailto:support@edlern.com">
 								For any queries, contact us on support@edlern.com
 								<FaExternalLinkAlt className="my-auto mx-auto text-black/50" />
-							</a>
+							</Link>
 						</div>
 					</div>
 				</div>
@@ -47,34 +48,34 @@ const Footer = () => {
 							WEBSITE
 						</h2>
 						<div className="flex flex-col text-lg  sm:font-normal text-black/80  transition-all duration-300">
-							<a
+							<Link
 								href="#home"
 								className="hover:text-black hover:scale-105 flex flex-row gap-2 "
 							>
 								Home
 								<FaHome className="my-auto" />
-							</a>
-							<a
+							</Link>
+							<Link
 								href="#features"
 								className="hover:text-black hover:scale-105 flex flex-row gap-2"
 							>
 								Features
 								<MdOutlineFeaturedVideo className="my-auto" />
-							</a>
-							<a
+							</Link>
+							<Link
 								href="#whyUs"
 								className="hover:text-black hover:scale-105 flex flex-row gap-2"
 							>
 								Who Are We
 								<MdRoundaboutLeft className="my-auto" />
-							</a>
-							<a
+							</Link>
+							<Link
 								href="#faq"
 								className="hover:text-black hover:scale-105 flex flex-row gap-2"
 							>
 								FAQ
 								<PiSealQuestionBold className="my-auto" />
-							</a>
+							</Link>
 						</div>
 					</div>
 
@@ -84,20 +85,20 @@ const Footer = () => {
 						</h2>
 
 						<div className="flex flex-col text-lg md:font-normal font-normal text-black/80  transition-all duration-300">
-							<a
-								href="#home"
+							<Link
+								href="https://www.instagram.com/edlern_official?igsh=MWN2Mzk2cWRscG9hdw=="
 								className="hover:text-black hover:scale-105 flex flex-row gap-2"
 							>
 								Instagram
 								<FaInstagram className="my-auto" />
-							</a>
-							<a
-								href="#features"
+							</Link>
+							<Link
+								href="https://www.linkedin.com/company/edlern/"
 								className="hover:text-black hover:scale-105 flex flex-row gap-2"
 							>
 								LinkedIn
 								<CiLinkedin className="my-auto text-2xl" />
-							</a>
+							</Link>
 						</div>
 					</div>
 					<div className="flex flex-col gap-3 cols-span-1 mx-auto w-full">
@@ -106,20 +107,20 @@ const Footer = () => {
 						</h2>
 
 						<div className="flex flex-col text-lg text-black/80 font-normal  transition-all  duration-300">
-							<a
+							<Link
 								href="/disclaimer.docx"
 								className="hover:text-black hover:scale-105 flex flex-row gap-2"
 							>
 								Disclaimer
 								<FaSheetPlastic className="my-auto" />
-							</a>
-							<a
+							</Link>
+							<Link
 								href="/policy.docx"
 								className="hover:text-black hover:scale-105 flex flex-row gap-2 text-ellipsis"
 							>
 								Privacy Policy
 								<BsNewspaper className="my-auto" />
-							</a>
+							</Link>
 						</div>
 					</div>
 				</div>

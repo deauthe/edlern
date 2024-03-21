@@ -58,7 +58,7 @@ const Navbar = () => {
 							</div>
 							<div className=" my-auto">
 								<Link
-									href="https://instagram.com"
+									href="https://www.instagram.com/edlern_official?igsh=MWN2Mzk2cWRscG9hdw=="
 									className={` text-pink-500 text-md font-serif font-bold hover:bg-transparent hover:font-extrabold transition-all duration-100 hover:translate-x-px ease-linear flex flex-row gap-1 items-center`}
 								>
 									<IconInstagram />
@@ -66,7 +66,7 @@ const Navbar = () => {
 							</div>
 							<div className=" my-auto">
 								<Link
-									href="https://linkedin.com"
+									href="https://www.linkedin.com/company/edlern/"
 									className={`text-blue-300 text-md font-serif font-bold hover:bg-transparent hover:font-extrabold transition-all duration-100 hover:translate-x-px ease-linear flex flex-row gap-1 items-center`}
 								>
 									<IconLinkedIn />
