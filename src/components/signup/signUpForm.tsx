@@ -5,8 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
-import { FaExternalLinkAlt } from "react-icons/fa";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import {
 	Form,
 	FormControl,
@@ -34,6 +33,7 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import { SignUpFormFields, signUpFormSchema } from "@/types/signUpTypes";
 import { Calendar } from "../ui/calendar";
+import TermsDialog from "./termsDialog";
 
 type FormProps = {
 	onSubmit: SubmitHandler<SignUpFormFields>;
@@ -246,9 +246,7 @@ const SignUpForm = ({ onSubmit }: FormProps) => {
 							<div className="space-y-1 leading-none">
 								<FormLabel className="flex flex-row gap-2 ">
 									I accept terms and conditions
-									<a href="/terms.docx">
-										<FaExternalLinkAlt />
-									</a>
+									<TermsDialog />
 								</FormLabel>
 							</div>
 						</FormItem>

@@ -12,6 +12,8 @@ import { BsNewspaper } from "react-icons/bs";
 import { BsFileEarmarkSpreadsheet } from "react-icons/bs";
 import { CiLinkedin } from "react-icons/ci";
 import Link from "next/link";
+import PolicyDialog from "./PolicyDialog";
+import DisclaimerDialog from "./DisclaimerDialog";
 
 const Footer = () => {
 	return (
@@ -26,7 +28,7 @@ const Footer = () => {
 						className="rounded-full  mx-auto"
 					/>
 					<div className="w-[200px] text-center mx-auto  flex-col flex  ">
-						<div className="font-oswald md:text-md text-md  text-black/80 font-normal text-wrap flex flex-row gap-2 my-auto hover:scale-105 transition-all duration-75 lg:w-full w-5/6 mx-auto">
+						<div className="font-oswald md:text-md text-md  text-black/80 font-normal text-wrap flex flex-row gap-2 my-auto  lg:w-full w-5/6 mx-auto">
 							edLern is an online, centralized place for growing the educational
 							community
 						</div>
@@ -107,20 +109,15 @@ const Footer = () => {
 						</h2>
 
 						<div className="flex flex-col text-lg text-black/80 font-normal  transition-all  duration-300">
-							<Link
-								href="/disclaimer.docx"
-								className="hover:text-black hover:scale-105 flex flex-row gap-2"
-							>
-								Disclaimer
+							<div className="hover:text-black hover:scale-105 flex flex-row gap-2">
+								<DisclaimerDialog />
 								<FaSheetPlastic className="my-auto" />
-							</Link>
-							<Link
-								href="/policy.docx"
-								className="hover:text-black hover:scale-105 flex flex-row gap-2 text-ellipsis"
-							>
-								Privacy Policy
+							</div>
+
+							<div className="hover:text-black hover:scale-105 flex flex-row gap-2 text-ellipsis">
+								<PolicyDialog />
 								<BsNewspaper className="my-auto" />
-							</Link>
+							</div>
 						</div>
 					</div>
 				</div>
