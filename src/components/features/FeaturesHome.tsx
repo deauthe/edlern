@@ -94,7 +94,7 @@ const StudyRoom = () => {
 			</div>
 			<div className="my-auto">
 				<video autoPlay loop muted className="w-[34em] rounded-full ml-auto">
-					<source src="/calendar.mp4" />
+					<source src="/studyRoom.mp4" />
 				</video>
 			</div>
 		</div>
