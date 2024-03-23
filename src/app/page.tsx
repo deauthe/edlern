@@ -16,6 +16,7 @@ import Vision from "@/components/Vision/Vision";
 import WhyUs from "@/components/WhyUs/WhyUs";
 import Launch from "@/components/Launch/Launch";
 import Empower from "@/components/Empower/Empower";
+import { CardStack } from "@/components/cardStack/CardStackAceternity";
 const Oswald = localfont({
 	src: [
 		{
@@ -84,6 +85,7 @@ export default function Home() {
 						<FeaturesHome />
 						<FeaturesStrip />
 					</div>
+
 					<div id="faq">
 						<FaqSection />
 					</div>
