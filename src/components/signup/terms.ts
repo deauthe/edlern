@@ -1,4 +1,4 @@
-export const termsDescription = `These Terms &amp; Conditions (“Terms”) of (a) use of our website www.edLern.com (“Website”), our
+export const termsDescription = `These Terms and; Conditions (“Terms”) of (a) use of our website www.edLern.com (“Website”), our
 applications (“Application”) or any products or services in connection with the Application/, 
 Website/products (“Services”)  or (b) any modes of registrations or usage of products, including
 through SD cards, tablets or other storage/transmitting device  are between Edlern Innovations
@@ -239,7 +239,7 @@ party which are not compatible with the Company&#39;s products and Services. The
 reserves the right to upgrade the table/ type of compatible devices as required from time to
 time.
 15. In order to encourage Customer Retention and Loyalty, EdLern encourages its Customers,
-Fintech Partners and other stakeholders to refer customers to buy EdLern’s Products &amp;
+Fintech Partners and other stakeholders to refer customers to buy EdLern’s Products and;
 Services. Company at its option can pay referral bonus subject to applicable laws. Since this
 is an optional selective policy of the Company, the decision of the Company is final and the
 same cannot be either disputed or challenged. It should be noted with abundant caution
