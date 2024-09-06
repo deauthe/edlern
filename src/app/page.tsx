@@ -1,6 +1,6 @@
 "use client";
 import "./globals.css";
-import { Inter as FontSans } from "next/font/google";
+import { Inter as FontSans, Rajdhani as rajdhani } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/NavBar/Navbar";
 import Hero from "@/components/Hero/Hero";
@@ -47,28 +47,44 @@ const Oswald = localfont({
 	],
 	variable: "--font-oswald",
 });
-
+const Sentient = localfont({
+	src: "../../public/fonts/Rajdhani/Rajdhani-Bold.otf",
+	variable: "--font-sentient",
+});
+const Rajdhani = rajdhani({
+	weight: ["300", "400", "500", "600", "700"],
+	fallback: ["sans", "serif"],
+	display: "auto",
+	preload: true,
+	style: "normal",
+	subsets: ["latin"],
+	variable: "--font-rajdhani",
+});
 export default function Home() {
 	return (
 		<>
 			<main
-				className={`flex h-full w-screen flex-col items-center justify-between  bg-gradient-to-b from-blue-300 to-white ${Oswald.variable} `}
+				className={`flex h-full w-screen flex-col items-center justify-between  bg-gradient-to-b  from-black to-blue-300 ${Rajdhani.variable} ${Sentient.variable} `}
 			>
 				<div className="h-full w-full  ">
 					<Navbar />
-					<div
-						id="home"
-						className="lg:h-fit h-fit w-full  bg-transparent  bg-dot-blue-100/[0.6] relative flex items-center justify-center "
-					>
-						{/* TODO:md response */}
-						<Hero />
+					{/* first scroll  */}
+					<div className="h-full w-full min-h-screen justify-center items-center flex flex-col ">
+						<div
+							id="home"
+							className="lg:h-fit h-fit w-full  bg-transparent  relative flex items-center justify-center  "
+						>
+							{/* TODO:md response */}
+							<Hero />
+						</div>
+						<div className="w-full">
+							<Offerings />
+						</div>
 					</div>
-					<div className="w-full">
-						<Offerings />
-					</div>
+
 					<div
 						id="whyUs"
-						className="md:grid md:grid-cols-2 md:px-8 lg:px-12 bg-white bg-dot-zinc-500/[0.5] flex flex-col md:gap-0 gap-10 px-5 w-full py-10"
+						className="md:grid md:grid-cols-2 md:px-8 lg:px-12 bg-black text-white bg-dot-zinc-500/[0.1] flex flex-col md:gap-0 gap-10 px-5 w-full py-10"
 					>
 						<Vision />
 						<WhyUs />

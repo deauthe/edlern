@@ -4,7 +4,7 @@ import { CardStack } from "../cardStack/CardStackAceternity";
 import { cardStackCards } from "@/components/cardStack/cardStackStatics";
 const About = () => {
 	return (
-		<div className=" lg:py-32 md:py-20 py-10 text-center flex flex-col h-fit bg-white-200/[0.9] bg-dot-black/[0.2]">
+		<div className=" lg:py-32 md:py-20 py-10 text-center flex flex-col h-fit bg-black/[0.9] bg-dot-black/[0.2]">
 			<div className="mx-auto mb-3 w-screen">
 				<h1 className="lg:text-9xl md:text-8xl text-7xl uppercase tracking-tighter bg-gradient-to-b from-black to-blue-300 text-transparent box-content font-oswald font-bold mx-auto bg-clip-text  ">
 					About Us

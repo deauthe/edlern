@@ -12,7 +12,7 @@ const Vision = () => {
 					</div>
 					<div className="my-auto">
 						<div className="">
-							<p className="lg:text-3xl text-2xl text-black/[0.9] font-oswald tracking-wider font-normal w-full mx-auto text-center">
+							<p className="lg:text-3xl text-2xl text-white/70 font-oswald tracking-wider font-normal w-full mx-auto text-center">
 								To create a global learning community platform that empowers
 								learners of all ages.We aim to provide lifelong learning
 								opportunities and skills for personal growth.

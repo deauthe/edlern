@@ -8,7 +8,6 @@ import {
 	NavigationMenuList,
 	NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import NavMenu from "./NavMenu";
 import { staticComponents } from "./staticNavComponents";
 import { cn } from "@/lib/utils";
 

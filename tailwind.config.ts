@@ -27,7 +27,8 @@ const config = {
 				sans: ["var(--font-sans)", ...fontFamily.sans],
 				serif: ["DmSerif", "sans-serif"],
 				DmSerif: ["DmSerif"],
-				oswald: "var(--font-oswald)",
+				replace_with_pooly: "var(--font-rajdhani)",
+				oswald: "var(--font-sentient)",
 			},
 			colors: {
 				border: "hsl(var(--border))",

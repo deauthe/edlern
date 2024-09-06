@@ -4,9 +4,9 @@ import FloatingCard from "./FloatingCard";
 
 const Offerings = () => {
 	return (
-		<div className=" w-full flex flex-col gap-5 lg:pt-10 pt-5 mx-auto h-fit pb-10 bg-dot-blue-100/[0.8] font-oswald">
-			<div className="lg:text-5xl md:text-4xl text-3xl mx-auto w-fit tracking-tight bg-gradient-to-t font-medium from-white/[0.6] to-white text-transparent bg-clip-text">
-				PLATFORM OFFERINGS
+		<div className=" w-full flex flex-col sm:gap-5 md:gap-16 lg:pt-10 pt-5 mx-auto h-fit pb-10  font-oswald">
+			<div className="lg:text-5xl md:text-4xl text-3xl mx-auto w-fit tracking-tight bg-gradient-to-t font-replace_with_pooly from-white/[0.6] to-white text-transparent bg-clip-text">
+				Platform Offerings
 			</div>
 			<div className="grid md:grid-cols-6 grid-cols-2 gap-5 w-fit mx-auto mt-auto lg:px-0 px-3 ">
 				{OfferingCardsStatic.map((item, idx) => {

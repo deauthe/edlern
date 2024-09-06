@@ -18,6 +18,10 @@ export const staticComponents: NavComponentsType[] = [
 		href: "#whyUs",
 	},
 	{
+		title: "Products",
+		href: "#faq",
+	},
+	{
 		title: "Features",
 		href: "#features",
 	},

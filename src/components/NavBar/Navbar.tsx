@@ -5,12 +5,7 @@ import { Icon } from "react-icons-kit";
 import NavMenu from "@/components/NavBar/NavMenu";
 import useMobileView from "@/hooks/useMobileView";
 import HamburgerMenu from "@/components/NavBar/HamburgerMenu";
-import { Button } from "../ui/button";
 import useNavBar from "@/hooks/useNavBar";
-import { AnimatePresence, motion } from "framer-motion";
-import { FaInstagram } from "react-icons/fa6";
-import { FiTwitter } from "react-icons/fi";
-import { CiLinkedin } from "react-icons/ci";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,17 +15,17 @@ export const IconLinkedIn = () => <Icon icon={linkedinSquare} size={26} />;
 const Navbar = () => {
 	const [isNavbar, isTransparent] = useNavBar(true, true);
 	const isMobileView = useMobileView();
-	let textColour = "black";
+	let textColour = "white";
 
 	return (
 		<>
 			{isNavbar && (
 				<div
-					className={`w-full box-border flex flex-row lg:grid lg:grid-cols-12  justify-between gap-5 p-5 bg-opacity-0 lg:px-14 md:px-16 px-3 z-50 ${
+					className={`w-full box-border flex flex-row lg:grid lg:grid-cols-12  justify-between gap-5 p-5 bg-opacity-0 lg:px-14 md:px-16 px-3 z-50 bg-black ${
 						isTransparent
 							? "bg-opacity-100 shadow-none "
 							: "bg-opacity-100 shadow-md "
-					}bg-white h-16 shadow-md z-10 fixed top-0 left-0`}
+					} h-16 shadow-md z-10 fixed top-0 left-0`}
 				>
 					<div
 						className={`mr-0 w-fit col-span-9 h-fit my-auto text-${textColour} lg:hidden`}
@@ -53,7 +48,7 @@ const Navbar = () => {
 							<NavMenu />
 						</div>
 						<div className="col-span-3 lg:flex flex-row justify-end gap-2 hidden ">
-							<div className=" my-auto mr-3 text-black/[0.6] text-nowrap">
+							<div className=" my-auto mr-3 opacity-80 text-nowrap text-white">
 								Let's connect
 							</div>
 							<div className=" my-auto">
