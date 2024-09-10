@@ -11,13 +11,13 @@ const FaqSection = () => {
 	return (
 		<div className="h-fit bg-blue-200/15 rounded-lg w-full flex flex-col lg:py-20 py-5 shadow-lg bg-dot-blue-100/[0.8]">
 			<div className="mx-auto lg:mb-10 mb-2">
-				<h1 className="lg:text-9xl md:text-7xl text-4xl tracking-tighter bg-gradient-to-l from-blue-300 to-black text-transparent box-content font-oswald font-bold mx-auto bg-clip-text  lg:px-2">
+				<h1 className="lg:text-9xl md:text-7xl text-4xl tracking-tighter bg-gradient-to-l from-blue-300 to-black text-transparent box-content font-rajdhani font-bold mx-auto bg-clip-text  lg:px-2">
 					FAQs
 				</h1>
 			</div>
 			<div className="  lg:grid lg:grid-cols-4 gap-5 mb-10 lg:px-20 lg:pt-10 rounded-lg lg:mt-10 mt-3 lg:mx-20 mx-5 lg:py-20 justify-center items-center font-DmSerif ">
 				<div className="col-span-2 mb-5 lg:mb-0 ">
-					<h1 className="lg:text-7xl md:text-6xl text-5xl md:text-left text-center tracking-tight font-bold uppercase font-oswald mx-auto  w-fit">
+					<h1 className="lg:text-7xl md:text-6xl text-5xl md:text-left text-center tracking-tight font-bold uppercase font-rajdhani mx-auto  w-fit">
 						Got a question?
 					</h1>
 				</div>

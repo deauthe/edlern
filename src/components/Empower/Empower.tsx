@@ -6,13 +6,13 @@ import { IoBriefcaseOutline } from "react-icons/io5";
 const Empower = () => {
 	return (
 		<div className=" lg:py-12 md:py-8 py-5 text-center flex flex-col h-fit  ">
-			<div className="mx-auto mb-3 w-screen">
-				<h1 className="lg:text-7xl md:text-6xl text-4xl  tracking-tighter bg-gradient-to-b from-black to-blue-300 text-transparent box-content font-oswald font-medium mx-auto bg-clip-text  ">
-					At edLern We Empower
+			<div className="mx-auto w-screen">
+				<h1 className="lg:text-6xl md:text-5xl text-3xl tracking-tighter text-blue-300/80 box-content font-rajdhani font-bold mx-auto bg-clip-text  ">
+					We Empower
 				</h1>
 			</div>
 
-			<div className="flex flex-col md:grid md:grid-cols-3 lg:gap-44 md:10  gap-5 lg:py-14 md:py-10 py-6 rounded-lg w-fit mx-auto lg:px-16 lg:mt-16 md:mt-10 mt-8">
+			<div className="flex flex-col md:grid md:grid-cols-3 lg:gap-44   gap-5 lg:py-5 md:py-3 py-2 rounded-lg w-fit mx-auto lg:px-16 lg:mt-5 md:mt-10 mt-8">
 				{sections.map((item, index) => {
 					return (
 						<Section
@@ -38,16 +38,20 @@ type SectionParams = {
 
 const Section = (data: SectionParams) => {
 	return (
-		<div className="flex flex-col lg:gap-5 md:gap-3 gap-1 font-oswald">
-			<div className="mx-auto lg:text-9xl md:text-8xl text-7xl">
+		<div className="flex flex-col lg:gap-5 md:gap-3 gap-1  text-white/95 bg-blue-300 shadow-lg p-5 rounded-lg">
+			<div className="mr-auto lg:text-7xl md:text-6xl text-5xl ">
 				{data.icon}
 			</div>
-			<div className="lg:text-5xl md:text-5xl text-4xl font-semibold ">
+			<div className="lg:text-4xl md:text-3xl text-2xl font-bold text-left font-rajdhani">
 				{data.heading}
 			</div>
-			<ul className="list-disc text-left mx-auto md:w-fit w-[180px] text-nowrap  lg:text-2xl md:text-2xl text-lg font-normal list-outside  ">
+			<ul className="list-none text-left mr-auto md:w-fit w-[180px] text-nowrap lg:text-xl md:text-lg text-md font-sentient list-outside  ">
 				{data.keypoints.map((keyPoint, index) => {
-					return <li key={index}>{keyPoint}</li>;
+					return (
+						<li className="text-md" key={index}>
+							{keyPoint}
+						</li>
+					);
 				})}
 			</ul>
 		</div>

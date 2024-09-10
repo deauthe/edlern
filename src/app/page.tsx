@@ -17,6 +17,9 @@ import WhyUs from "@/components/WhyUs/WhyUs";
 import Launch from "@/components/Launch/Launch";
 import Empower from "@/components/Empower/Empower";
 import { CardStack } from "@/components/cardStack/CardStackAceternity";
+import Image from "next/image";
+import CarouselDApiDemo from "@/components/Carousel/Carousel";
+import { staticFeatureCards } from "@/components/Carousel/staticCarouselItems";
 const Oswald = localfont({
 	src: [
 		{
@@ -45,7 +48,7 @@ const Oswald = localfont({
 			style: "normal",
 		},
 	],
-	variable: "--font-oswald",
+	variable: "--font-rajdhani",
 });
 const Sentient = localfont({
 	src: "../../public/fonts/Rajdhani/Rajdhani-Bold.otf",
@@ -64,7 +67,7 @@ export default function Home() {
 	return (
 		<>
 			<main
-				className={`flex h-full w-screen flex-col items-center justify-between  bg-gradient-to-b  from-black to-blue-300 ${Rajdhani.variable} ${Sentient.variable} `}
+				className={`flex h-full w-screen flex-col items-center justify-between  bg-white  ${Rajdhani.variable} ${Sentient.variable} pt-10`}
 			>
 				<div className="h-full w-full  ">
 					<Navbar />
@@ -72,7 +75,7 @@ export default function Home() {
 					<div className="h-full w-full min-h-screen justify-center items-center flex flex-col ">
 						<div
 							id="home"
-							className="lg:h-fit h-fit w-full  bg-transparent  relative flex items-center justify-center  "
+							className="lg:h-fit h-fit w-full  bg-transparent  relative flex items-center justify-center  text-black"
 						>
 							{/* TODO:md response */}
 							<Hero />
@@ -81,32 +84,73 @@ export default function Home() {
 							<Offerings />
 						</div>
 					</div>
-
+					{/* photo placeholder  */}
+					<div className="grid lg:grid-cols-4 grid-cols-1 mx-5 lg:mx-5 gap-0 px-20 mt-16">
+						<Image
+							src={"/process/1.svg"}
+							height={600}
+							width={600}
+							alt="photo"
+							className="mx-auto scale"
+						/>
+						<Image
+							src={"/process/2.svg"}
+							height={600}
+							width={600}
+							alt="photo"
+							className="mx-auto"
+						/>
+						<Image
+							src={"/process/3.svg"}
+							height={600}
+							width={600}
+							alt="photo"
+							className="mx-auto"
+						/>
+						<Image
+							src={"/process/4.svg"}
+							height={600}
+							width={600}
+							alt="photo"
+							className="mx-auto"
+						/>
+					</div>
+					{/* <div className="w-full px-20 mx-auto items-center justify-center py-0 lg:-my-44 ">
+						<Image
+							src={"/process.svg"}
+							height={1300}
+							width={1300}
+							alt="photo"
+							className="mx-auto"
+						/>
+					</div> */}
 					<div
 						id="whyUs"
-						className="md:grid md:grid-cols-2 md:px-8 lg:px-12 bg-black text-white bg-dot-zinc-500/[0.1] flex flex-col md:gap-0 gap-10 px-5 w-full py-10"
+						className="md:grid md:grid-cols-2 md:px-8 lg:px-12 py-16 text-black bg-dot-zinc-500/[0.1] flex flex-col md:gap-0 gap-10 px-5 w-full items"
 					>
 						<Vision />
 						<WhyUs />
 					</div>
-					<div id="launch" className="pb-10 bg-white bg-dot-zinc-500/[0.5]">
-						<Launch />
-					</div>
-					<div className="bg-white bg-grid-zinc-500/[0.2]">
-						<Empower />
-					</div>
 
 					<CategoryStrip />
-					<div id="features">
-						<FeaturesHome />
-						<FeaturesStrip />
+					{/* <div className="bg-[#70dbe2] bg-opacity-">
+						<Empower />
+					</div> */}
+
+					<div id="features" className="mx-auto w-full max-w-7xl">
+						<CarouselDApiDemo
+							carouselItems={staticFeatureCards}
+							autoScrollDuration={10000}
+							pagination={false}
+						/>
+						{/* <FeaturesHome />
+						<FeaturesStrip /> */}
 					</div>
 
-					<div id="faq">
+					{/* <div id="faq">
 						<FaqSection />
-					</div>
-					<hr className="bg-black" />
-
+					</div> */}
+					<hr />
 					<div id="footer">
 						<Footer />
 					</div>

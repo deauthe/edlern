@@ -4,11 +4,11 @@ import FloatingCard from "./FloatingCard";
 
 const Offerings = () => {
 	return (
-		<div className=" w-full flex flex-col sm:gap-5 md:gap-16 lg:pt-10 pt-5 mx-auto h-fit pb-10  font-oswald">
-			<div className="lg:text-5xl md:text-4xl text-3xl mx-auto w-fit tracking-tight bg-gradient-to-t font-replace_with_pooly from-white/[0.6] to-white text-transparent bg-clip-text">
+		<div className=" w-full flex flex-col md:gap-5 mt-16 pt-5 mx-auto h-fit pb-10 font-rajdhani">
+			<div className="lg:text-5xl md:text-4xl text-3xl mx-auto w-fit tracking-tight bg-gradient-to-t font-sentient from-black/90 to-black text-transparent bg-clip-text">
 				Platform Offerings
 			</div>
-			<div className="grid md:grid-cols-6 grid-cols-2 gap-5 w-fit mx-auto mt-auto lg:px-0 px-3 ">
+			<div className="grid md:grid-cols-3 grid-cols-3 lg:grid-cols-6 gap-5 w-fit mx-auto mt-auto bg-gradient-to-r from-[#CCFED8] to-[#93B9FE] p-10 rounded-lg">
 				{OfferingCardsStatic.map((item, idx) => {
 					return (
 						<FloatingCard

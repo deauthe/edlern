@@ -15,7 +15,7 @@ import { cn } from "@/lib/utils";
 const NavMenu = () => {
 	return (
 		<div className="mx-auto lg:w-fit md:w-[500px] ">
-			<ul className="flex flex-row font-oswald mx-auto w-fit gap-10">
+			<ul className="flex flex-row font-rajdhani mx-auto w-fit gap-10">
 				{staticComponents.map((component) => (
 					<ListItem
 						className=""

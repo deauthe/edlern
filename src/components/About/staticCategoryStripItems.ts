@@ -30,7 +30,7 @@ export const OfferingCardsStatic: OfferingCardType[] = [
 		icon: MdEmojiEvents,
 	},
 	{
-		title: "Direct Engagement with Educator",
+		title: "Direct Engagement ",
 		icon: GiTalk,
 	},
 	{

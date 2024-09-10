@@ -3,7 +3,6 @@ import { instagram } from "react-icons-kit/fa/instagram";
 import { linkedinSquare } from "react-icons-kit/fa/linkedinSquare";
 import { Icon } from "react-icons-kit";
 import NavMenu from "@/components/NavBar/NavMenu";
-import useMobileView from "@/hooks/useMobileView";
 import HamburgerMenu from "@/components/NavBar/HamburgerMenu";
 import useNavBar from "@/hooks/useNavBar";
 import Image from "next/image";
@@ -14,63 +13,57 @@ export const IconLinkedIn = () => <Icon icon={linkedinSquare} size={26} />;
 
 const Navbar = () => {
 	const [isNavbar, isTransparent] = useNavBar(true, true);
-	const isMobileView = useMobileView();
-	let textColour = "white";
+	let textColour = "black";
 
 	return (
 		<>
-			{isNavbar && (
+			<div
+				className={`w-full box-border flex flex-row lg:grid lg:grid-cols-12  justify-between gap-5 p-5 lg:px-14 md:px-16 px-3  bg-white 
+							bg-opacity-100 shadow-md
+					h-16 z-50 fixed top-0 left-0 transition-all duration-200 ${
+						isNavbar ? "translate-y-0" : "-translate-y-full"
+					}`}
+			>
 				<div
-					className={`w-full box-border flex flex-row lg:grid lg:grid-cols-12  justify-between gap-5 p-5 bg-opacity-0 lg:px-14 md:px-16 px-3 z-50 bg-black ${
-						isTransparent
-							? "bg-opacity-100 shadow-none "
-							: "bg-opacity-100 shadow-md "
-					} h-16 shadow-md z-10 fixed top-0 left-0`}
+					className={`mr-0 w-fit col-span-9 h-fit my-auto text-${textColour} lg:hidden`}
 				>
-					<div
-						className={`mr-0 w-fit col-span-9 h-fit my-auto text-${textColour} lg:hidden`}
-					>
-						<HamburgerMenu />
-					</div>
-					<div className={` col-span-3 `}>
-						<Image
-							src="/logo.png"
-							alt=""
-							width={500}
-							height={500}
-							className="w-32 h-auto rounded-lg"
-						/>
-					</div>
-
-					<>
-						{" "}
-						<div className={`col-span-6 text-${textColour} hidden lg:block`}>
-							<NavMenu />
-						</div>
-						<div className="col-span-3 lg:flex flex-row justify-end gap-2 hidden ">
-							<div className=" my-auto mr-3 opacity-80 text-nowrap text-white">
-								Let's connect
-							</div>
-							<div className=" my-auto">
-								<Link
-									href="https://www.instagram.com/edlern_official?igsh=MWN2Mzk2cWRscG9hdw=="
-									className={` text-pink-500 text-md font-serif font-bold hover:bg-transparent hover:font-extrabold transition-all duration-100 hover:translate-x-px ease-linear flex flex-row gap-1 items-center`}
-								>
-									<IconInstagram />
-								</Link>
-							</div>
-							<div className=" my-auto">
-								<Link
-									href="https://www.linkedin.com/company/edlern/"
-									className={`text-blue-300 text-md font-serif font-bold hover:bg-transparent hover:font-extrabold transition-all duration-100 hover:translate-x-px ease-linear flex flex-row gap-1 items-center`}
-								>
-									<IconLinkedIn />
-								</Link>
-							</div>
-						</div>
-					</>
+					<HamburgerMenu />
 				</div>
-			)}
+				<div className={` col-span-3 `}>
+					<Image
+						src="/logo.png"
+						alt=""
+						width={500}
+						height={500}
+						className="w-32 h-auto rounded-lg"
+					/>
+				</div>
+
+				<>
+					{" "}
+					<div className={`col-span-6 text-${textColour} hidden lg:block`}>
+						<NavMenu />
+					</div>
+					<div className="col-span-3 lg:flex flex-row justify-end gap-2 hidden ">
+						<div className=" my-auto">
+							<Link
+								href="https://www.instagram.com/edlern_official?igsh=MWN2Mzk2cWRscG9hdw=="
+								className={` text-pink-500 text-md font-serif font-bold hover:bg-transparent hover:font-extrabold transition-all duration-100 hover:translate-x-px ease-linear flex flex-row gap-1 items-center`}
+							>
+								<IconInstagram />
+							</Link>
+						</div>
+						<div className=" my-auto">
+							<Link
+								href="https://www.linkedin.com/company/edlern/"
+								className={`text-blue-300 text-md font-serif font-bold hover:bg-transparent hover:font-extrabold transition-all duration-100 hover:translate-x-px ease-linear flex flex-row gap-1 items-center`}
+							>
+								<IconLinkedIn />
+							</Link>
+						</div>
+					</div>
+				</>
+			</div>
 		</>
 	);
 };

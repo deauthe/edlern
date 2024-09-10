@@ -91,13 +91,13 @@ export const InfiniteMovingCards = ({
 					const Icon = item.icon;
 					return (
 						<li
-							className="w-fit flex relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 bg-black font-oswald text-white h-full "
+							className="w-fit flex relative rounded-2xl border flex-shrink-0 border-blue-300 px-8 py-6 bg-white font-rajdhani text-black/90 h-full "
 							key={item.title}
 						>
 							<div className=" w-fit my-auto flex h-full ">
 								<div className="relative z-20 flex flex-row items-center mb-auto justify-center ">
 									<span className="flex flex-row gap-5 my-auto">
-										<div className=" leading-[1.6] text-muted/80 font-bold text-lg text-center justify-end flex-col flex mx-auto ">
+										<div className=" leading-[1.6] font-light text-lg text-center justify-end flex-col flex mx-auto font-medium">
 											{item.title}
 										</div>
 										<div className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">

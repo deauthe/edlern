@@ -4,7 +4,7 @@ import { HoverEffect } from "./FeatureCard";
 
 const Features = () => {
 	return (
-		<div className=" w-screen h-fit bg-grid-white-200/[0.2] lg:px-20 mx-auto md:px-16 px-5 lg:hidden">
+		<div className=" w-screen h-fit lg:px-20 mx-auto md:px-16 px-5 lg:hidden">
 			<HoverEffect items={FeatureCardContent} />
 		</div>
 	);

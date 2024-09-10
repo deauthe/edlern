@@ -15,17 +15,17 @@ const HamburgerMenu = () => {
 	return (
 		<div>
 			<NavigationMenu orientation="vertical">
-				<NavigationMenuList>
+				<NavigationMenuList className="border-none">
 					<NavigationMenuItem>
-						<NavigationMenuTrigger className="bg-transparent border-l-1 border-black shadow-sm">
+						<NavigationMenuTrigger className=" ">
 							<div className="text-3xl font-bold">
 								<HamburgerMenuIcon />
 							</div>
 							{/* icon  */}
 						</NavigationMenuTrigger>
-						<NavigationMenuContent>
-							<NavigationMenuLink className="translate-x-32">
-								<ul className="grid w-[200px] gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[400px] ">
+						<NavigationMenuContent className="bg-white border-red-300 ">
+							<NavigationMenuLink className="translate-x-32 bg-transparent border-0">
+								<ul className="grid w-[200px] gap-3 p-4 md:w-[200px]  lg:w-[100px] text-black/60 ">
 									{staticComponents.map((component) => (
 										<ListItem
 											key={component.title}

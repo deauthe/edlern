@@ -1,3 +1,4 @@
+import React from "react";
 import * as z from "zod";
 
 const navComponentZod = z.object({
@@ -12,6 +13,7 @@ export const staticComponents: NavComponentsType[] = [
 	{
 		title: "Home",
 		href: "#home",
+
 	},
 	{
 		title: "About",
