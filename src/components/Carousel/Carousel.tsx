@@ -32,13 +32,14 @@ export default function CarouselDApiDemo({
   React.useEffect(() => {
     if (!api) {
       return;
-    }
+    } else console.log("api", api);
 
     setCount(api.scrollSnapList().length);
     setCurrent(api.selectedScrollSnap() + 1);
 
     api.on("select", () => {
       setCurrent(api.selectedScrollSnap() + 1);
+      console.log("Selected index:", api.selectedScrollSnap());
     });
   }, [api]);
 

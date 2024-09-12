@@ -1,13 +1,6 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { OfferingCardsStatic } from "../About/staticCategoryStripItems";
+
+import { OfferingCardsStatic } from "./staticCategoryStripItems";
 import { InfiniteMovingCards } from "@/components/ui/infiniteMovingCards.tsx";
 
 const CategoryStrip = () => {

@@ -14,6 +14,7 @@ import { CiLinkedin } from "react-icons/ci";
 import Link from "next/link";
 import PolicyDialog from "./PolicyDialog";
 import DisclaimerDialog from "./DisclaimerDialog";
+import { IconBrandProducthunt } from "@tabler/icons-react";
 
 const Footer = () => {
   return (
@@ -38,7 +39,7 @@ const Footer = () => {
               />
               <Link href="mailto:support@edlern.com">
                 For any queries, contact us on support@edlern.com
-                <FaExternalLinkAlt className="mx-auto my-auto" />
+                <FaExternalLinkAlt className="mx-auto my-auto hidden lg:flex" />
               </Link>
               <Link
                 href={"https://edlern.scenes.social"}
@@ -60,28 +61,32 @@ const Footer = () => {
                 className="flex flex-row gap-2 transition-all duration-200 hover:scale-105"
               >
                 Home
-                <FaHome className="my-auto" />
+                <FaHome className="my-auto hidden lg:flex" />
               </Link>
               <Link
                 href="#features"
                 className="flex flex-row gap-2 transition-all duration-200 hover:scale-105"
               >
                 Features
-                <MdOutlineFeaturedVideo className="my-auto" />
+                <MdOutlineFeaturedVideo className="my-auto hidden lg:flex" />
               </Link>
               <Link
-                href="#whyUs"
+                href="#features"
                 className="flex flex-row gap-2 transition-all duration-200 hover:scale-105"
               >
-                Who Are We
-                <MdRoundaboutLeft className="my-auto" />
+                Products
+                <IconBrandProducthunt
+                  strokeWidth={2}
+                  className="hidden lg:flex"
+                />
               </Link>
+
               <Link
                 href="#faq"
                 className="flex flex-row gap-2 transition-all duration-200 hover:scale-105"
               >
                 Contact Us
-                <PiPhoneBold className="my-auto" />
+                <PiPhoneBold className="my-auto hidden lg:flex" />
               </Link>
             </div>
           </div>
@@ -97,14 +102,14 @@ const Footer = () => {
                 className="flex flex-row gap-2 transition-all duration-200 hover:scale-105"
               >
                 Instagram
-                <FaInstagram className="my-auto" />
+                <FaInstagram className="my-auto hidden lg:flex" />
               </Link>
               <Link
                 href="https://www.linkedin.com/company/edlern/"
                 className="flex flex-row gap-2 transition-all duration-200 hover:scale-105"
               >
                 LinkedIn
-                <CiLinkedin className="my-auto text-2xl" />
+                <CiLinkedin className="my-auto hidden lg:flex" />
               </Link>
             </div>
           </div>
@@ -121,7 +126,7 @@ const Footer = () => {
 
               <div className="flex flex-row gap-2 text-ellipsis text-nowrap text-left transition-all duration-200 hover:scale-105">
                 <PolicyDialog />
-                <BsNewspaper className="my-auto" />
+                <BsNewspaper className="my-auto hidden lg:flex" />
               </div>
             </div>
           </div>

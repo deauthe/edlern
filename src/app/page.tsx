@@ -1,73 +1,24 @@
 "use client";
 import "./globals.css";
 import { Inter as FontSans, Rajdhani as rajdhani } from "next/font/google";
-import { cn } from "@/lib/utils";
 import Navbar from "@/components/NavBar/Navbar";
 import Hero from "@/components/Hero/Hero";
-import FaqSection from "@/components/Faq/FaqSection";
+
 import localfont from "next/font/local";
 import CategoryStrip from "@/components/CategoryStrip/CategoryStrip";
 import Footer from "@/components/Footer/Footer";
 import FeaturesHome from "@/components/features/FeaturesHome";
-import FeaturesStrip from "@/components/features/Features";
 import { Toaster } from "@/components/ui/toaster";
 import Offerings from "@/components/Offerings/Offerings";
 import Vision from "@/components/Vision/Vision";
 import WhyUs from "@/components/Vision/WhyUs";
-import Launch from "@/components/Launch/Launch";
-import Empower from "@/components/Empower/Empower";
-import { CardStack } from "@/components/cardStack/CardStackAceternity";
 import Image from "next/image";
-import CarouselDApiDemo from "@/components/Carousel/Carousel";
-import { staticFeatureCards } from "@/components/Carousel/staticCarouselItems";
-const Oswald = localfont({
-  src: [
-    {
-      path: "../../public/fonts/Oswald/Oswald-ExtraLight.ttf",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Oswald/Oswald-Light.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Oswald/Oswald-Medium.ttf",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Oswald/Oswald-SemiBold.ttf",
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Oswald/Oswald-Bold.ttf",
-      weight: "700",
-      style: "normal",
-    },
-  ],
-  variable: "--font-rajdhani",
-});
-const Sentient = localfont({
-  src: "../../public/fonts/Rajdhani/Rajdhani-Bold.otf",
-  variable: "--font-sentient",
-});
-const Rajdhani = rajdhani({
-  weight: ["300", "400", "500", "600", "700"],
-  fallback: ["sans", "serif"],
-  display: "auto",
-  preload: true,
-  style: "normal",
-  subsets: ["latin"],
-  variable: "--font-rajdhani",
-});
+
 export default function Home() {
   return (
     <>
       <main
-        className={`flex h-full w-screen flex-col items-center justify-between bg-white ${Rajdhani.variable} ${Sentient.variable} pt-10`}
+        className={`flex h-full w-screen flex-col items-center justify-between bg-white pt-10`}
       >
         <div className="h-full w-full">
           <Navbar />
@@ -85,7 +36,7 @@ export default function Home() {
             </div>
           </div>
           {/* photo placeholder  */}
-          <div className="mx-auto my-10 grid w-3/4 grid-cols-2 gap-0 pl-3 lg:mt-16 lg:grid-cols-4">
+          <div className="mx-auto my-10 grid w-3/4 grid-cols-2 gap-7 pl-3 lg:mt-16 lg:grid-cols-4 lg:gap-20">
             <div className="flex flex-col gap-5">
               <Image
                 src={"/process/1.svg"}
@@ -94,7 +45,7 @@ export default function Home() {
                 alt="photo"
                 className="scale mx-auto"
               />
-              <h1 className="font-rajdhani text-3xl font-bold">
+              <h1 className="mx-auto hidden w-fit rounded-full bg-blue-300 px-4 font-rajdhani text-2xl font-bold text-white lg:flex">
                 Have A Passion
               </h1>
             </div>
@@ -106,25 +57,34 @@ export default function Home() {
                 alt="photo"
                 className="mx-auto"
               />
-              <h1 className="font-rajdhani text-3xl font-bold">
-                make a community
+              <h1 className="mx-auto hidden w-fit -translate-y-2 translate-x-1 rounded-full bg-blue-300 px-4 font-rajdhani text-2xl font-bold text-white lg:flex">
+                Make A Community
               </h1>
             </div>
-
-            <Image
-              src={"/process/3.svg"}
-              height={600}
-              width={600}
-              alt="photo"
-              className="mx-auto"
-            />
-            <Image
-              src={"/process/4.svg"}
-              height={600}
-              width={600}
-              alt="photo"
-              className="mx-auto"
-            />
+            <div className="flex flex-col gap-5">
+              <Image
+                src={"/process/3.svg"}
+                height={600}
+                width={600}
+                alt="photo"
+                className="mx-auto"
+              />
+              <h1 className="mx-auto hidden w-fit translate-x-1 rounded-full bg-blue-300 px-4 font-rajdhani text-2xl font-bold text-white lg:flex lg:translate-y-2">
+                Learn Together
+              </h1>
+            </div>
+            <div className="flex flex-col gap-5">
+              <Image
+                src={"/process/4.svg"}
+                height={600}
+                width={600}
+                alt="photo"
+                className="mx-auto"
+              />
+              <h1 className="mx-auto hidden w-fit translate-x-1 rounded-full bg-blue-300 px-4 font-rajdhani text-2xl font-bold text-white lg:flex lg:translate-y-3">
+                Earn Money
+              </h1>
+            </div>
           </div>
           {/* <div className="w-full px-20 mx-auto items-center justify-center py-0 lg:-my-44 ">
 						<Image
@@ -137,7 +97,7 @@ export default function Home() {
 					</div> */}
           <div
             id="whyUs"
-            className="my-10 grid w-full grid-cols-1 items-center gap-5 px-5 text-black md:grid md:grid-cols-2 md:px-8 lg:my-16 lg:gap-10 lg:px-12"
+            className="my-16 grid w-full grid-cols-1 items-center gap-5 px-5 text-black md:grid md:grid-cols-2 md:px-8 lg:my-16 lg:gap-10 lg:px-12"
           >
             <Vision />
             <WhyUs />
@@ -150,7 +110,7 @@ export default function Home() {
 
           <div
             id="features"
-            className="mx-auto my-10 w-full max-w-7xl lg:my-32"
+            className="mx-auto my-10 mt-16 w-full max-w-7xl lg:my-16"
           >
             <FeaturesHome />
           </div>

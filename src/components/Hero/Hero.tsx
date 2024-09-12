@@ -2,7 +2,7 @@
 import { TypeAnimation } from "react-type-animation";
 import RegisterForm from "@/components/RegistrationForm";
 import FloatingCard from "../Offerings/FloatingCard";
-import { OfferingCardsStatic } from "../About/staticCategoryStripItems";
+import { OfferingCardsStatic } from "../CategoryStrip/staticCategoryStripItems";
 import Offerings from "../Offerings/Offerings";
 import { Button } from "../ui/button";
 import Link from "next/link";
@@ -20,7 +20,7 @@ const HeroBanner = () => {
             <div className="mx-auto h-fit font-bold tracking-tighter text-black md:px-5 lg:px-10">
               Your New Home for
             </div>
-            <div className="mx-auto h-fit w-5/6 font-bold tracking-tighter text-blue-200 md:max-w-[400px] md:px-5 lg:max-w-max lg:text-nowrap lg:px-10">
+            <div className="mx-auto w-5/6 text-blue-200 lg:w-full">
               Learning And Community Engagement!
             </div>
           </div>

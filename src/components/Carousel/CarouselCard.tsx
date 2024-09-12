@@ -14,9 +14,11 @@ export const CarouselCard = ({
   video,
 }: CarouselItem) => {
   return (
-    <div className="grid h-full w-full grid-cols-1 gap-5 lg:grid-cols-2">
+    <div
+      className={`grid h-full w-full grid-cols-1 gap-5 ${image ? "lg:grid-cols-3" : "lg:grid-cols-2"}`}
+    >
       {/* text section  */}
-      <div className="mb-auto flex flex-col gap-3">
+      <div className="col-span-1 mb-auto flex flex-col gap-3">
         <h1 className="font-rajdhani text-4xl font-semibold text-black/80">
           {title}
         </h1>
@@ -27,8 +29,14 @@ export const CarouselCard = ({
 
       {/* media  */}
       {image && (
-        <div className="w-full overflow-y-hidden">
-          <Image src={image} height={600} width={600} alt="image" />
+        <div className={`col-span-2 w-full overflow-y-hidden lg:min-h-96`}>
+          <img
+            src={image}
+            height={1000}
+            width={1000}
+            alt="image"
+            className="h-full w-full"
+          />
         </div>
       )}
       {video && (

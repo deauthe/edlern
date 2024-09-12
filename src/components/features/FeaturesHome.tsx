@@ -1,9 +1,7 @@
 "use client";
-import { cn } from "@/lib/utils";
 import React from "react";
 import CarouselDApiDemo from "../Carousel/Carousel";
 import { staticFeatureCards } from "../Carousel/staticCarouselItems";
-import CarouselVertical from "../Carousel/CarouselVertical";
 
 const FeaturesHome = () => {
   return (
@@ -14,7 +12,7 @@ const FeaturesHome = () => {
       </div>
       <div className="px-5 md:px-10">
         <CarouselDApiDemo
-          titles={["Create", "Classroom", "⁠Live Stream", "Gamification"]}
+          titles={["Create", "Monetize", "⁠Live Stream", "Gamification"]}
           carouselItems={staticFeatureCards}
           autoScrollDuration={6000}
           pagination={true}

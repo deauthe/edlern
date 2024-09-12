@@ -19,11 +19,7 @@ export const staticComponents: NavComponentsType[] = [
     href: "#home",
     icon: <IconHome2 strokeWidth={1} />,
   },
-  {
-    title: "About",
-    href: "#whyUs",
-    icon: <IconUser strokeWidth={1} />,
-  },
+
   {
     title: "Products",
     href: "#faq",

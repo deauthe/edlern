@@ -1,5 +1,5 @@
 import React from "react";
-import { OfferingCardsStatic } from "../About/staticCategoryStripItems";
+import { OfferingCardsStatic } from "../CategoryStrip/staticCategoryStripItems";
 import FloatingCard from "./FloatingCard";
 
 const Offerings = () => {
