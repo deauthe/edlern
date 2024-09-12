@@ -8,42 +8,42 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 
 const HeroBanner = () => {
-	const RegisterUser = () => {
-		// take to signUp Form
-	};
+  const RegisterUser = () => {
+    // take to signUp Form
+  };
 
-	return (
-		<div className="mx-auto relative font-rajdhani font-extrabold h-fit mt-[70px] ">
-			<div className="sm:flex sm:flex-col lg:gap-16 ">
-				<div className="flex justify-center gap-5 flex-col text-center  col-span-1 my-auto ">
-					<div className="flex flex-col gap-1">
-						<div className="lg:text-6xl md:text-4xl text-3xl lg:px-10 md:px-5  font-bold tracking-tighter  h-fit text-black  mx-auto max-w-[200px] sm:max-w-[300px] md:max-w-[400px] lg:max-w-[500px]">
-							Your New Home
-						</div>
-						<div className="lg:text-6xl md:text-4xl text-3xl lg:px-10 md:px-5 font-bold tracking-tighter  h-fit  text-blue-300  mx-auto max-w-[200px] sm:max-w-[300px] md:max-w-[400px] lg:max-w-max lg:text-nowrap">
-							Learning And Community Engagement!
-						</div>
-					</div>
+  return (
+    <div className="relative mx-auto mt-[70px] h-fit font-rajdhani font-extrabold">
+      <div className="sm:flex sm:flex-col lg:gap-16">
+        <div className="col-span-1 my-auto flex flex-col justify-center gap-5 text-center">
+          <div className="flex flex-col gap-1 text-5xl md:text-6xl lg:text-7xl">
+            <div className="mx-auto h-fit font-bold tracking-tighter text-black md:px-5 lg:px-10">
+              Your New Home for
+            </div>
+            <div className="mx-auto h-fit w-5/6 font-bold tracking-tighter text-blue-200 md:max-w-[400px] md:px-5 lg:max-w-max lg:text-nowrap lg:px-10">
+              Learning And Community Engagement!
+            </div>
+          </div>
 
-					<Link
-						href={"https://edlern.scenes.social"}
-						className="max-w-md mx-auto bg-blue-300 text-white lg:text-xl text-lg px-2 py-1 rounded-md hover:rotate-1 transition-all duration-200 hover:scale-[105%]"
-					>
-						Create Your Community
-					</Link>
-					<div className=" md:mx-auto w-fit h-fit rounded-lg overflow-hidden lg:mx-10 border-black/20 border-[1px] mx-3 ">
-						<video
-							muted
-							src="/homeVideo.mp4"
-							className="w-full max-w-5xl"
-							autoPlay={true}
-							loop={true}
-						></video>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
+          <Link
+            href={"https://edlern.scenes.social"}
+            className="mx-auto max-w-md rounded-full bg-blue-300 p-4 text-lg text-white transition-all duration-200 hover:rotate-1 hover:scale-[105%] lg:text-xl"
+          >
+            Create Your Community
+          </Link>
+          <div className="mx-3 h-fit w-fit overflow-hidden rounded-lg border-[1px] border-black/20 md:mx-auto lg:mx-10">
+            <video
+              muted
+              src="/homeVideo.mp4"
+              className="w-full max-w-5xl"
+              autoPlay={true}
+              loop={true}
+            ></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default HeroBanner;

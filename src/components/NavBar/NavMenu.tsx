@@ -1,13 +1,4 @@
 import React from "react";
-import {
-	NavigationMenu,
-	NavigationMenuContent,
-	NavigationMenuItem,
-	NavigationMenuLink,
-	NavigationMenuList,
-	NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
-import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { staticComponents } from "./staticNavComponents";
 
 import { cn } from "@/lib/utils";

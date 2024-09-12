@@ -10,7 +10,7 @@ export type FloatingCardType = {
 const FloatingCard = (item: FloatingCardType) => {
 	const Icon = item.icon;
 	return (
-		<div className=" rounded-md lg:size-40 size-24 bg-white hover:cursor-pointer shadow-md hover:shadow-lg border-[1px] border-opacity-25 border-black/50 ">
+		<div className=" rounded-md lg:size-40 size-24 bg-white hover:cursor-pointer shadow-md hover:shadow-lg border-[1px] border-opacity-25 border-black/50 hover:scale-110 transition-all duration-200">
 			<div className="  w-full h-full rounded-full flex flex-col ">
 				<div className="mx-auto w-full h-full  my-auto ">
 					<h1 className="lg:text-xl md:text-lg text-lg text-center lg:p-3 p-1 lg:px-5 tracking-tighter text-black w-full h-full rounded-full  font-rajdhani font-bold mx-auto flex flex-col justify-between ">
