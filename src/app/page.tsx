@@ -13,6 +13,7 @@ import Offerings from "@/components/Offerings/Offerings";
 import Vision from "@/components/Vision/Vision";
 import WhyUs from "@/components/Vision/WhyUs";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -31,8 +32,21 @@ export default function Home() {
               {/* TODO:md response */}
               <Hero />
             </div>
-            <div className="my-10 w-full">
-              <Offerings />
+            <div className="my-10 flex w-full flex-col gap-7 px-5 lg:px-16">
+              {/* <Offerings /> */}
+              <Image
+                src="/digitalShop.svg"
+                height={2000}
+                width={2000}
+                className="max-w-full"
+                alt=""
+              />
+              <Link
+                href={"https://edlern.scenes.social"}
+                className="mx-auto max-w-md rounded-full bg-blue-300 p-4 text-lg text-white transition-all duration-200 hover:rotate-1 hover:scale-[105%] lg:text-xl"
+              >
+                Start Selling
+              </Link>
             </div>
           </div>
           {/* photo placeholder  */}
