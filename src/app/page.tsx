@@ -1,103 +1,145 @@
 "use client";
 import "./globals.css";
-import { Inter as FontSans } from "next/font/google";
-import { cn } from "@/lib/utils";
+import { Inter as FontSans, Rajdhani as rajdhani } from "next/font/google";
 import Navbar from "@/components/NavBar/Navbar";
 import Hero from "@/components/Hero/Hero";
-import FaqSection from "@/components/Faq/FaqSection";
+
 import localfont from "next/font/local";
 import CategoryStrip from "@/components/CategoryStrip/CategoryStrip";
 import Footer from "@/components/Footer/Footer";
 import FeaturesHome from "@/components/features/FeaturesHome";
-import FeaturesStrip from "@/components/features/Features";
 import { Toaster } from "@/components/ui/toaster";
 import Offerings from "@/components/Offerings/Offerings";
 import Vision from "@/components/Vision/Vision";
-import WhyUs from "@/components/WhyUs/WhyUs";
-import Launch from "@/components/Launch/Launch";
-import Empower from "@/components/Empower/Empower";
-import { CardStack } from "@/components/cardStack/CardStackAceternity";
-const Oswald = localfont({
-	src: [
-		{
-			path: "../../public/fonts/Oswald/Oswald-ExtraLight.ttf",
-			weight: "300",
-			style: "normal",
-		},
-		{
-			path: "../../public/fonts/Oswald/Oswald-Light.ttf",
-			weight: "400",
-			style: "normal",
-		},
-		{
-			path: "../../public/fonts/Oswald/Oswald-Medium.ttf",
-			weight: "500",
-			style: "normal",
-		},
-		{
-			path: "../../public/fonts/Oswald/Oswald-SemiBold.ttf",
-			weight: "600",
-			style: "normal",
-		},
-		{
-			path: "../../public/fonts/Oswald/Oswald-Bold.ttf",
-			weight: "700",
-			style: "normal",
-		},
-	],
-	variable: "--font-oswald",
-});
+import WhyUs from "@/components/Vision/WhyUs";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
-	return (
-		<>
-			<main
-				className={`flex h-full w-screen flex-col items-center justify-between  bg-gradient-to-b from-blue-300 to-white ${Oswald.variable} `}
-			>
-				<div className="h-full w-full  ">
-					<Navbar />
-					<div
-						id="home"
-						className="lg:h-fit h-fit w-full  bg-transparent  bg-dot-blue-100/[0.6] relative flex items-center justify-center "
-					>
-						{/* TODO:md response */}
-						<Hero />
-					</div>
-					<div className="w-full">
-						<Offerings />
-					</div>
-					<div
-						id="whyUs"
-						className="md:grid md:grid-cols-2 md:px-8 lg:px-12 bg-white bg-dot-zinc-500/[0.5] flex flex-col md:gap-0 gap-10 px-5 w-full py-10"
-					>
-						<Vision />
-						<WhyUs />
-					</div>
-					<div id="launch" className="pb-10 bg-white bg-dot-zinc-500/[0.5]">
-						<Launch />
-					</div>
-					<div className="bg-white bg-grid-zinc-500/[0.2]">
+  return (
+    <>
+      <main
+        className={`flex h-full w-screen flex-col items-center justify-between bg-white pt-10`}
+      >
+        <div className="h-full w-full">
+          <Navbar />
+          {/* first scroll  */}
+          <div className="flex h-full min-h-screen w-full flex-col items-center justify-center">
+            <div
+              id="home"
+              className="relative flex h-fit w-full items-center justify-center bg-transparent text-black lg:h-fit"
+            >
+              {/* TODO:md response */}
+              <Hero />
+            </div>
+            <div className="my-10 flex w-full flex-col gap-7 px-5 lg:px-16">
+              {/* <Offerings /> */}
+              <Image
+                src="/digitalShop.svg"
+                height={2000}
+                width={2000}
+                className="max-w-full"
+                alt=""
+              />
+              <Link
+                href={"https://edlern.scenes.social"}
+                className="mx-auto max-w-md rounded-full bg-blue-300 p-4 text-lg text-white transition-all duration-200 hover:rotate-1 hover:scale-[105%] lg:text-xl"
+              >
+                Start Selling
+              </Link>
+            </div>
+          </div>
+          {/* photo placeholder  */}
+          <div className="mx-auto my-10 grid w-3/4 grid-cols-2 gap-7 pl-3 lg:mt-16 lg:grid-cols-4 lg:gap-20">
+            <div className="flex flex-col gap-5">
+              <Image
+                src={"/process/1.svg"}
+                height={600}
+                width={600}
+                alt="photo"
+                className="scale mx-auto"
+              />
+              <h1 className="mx-auto hidden w-fit rounded-full bg-blue-300 px-4 font-rajdhani text-2xl font-bold text-white lg:flex">
+                Have A Passion
+              </h1>
+            </div>
+            <div className="flex flex-col gap-5">
+              <Image
+                src={"/process/2.svg"}
+                height={600}
+                width={600}
+                alt="photo"
+                className="mx-auto"
+              />
+              <h1 className="mx-auto hidden w-fit -translate-y-2 translate-x-1 rounded-full bg-blue-300 px-4 font-rajdhani text-2xl font-bold text-white lg:flex">
+                Make A Community
+              </h1>
+            </div>
+            <div className="flex flex-col gap-5">
+              <Image
+                src={"/process/3.svg"}
+                height={600}
+                width={600}
+                alt="photo"
+                className="mx-auto"
+              />
+              <h1 className="mx-auto hidden w-fit translate-x-1 rounded-full bg-blue-300 px-4 font-rajdhani text-2xl font-bold text-white lg:flex lg:translate-y-2">
+                Learn Together
+              </h1>
+            </div>
+            <div className="flex flex-col gap-5">
+              <Image
+                src={"/process/4.svg"}
+                height={600}
+                width={600}
+                alt="photo"
+                className="mx-auto"
+              />
+              <h1 className="mx-auto hidden w-fit translate-x-1 rounded-full bg-blue-300 px-4 font-rajdhani text-2xl font-bold text-white lg:flex lg:translate-y-3">
+                Earn Money
+              </h1>
+            </div>
+          </div>
+          {/* <div className="w-full px-20 mx-auto items-center justify-center py-0 lg:-my-44 ">
+						<Image
+							src={"/process.svg"}
+							height={1300}
+							width={1300}
+							alt="photo"
+							className="mx-auto"
+						/>
+					</div> */}
+          <div
+            id="whyUs"
+            className="my-16 grid w-full grid-cols-1 items-center gap-5 px-5 text-black md:grid md:grid-cols-2 md:px-8 lg:my-16 lg:gap-10 lg:px-12"
+          >
+            <Vision />
+            <WhyUs />
+          </div>
+
+          <CategoryStrip />
+          {/* <div className="bg-[#70dbe2] bg-opacity-">
 						<Empower />
-					</div>
+					</div> */}
 
-					<CategoryStrip />
-					<div id="features">
-						<FeaturesHome />
-						<FeaturesStrip />
-					</div>
+          <div
+            id="features"
+            className="mx-auto my-10 mt-16 w-full max-w-7xl lg:my-16"
+          >
+            <FeaturesHome />
+          </div>
 
-					<div id="faq">
+          {/* <div id="faq">
 						<FaqSection />
-					</div>
-					<hr className="bg-black" />
+					</div> */}
+          <hr className="shadow-lg" />
+          <div id="footer">
+            <Footer />
+          </div>
 
-					<div id="footer">
-						<Footer />
-					</div>
-
-					<Toaster />
-				</div>
-			</main>
-		</>
-	);
+          <Toaster />
+        </div>
+      </main>
+    </>
+  );
 }

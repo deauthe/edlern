@@ -27,7 +27,8 @@ const config = {
 				sans: ["var(--font-sans)", ...fontFamily.sans],
 				serif: ["DmSerif", "sans-serif"],
 				DmSerif: ["DmSerif"],
-				oswald: "var(--font-oswald)",
+				rajdhani: "var(--font-rajdhani)",
+				sentient: "var(--font-sentient)",
 			},
 			colors: {
 				border: "hsl(var(--border))",

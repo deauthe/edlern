@@ -1,46 +1,49 @@
+"use client";
 import { TypeAnimation } from "react-type-animation";
 import RegisterForm from "@/components/RegistrationForm";
 import FloatingCard from "../Offerings/FloatingCard";
-import { OfferingCardsStatic } from "../About/staticCategoryStripItems";
-import SignUpForm from "../signup/signUpForm";
+import { OfferingCardsStatic } from "../CategoryStrip/staticCategoryStripItems";
 import Offerings from "../Offerings/Offerings";
-import SignUp from "@/components/signup/SignUp";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const HeroBanner = () => {
-	const RegisterUser = () => {
-		// take to signUp Form
-	};
+  const RegisterUser = () => {
+    // take to signUp Form
+  };
 
-	return (
-		<div className="mx-auto relative font-oswald font-extrabold h-fit mt-[70px] ">
-			<div className="sm:flex sm:flex-col lg:grid lg:grid-cols-2 lg:gap-16 ">
-				<div className="flex justify-center  flex-col text-center  col-span-1 gap-3 my-auto ">
-					<div className="lg:text-7xl md:text-4xl text-4xl lg:px-10 md:px-5 mt-6 font-semibold tracking-tighter text-muted/80 h-fit w-11/12   mx-auto ">
-						Your New Home For Learning And Community Engagement!
-					</div>
+  return (
+    <div className="relative mx-auto mt-[70px] h-fit font-rajdhani font-extrabold">
+      <div className="sm:flex sm:flex-col lg:gap-16">
+        <div className="col-span-1 my-auto flex flex-col justify-center gap-5 text-center">
+          <div className="flex flex-col gap-1 text-5xl md:text-6xl lg:text-7xl">
+            <div className="mx-auto h-fit font-bold tracking-tighter text-black md:px-5 lg:px-10">
+              Your New Home for
+            </div>
+            <div className="mx-auto w-5/6 text-blue-200 lg:w-full">
+              Learning And Community Engagement!
+            </div>
+          </div>
 
-					<div className="lg:mt-10 md:mt-5 mt-2 mx-auto lg:px-3 md:px-1 w-11/12">
-						<h1 className="lg:text-5xl text-2xl md:text-3xl tracking-tighter font-oswald font-semibold text-center mx-auto lg:px-20 md:px-10 px-3  text-muted/60">
-							<span className="bg-gradient-to-b text-transparent from-blue-300 to-black bg-clip-text ">
-								{`Share your  `}
-							</span>
-							ideas, host discussions
-							<span className="bg-gradient-to-b text-transparent from-blue-300 to-black  bg-clip-text ">
-								{` `}
-							</span>
-							<span className="bg-gradient-to-b text-transparent from-blue-300 to-black bg-clip-text ">
-								{` and engage in `}
-							</span>
-							events, courses, coaching and consultations
-						</h1>
-					</div>
-				</div>
-				<div className="w-full flex flex-col h-fit mx-auto my-auto">
-					<SignUp />
-				</div>
-			</div>
-		</div>
-	);
+          <Link
+            href={"https://edlern.scenes.social"}
+            className="mx-auto max-w-md rounded-full bg-blue-300 p-4 text-lg text-white transition-all duration-200 hover:rotate-1 hover:scale-[105%] lg:text-xl"
+          >
+            Create Your Community
+          </Link>
+          <div className="mx-3 h-fit w-fit overflow-hidden rounded-lg border-[1px] border-black/20 md:mx-auto lg:mx-10">
+            <video
+              muted
+              src="/homeVideo.mp4"
+              className="w-full max-w-5xl"
+              autoPlay={true}
+              loop={true}
+            ></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default HeroBanner;

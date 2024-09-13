@@ -1,13 +1,4 @@
 import React from "react";
-import {
-	NavigationMenu,
-	NavigationMenuContent,
-	NavigationMenuItem,
-	NavigationMenuLink,
-	NavigationMenuList,
-	NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
-import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { staticComponents } from "./staticNavComponents";
 
 import { cn } from "@/lib/utils";
@@ -15,7 +6,7 @@ import { cn } from "@/lib/utils";
 const NavMenu = () => {
 	return (
 		<div className="mx-auto lg:w-fit md:w-[500px] ">
-			<ul className="flex flex-row font-oswald mx-auto w-fit gap-10">
+			<ul className="flex flex-row font-rajdhani mx-auto w-fit gap-10">
 				{staticComponents.map((component) => (
 					<ListItem
 						className=""
