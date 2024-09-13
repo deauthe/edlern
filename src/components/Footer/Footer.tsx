@@ -82,7 +82,7 @@ const Footer = () => {
               </Link>
 
               <Link
-                href="#faq"
+                href="mailto:support@edlern.com"
                 className="flex flex-row gap-2 transition-all duration-200 hover:scale-105"
               >
                 Contact Us

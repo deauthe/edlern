@@ -32,7 +32,7 @@ export const staticComponents: NavComponentsType[] = [
   },
   {
     title: "Contact Us",
-    href: "#faq",
+    href: "mailto:support@edlern.com",
     icon: <IconBook2 strokeWidth={1} />,
   },
 ];
